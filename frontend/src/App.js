@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {Link} from "react-router-dom";
 
 function App() {
   return (
@@ -20,11 +21,11 @@ function App() {
 
             <div id="nav-principal" class="collapse navbar-collapse">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Sobre Nós</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">O Projeto</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Como Ajudar</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Parcerias</a></li> 
-                <li class="nav-item"><a class="nav-link" href="#">Fale Conosco</a></li>                         
+                <li class="nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
+                <li class="nav-item"><Link className="nav-link" to="/projeto">O Projeto</Link></li>
+                <li class="nav-item"><Link className="nav-link" to="/como-doar">Como Doar</Link></li>
+                <li class="nav-item"><Link className="nav-link" to="/parceiros">Parceiros</Link></li> 
+                <li class="nav-item"><Link className="nav-link" to="/fale-conosco">Fale Conosco</Link></li>                         
               </ul>
             </div>
           </div>
