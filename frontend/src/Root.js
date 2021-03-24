@@ -6,6 +6,7 @@ import {
 import App from "./App";
 import Doador from "./Doador";
 import Sobre from "./Sobre";
+import Projeto from "./Projeto";
 
 export default function Root() {
     return (
@@ -15,6 +16,9 @@ export default function Root() {
           <Switch>
             <Route path="/sobre-nos">
                 <Sobre />
+            </Route>
+            <Route path="/o-projeto">
+                <Projeto />
             </Route>
             <Route path="/como-doar">
                 <Doador />
