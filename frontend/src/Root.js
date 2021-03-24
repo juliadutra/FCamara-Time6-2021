@@ -7,6 +7,8 @@ import App from "./App";
 import Doador from "./Doador";
 import Sobre from "./Sobre";
 import Projeto from "./Projeto";
+import Parceiros from "./Parceiros";
+import FaleConosco from "./FaleConosco";
 
 export default function Root() {
     return (
@@ -22,6 +24,12 @@ export default function Root() {
             </Route>
             <Route path="/como-doar">
                 <Doador />
+            </Route>
+            <Route path="/parceiros">
+                <Parceiros />
+            </Route>
+            <Route path="/fale-conosco">
+                <FaleConosco />
             </Route>
             <Route path="/">
               <App />
