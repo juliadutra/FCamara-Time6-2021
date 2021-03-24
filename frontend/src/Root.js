@@ -19,7 +19,7 @@ export default function Root() {
             <Route path="/sobre-nos">
                 <Sobre />
             </Route>
-            <Route path="/o-projeto">
+            <Route path="/projeto">
                 <Projeto />
             </Route>
             <Route path="/como-doar">
