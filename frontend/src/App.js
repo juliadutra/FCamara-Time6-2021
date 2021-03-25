@@ -46,7 +46,7 @@ function App() {
                 <div className="container">
                     <h1 className="display-4">Sobre Nós</h1>
                     <p className="lead">
-                      Nossa história, nosso lema e manifesto 
+                      Nossa história, nosso lema e manifesto.
                     </p>
                 </div>
             </div>
