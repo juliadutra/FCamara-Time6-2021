@@ -44,27 +44,27 @@ function App() {
           <div className="carousel-inner">      
             <div className="carousel-item active carousel-fundo1" data-bs-interval="1400">
                 <div className="container">
-                    <h1 className="display-4">Slide 1</h1>
+                    <h1 className="display-4">Sobre Nós</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      Nossa história, nosso lema e manifesto 
                     </p>
                 </div>
             </div>
 
             <div className="carousel-item carousel-fundo2" data-bs-interval="1400">
                 <div className="container">
-                    <h1 className="display-4">Slide 2</h1>
+                    <h1 className="display-4">O Projeto</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      Como transformamos vidas e ajudamos na esperança de um futuro melhor.
                     </p>
                 </div>
             </div>        
 
             <div className="carousel-item carousel-fundo3" data-bs-interval="1400">
                 <div className="container">
-                    <h1 className="display-4">Slide 3</h1>
+                    <h1 className="display-4">Como Doar</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Você pode ajudar a transformar a vida de diversas crianças. Junte-se a nós!
                     </p>
                 </div>
             </div>        
