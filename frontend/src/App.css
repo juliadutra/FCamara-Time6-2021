@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -41,3 +42,9 @@
 .App header {
   text-align: left;
 }
+
+
+
+
+
+
