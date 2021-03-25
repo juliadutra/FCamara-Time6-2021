@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
 
       {/*MENU*/}
@@ -20,8 +20,8 @@ function App() {
             </button>
 
             <div id="nav-principal" className="collapse navbar-collapse">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
+              <ul className="navbar-nav ms-auto" id="navegacao">
+                <li className="home nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/projeto">O Projeto</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/como-doar">Como Doar</Link></li>
                 <li className="nav-item"><Link className="nav-link" to="/parceiros">Parceiros</Link></li> 
@@ -33,54 +33,56 @@ function App() {
       </header>  
 
       {/*CAROUSEL*/}
-      <section id="secaoCarousel">
-        <div>
-          <div className="row">
-              <div className="col-xl-12 m-auto">
-                  <div id="carouselControle" class="carousel slide" data-bs-ride="carousel">
-                      <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselControle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselControle" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselControle" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                                           
-                        <div className="carousel-inner">
-                          <div className="carousel-item active">
-                            <img src="Imagens/foto-carousel.jpg" className="d-block w-100"/>
-                            <div className="carousel-caption">
-                              <h5 className="display-4">First slide label</h5>
-                              <p className="lead">Some representative placeholder content for the first slide.</p>
-                            </div>
-                          </div>
-                          <div className="carousel-item">
-                            <img src="Imagens/foto-carousel.jpg" className="d-block w-100"/>
-                            <div className="carousel-caption">
-                              <h5 className="display-4">Second slide label</h5>
-                              <p className="lead">Some representative placeholder content for the second slide.</p>
-                            </div>
-                          </div>
-                          <div className="carousel-item">
-                            <img src="Imagens/foto-carousel.jpg" className="d-block w-100"/>
-                            <div className="carousel-caption">
-                              <h5 className="display-4">Third slide label</h5>
-                              <p className="lead">Some representative placeholder content for the third slide.</p>
-                            </div>
-                          </div>
-                        </div>
-                     
-                      <button className="carousel-control-prev" type="button" data-bs-target="#carouselControle" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                      </button>
-                      <button className="carousel-control-next" type="button" data-bs-target="#carouselControle" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                      </button>
-                    </div>
+      <section>
+        <div id="carouselControle" className="carousel slide" data-bs-ride="carousel" >
+          <ol className="carousel-indicators">
+            <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
+            <li data-bs-target="#carouselControle" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselControle" data-bs-slide-to="2"></li>
+          </ol>
+
+          <div className="carousel-inner">      
+          <div className="carousel-item active">
+              <div className="container">
+                  <h1>Slide 1</h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
               </div>
           </div>
+
+          <div className="carousel-item">
+              <div className="container">
+                  <h1>Slide 2</h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+              </div>
+          </div>        
+
+          <div className="carousel-item">
+              <div className="container">
+                  <h1>Slide 3</h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                  </p>
+              </div>
+          </div>        
         </div>
-      </section> 
+
+        <a class="carousel-control-prev" data-bs-target="#carouselControle" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" data-bs-target="#carouselControle" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+
+      </div>
+
+      </section>
     </div>
 
   );
