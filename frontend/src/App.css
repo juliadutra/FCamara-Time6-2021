@@ -54,7 +54,7 @@
 .App section .carousel-item {
   height: 32rem;
   background-color: #000;
-  color: #fff;
+  color: #000;
   position: relative;
   background-position: center;
   background-size: cover;
@@ -70,17 +70,15 @@
 
 .App section .carousel-fundo1 {
   background-image:url('./Imagens/foto-carouse1.jpg');
-  opacity: 0.5;
 }
 
 .App section .carousel-fundo2 {
   background-image:url('./Imagens/foto-carousel2.jpg');
-  opacity: 0.5;
+
 }
 
 .App section .carousel-fundo3 {
   background-image:url('./Imagens/foto-carousel3.jpg');
-  opacity: 0.8;
 }
 
 
