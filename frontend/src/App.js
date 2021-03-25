@@ -34,7 +34,7 @@ function App() {
 
       {/*CAROUSEL*/}
       <section>
-        <div id="carouselControle" className="carousel slide" data-bs-ride="carousel" >
+        <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
             <li data-bs-target="#carouselControle" data-bs-slide-to="1"></li>
@@ -44,8 +44,8 @@ function App() {
           <div className="carousel-inner">      
             <div className="carousel-item active carousel-fundo1">
                 <div className="container">
-                    <h1>Slide 1</h1>
-                    <p>
+                    <h1 className="display-4">Slide 1</h1>
+                    <p className="lead">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
@@ -53,8 +53,8 @@ function App() {
 
             <div className="carousel-item carousel-fundo2">
                 <div className="container">
-                    <h1>Slide 2</h1>
-                    <p>
+                    <h1 className="display-4">Slide 2</h1>
+                    <p className="lead">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
@@ -62,8 +62,8 @@ function App() {
 
             <div className="carousel-item carousel-fundo3">
                 <div className="container">
-                    <h1>Slide 3</h1>
-                    <p>
+                    <h1 className="display-4">Slide 3</h1>
+                    <p className="lead">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                 </div>
@@ -83,6 +83,8 @@ function App() {
       </div>
 
       </section>
+
+
     </div>
 
   );
