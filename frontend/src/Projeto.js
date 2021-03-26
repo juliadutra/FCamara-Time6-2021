@@ -1,6 +1,10 @@
 import React from 'react'
+import Cabecalho from './Cabecalho';
 export default function Projeto() {
     return (
-      <h1>O Projeto</h1>
+      <div>
+        <Cabecalho/>
+        <h1>O Projeto</h1>
+      </div>
     );
   }

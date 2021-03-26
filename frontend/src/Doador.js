@@ -1,7 +1,9 @@
 import React from 'react'
+import Cabecalho from './Cabecalho';
 export default function Doador() {
   return (
     <div>
+      <Cabecalho />
       <div className="text-center">
         <p className="display-4">Entenda Como Você Pode Contribuir</p>
         <div className="leader m-3 p-4">Nós da Iniciativa X acreditamos que toda criança pode sonhar com um futuro melhor.
@@ -15,7 +17,7 @@ export default function Doador() {
               <h4 class="my-0 font-weight-normal">Kit</h4>
             </div>
             <div className="card-body">
-              <p>Você pode adquirir Kits pré formulados por nós, em parceria com papelarias/livrarias parceiras, com materiais adequados à realidade de cada faixa etária escolar.
+              <p>Você pode adquirir Kits pré formulados por nós, em parceria com papelarias/livrarias conveniadas, com materiais adequados à realidade de cada faixa etária escolar.
               </p>
             </div>
           </div>
