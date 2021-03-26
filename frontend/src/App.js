@@ -1,38 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import {Link} from "react-router-dom";
+import Cabecalho from './Cabecalho';
 
 function App() {
   return (
     <div className="App" id="home">
       {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
-
-      {/*MENU*/}
-      <header> 
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
-          <div className="container">
-            <a href="#" className="navbar-brand">
-              <h1>Logo</h1>
-            </a>
-
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div id="nav-principal" className="collapse navbar-collapse">
-              <ul className="navbar-nav ms-auto" id="navegacao">
-                <li className="home nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/projeto">O Projeto</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/como-doar">Como Doar</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/parceiros">Parceiros</Link></li> 
-                <li className="nav-item"><Link className="nav-link" to="/fale-conosco">Fale Conosco</Link></li>                         
-              </ul>
-            </div>
-          </div>
-        </nav>            
-      </header>  
-
-      {/*CAROUSEL*/}
+      <Cabecalho/>
+     {/*CAROUSEL*/}
       <section>
         <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
@@ -44,27 +20,27 @@ function App() {
           <div className="carousel-inner">      
             <div className="carousel-item active carousel-fundo1" data-bs-interval="5000">
                 <div className="container">
-                    <h1 className="display-4">Slide 1</h1>
+                    <h1 className="display-4">Sobre Nós</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      Nossa história, nosso lema e manifesto.
                     </p>
                 </div>
             </div>
 
             <div className="carousel-item carousel-fundo2" data-bs-interval="5000">
                 <div className="container">
-                    <h1 className="display-4">Slide 2</h1>
+                    <h1 className="display-4">O Projeto</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                      Como transformamos vidas e ajudamos na esperança de um futuro melhor.
                     </p>
                 </div>
             </div>        
 
             <div className="carousel-item carousel-fundo3" data-bs-interval="5000">
                 <div className="container">
-                    <h1 className="display-4">Slide 3</h1>
+                    <h1 className="display-4">Como Doar</h1>
                     <p className="lead">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Você pode ajudar a transformar a vida de diversas crianças. Junte-se a nós!
                     </p>
                 </div>
             </div>        
