@@ -8,9 +8,9 @@ export default function Cabecalho() {
         <header>
             <nav className="navbar navbar-expand-md navbar-light bg-light">
                 <div className="container">
-                    <a href="#" className="navbar-brand">
+                    <Link className="navbar-brand" to="/">
                         <h1>Logo</h1>
-                    </a>
+                    </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal">
                         <span className="navbar-toggler-icon"></span>
