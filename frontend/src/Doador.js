@@ -8,7 +8,8 @@ export default function Doador() {
       <Cabecalho />
       <section>
         <div className="text-center">
-          <p className="display-4 mt-4">Entenda Como Você Pode Contribuir</p>
+          <p className="display-4 mt-4">Entenda Como Você Pode Contribuir
+          </p>
           <div className="leader m-3 p-4">Nós da Iniciativa X acreditamos que toda criança pode sonhar com um futuro melhor.
             Ser um doador significa dar a uma criança em situação de vulnerabilidade a oportunidade de ser protagonista da própria vida. Gostaria de fazer isso por alguém? Saiba como:
           </div>
