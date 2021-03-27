@@ -61,7 +61,7 @@
 }
 
 .App section .container {
-  position: absolute;
+  position: absolute;/*relativo*/
   bottom: 0;
   left: 0;
   right: 0;
@@ -80,5 +80,14 @@
 .App section .carousel-fundo3 {
   background-image:url('./Imagens/foto-carousel3.jpg');
 }
+
+.App #depoimento .container{
+  position: relative;/*relativo*/   
+  margin-top: 50px;
+  border: 1px solid red;
+      
+}
+  
+
 
 

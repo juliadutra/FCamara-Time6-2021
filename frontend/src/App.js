@@ -9,7 +9,7 @@ function App() {
       {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
       <Cabecalho/>
      {/*CAROUSEL*/}
-      <section>
+    <section>
         <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
@@ -55,13 +55,28 @@ function App() {
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </a>
-
       </div>
+    </section>
 
-      </section>
-
-
+      {/*Depoimentos*/}
+    
+    <section id="depoimento" className="d-flex">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            seção 1
+          </div>
+          <div className="col-md-4">
+            seção 1
+          </div>
+          <div className="col-md-4">
+            seção 1
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
+    
 
   );
 }
