@@ -18,7 +18,7 @@ function App() {
           </ol>
 
           <div className="carousel-inner">      
-            <div className="carousel-item active carousel-fundo1" data-bs-interval="5000">
+            <div className="carousel-item active carousel-fundo1" data-bs-interval="6000">
                 <div className="container">
                     <h1 className="display-4">Sobre Nós</h1>
                     <p className="lead">
@@ -27,7 +27,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="carousel-item carousel-fundo2" data-bs-interval="5000">
+            <div className="carousel-item carousel-fundo2" data-bs-interval="6000">
                 <div className="container">
                     <h1 className="display-4">O Projeto</h1>
                     <p className="lead">
@@ -36,7 +36,7 @@ function App() {
                 </div>
             </div>        
 
-            <div className="carousel-item carousel-fundo3" data-bs-interval="5000">
+            <div className="carousel-item carousel-fundo3" data-bs-interval="6000">
                 <div className="container">
                     <h1 className="display-4">Como Doar</h1>
                     <p className="lead">
