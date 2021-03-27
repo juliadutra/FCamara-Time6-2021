@@ -9,6 +9,7 @@ import Sobre from "./Sobre";
 import Projeto from "./Projeto";
 import Parceiros from "./Parceiros";
 import FaleConosco from "./FaleConosco";
+import DoarKit from "./DoarKit";
 
 export default function Root() {
     return (
@@ -30,6 +31,9 @@ export default function Root() {
             </Route>
             <Route path="/fale-conosco">
                 <FaleConosco />
+            </Route>
+            <Route path="/doar-kit">
+                <DoarKit/>
             </Route>
             <Route path="/">
               <App />
