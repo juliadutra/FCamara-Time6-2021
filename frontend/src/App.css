@@ -45,7 +45,11 @@
 
 
 /*Acessibilidade controle menu*/
-#home #navegacao .home a {
+#home #navegacao .home a,
+#projeto #navegacao .projeto a,
+#doador #navegacao .doador a,
+#parceiros #navegacao .parceiros a,
+#faleconosco #navegacao .faleconosco a {
   font-weight: bold;
 }
 
@@ -107,6 +111,11 @@
   .App #depoimento .container {
     height: 730px;
   }
+
+  .App #depoimento .fa-3x {
+    font-size: 2em;
+  }
+
 }
 
 
@@ -116,6 +125,11 @@
   .App #depoimento .container {
     height: 700px;
   }
+
+  .App #depoimento .fa-3x {
+    font-size: 2em;
+  }
+
 }
 
 /*Tablets, 768px and up*/
