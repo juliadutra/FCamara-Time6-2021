@@ -86,16 +86,33 @@
 }
 
 
+/*conheça mais sobre o projeto*/
+.App #conhecaMais .container{
+  position: relative;
+  margin-top: 50px;
+  height: 400px;
+ /* border: 1px solid red;*/
+}
+
+.App #conhecaMais .container .row {
+  padding-top: 30px;
+}
+
+.App #conhecaMais .container .row p {
+  padding-top: 10px;
+  text-align: justify;
+}
+
+
 /*depoimento*/
 .App #depoimento .container{
   position: relative;
   margin-top: 50px;
   height: 400px;
-  margin-top: 80px;
 }
 
 .App #depoimento .container .row {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .App #depoimento .container .secao-depoimento {
@@ -117,7 +134,6 @@
   }
 
 }
-
 
 /*Landscape phones, 576px and up*/
 @media (min-width: 576px) and (max-width: 767.98px){
