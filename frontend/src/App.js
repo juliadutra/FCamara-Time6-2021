@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import {Link} from "react-router-dom";
 import Cabecalho from './Cabecalho';
+import {foto1} from './Imagens/foto-carouse1.jpg'
+
 
 function App() {
   return (
@@ -9,7 +11,8 @@ function App() {
       {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
       <Cabecalho/>
      {/*CAROUSEL*/}
-    <section>
+    
+     <section>
         <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
@@ -58,23 +61,50 @@ function App() {
       </div>
     </section>
 
+
       {/*Depoimentos*/}
     
-    <section id="depoimento" className="d-flex">
-      <div className="container">
+      <section id="depoimento" className="d-flex">
+      <div className="container align-self-center">
         <div className="row">
-          <div className="col-md-4">
-            seção 1
+          <h2 className="display-4 pb-4">DEPOIMENTOS</h2>
+          <div className="col-md-4 secao-depoimento">
+            <i className="fas fa-quote-left fa-3x"></i>
+            <figure className="text-center pt-4">
+              <blockquote className="blockquote">
+                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ."</p>
+              </blockquote>
+              <figcaption className="blockquote-footer">
+                <cite title="Source Title">Doador 1</cite>
+              </figcaption>
+            </figure>                        
           </div>
-          <div className="col-md-4">
-            seção 1
+          <div className="col-md-4 secao-depoimento">
+            <i className="fas fa-quote-left fa-3x"></i>
+            <figure className="text-center pt-4">
+              <blockquote className="blockquote">
+                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
+              </blockquote>
+              <figcaption className="blockquote-footer">
+                <cite title="Source Title">Doador 2</cite>
+              </figcaption>
+            </figure>         
           </div>
-          <div className="col-md-4">
-            seção 1
+          <div className="col-md-4 secao-depoimento">
+            <i className="fas fa-quote-left fa-3x"></i>
+            <figure className="text-center pt-4">
+              <blockquote className="blockquote">
+                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
+              </blockquote>
+              <figcaption className="blockquote-footer">
+                <cite title="Source Title">Doador 3</cite>
+              </figcaption>
+            </figure>         
           </div>
         </div>
       </div>
     </section>
+
     </div>
     
 
