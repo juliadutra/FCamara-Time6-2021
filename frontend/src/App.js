@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import {Link} from "react-router-dom";
+import {withRouter} from "react-router-dom";
 import Cabecalho from './Cabecalho';
-import {foto1} from './Imagens/foto-carouse1.jpg'
 
 
-function App() {
+function App(props) {
+  function redirecionarParaSobreNos() {
+    props.history.push("/sobre-nos")
+  }
+  function redirecionaParaProjeto() {
+    props.history.push("/projeto")
+  }
+  function redirecionaParaComoDoar() {
+    props.history.push("como-doar")
+  }
   return (
     <div className="App" id="home">
       {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
@@ -21,7 +28,7 @@ function App() {
           </ol>
 
           <div className="carousel-inner">      
-            <div className="carousel-item active carousel-fundo1" data-bs-interval="6000">
+            <div className="carousel-item active carousel-fundo1" data-bs-interval="6000" onClick={redirecionarParaSobreNos}>
                 <div className="container">
                     <h1 className="display-4">Sobre Nós</h1>
                     <p className="lead">
@@ -30,7 +37,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="carousel-item carousel-fundo2" data-bs-interval="6000">
+            <div className="carousel-item carousel-fundo2" data-bs-interval="6000" onClick={redirecionaParaProjeto}>
                 <div className="container">
                     <h1 className="display-4">O Projeto</h1>
                     <p className="lead">
@@ -39,7 +46,7 @@ function App() {
                 </div>
             </div>        
 
-            <div className="carousel-item carousel-fundo3" data-bs-interval="6000">
+            <div className="carousel-item carousel-fundo3" data-bs-interval="6000" onClick={redirecionaParaComoDoar}>
                 <div className="container">
                     <h1 className="display-4">Como Doar</h1>
                     <p className="lead">
@@ -111,4 +118,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
