@@ -6,7 +6,7 @@ export default function Cabecalho() {
     return (
 
         <header>
-            <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <nav className="navbar navbar-expand-md navbar-light bg-light">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         <h1>Logo</h1>

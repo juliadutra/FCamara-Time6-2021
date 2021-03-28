@@ -8,8 +8,8 @@ export default function DoarKit() {
         <>
             <Cabecalho />
             <div className="container">
-                <h1 className="p-4">DOADOR(A) </h1>
-                <div className="leader p-4">
+                <h1 className="p-4 mt-3">DOADOR(A) </h1>
+                <div className="leader m-3 p-4">
                     Sua doação é muito importante para a transformação de vidas das crianças.
                 </div>
                 <div className="row">

@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function UFs() {
+export default function UFs(props) {
     return (
         <>
-            <div class="mb-3">
-                <label for="uf" class="form-label">Selecione a UF</label>
-                <select name="uf" class="form-select col-6">
+            <div className="mb-3">
+                <label htmlFor="uf" className="form-label">Selecione a UF</label>
+                <select name="uf" className="form-select col-6" onChange={props.onChange}>
                     <option value="">---</option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
