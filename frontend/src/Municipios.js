@@ -10,6 +10,7 @@ export default function Municipios(props) {
             <>
                 <label htmlFor="municipio" className="form-label">Selecione o Município</label>
                 <select name="municipio" className="form-select col-6" onChange={props.onChange}>
+                    <option value="">---</option>
                     {
                         props.lista.map((objeto) => (
                             <option key={objeto.codigo} value={objeto.codigo}>{objeto.nome}</option>
