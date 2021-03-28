@@ -56,12 +56,12 @@
   background-color: #000;
   color: #000;
   position: relative;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
 .App section .container {
-  position: absolute;/*relativo*/
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -81,13 +81,18 @@
   background-image:url('./Imagens/foto-carousel3.jpg');
 }
 
+
+/*depoimento*/
 .App #depoimento .container{
-  position: relative;/*relativo*/   
+  position: relative;
   margin-top: 50px;
   border: 1px solid red;
-      
+  height: 300px;
+  margin-top: 80px;
 }
-  
 
+.App #depoimento .container .row {
+  padding-top: 20px;
+}
 
 
