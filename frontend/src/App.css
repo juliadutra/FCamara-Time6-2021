@@ -86,8 +86,7 @@
 .App #depoimento .container{
   position: relative;
   margin-top: 50px;
-  border: 1px solid red;
-  height: 300px;
+  height: 400px;
   margin-top: 80px;
 }
 
@@ -95,4 +94,30 @@
   padding-top: 20px;
 }
 
+.App #depoimento .container .secao-depoimento {
+  padding-top: 20px;
+}
 
+
+/*Media queries*/
+
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+  /*Depoimento*/
+  .App #depoimento .container {
+    height: 730px;
+  }
+}
+
+
+/*Landscape phones, 576px and up*/
+@media (min-width: 576px) and (max-width: 767.98px){
+  /*Depoimento*/
+  .App #depoimento .container {
+    height: 700px;
+  }
+}
+
+/*Tablets, 768px and up*/
+@media (min-width: 768px) and (max-width: 991.98px){
+}

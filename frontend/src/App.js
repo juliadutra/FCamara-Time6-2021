@@ -70,7 +70,7 @@ function App() {
           <h2 className="display-4 pb-4">DEPOIMENTOS</h2>
           <div className="col-md-4 secao-depoimento">
             <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center">
+            <figure className="text-center pt-4">
               <blockquote className="blockquote">
                 <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ."</p>
               </blockquote>
@@ -81,7 +81,7 @@ function App() {
           </div>
           <div className="col-md-4 secao-depoimento">
             <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center">
+            <figure className="text-center pt-4">
               <blockquote className="blockquote">
                 <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
               </blockquote>
@@ -92,7 +92,7 @@ function App() {
           </div>
           <div className="col-md-4 secao-depoimento">
             <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center">
+            <figure className="text-center pt-4">
               <blockquote className="blockquote">
                 <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
               </blockquote>
