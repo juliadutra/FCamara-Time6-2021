@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { validate } from 'gerador-validador-cpf';
+import { useAlert } from "react-alert";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4");
 }
 
 export default function DadosSolicitacao() {
+    const alert = useAlert()
     const [ cpf, setCPF ] = useState("")
     const [ cpfValido, setCPFValido ] = useState(true)
     function aoAlterarCPF(event) {
@@ -13,6 +15,14 @@ export default function DadosSolicitacao() {
         const cpfValido = validate(cpf)
         setCPF(cpf)
         setCPFValido(cpfValido)
+    }
+
+    function aoClicarEmRecuperarSolicitacoes() {
+        alert.show("Clicou em recuperar solicitações")
+    }
+    
+    function aoClicarEmNovaSolicitacao() {
+        alert.show("Clicou em nova solicitação")
     }
 
 
@@ -24,6 +34,7 @@ export default function DadosSolicitacao() {
             </div>
             <div className="card-body">
                 <div>
+                    <p>Digite o seu CPF para registrar uma nova solicitação de Kit Escolar ou para consultar solicitações já registradas</p>
                     <label htmlFor="cpf" className="form-label">Informe o seu CPF</label>
                     <input
                         type="text"
@@ -41,6 +52,13 @@ export default function DadosSolicitacao() {
                             </div>
                         )
                     }
+
+                    <button className="btn btn-primary" onClick={aoClicarEmRecuperarSolicitacoes}>
+                        Recuperar Solicitações
+                    </button>
+                    <button className="btn btn-primary" onClick={aoClicarEmNovaSolicitacao}>
+                        Nova Solicitação
+                    </button>
                     
                 </div>
             </div>
