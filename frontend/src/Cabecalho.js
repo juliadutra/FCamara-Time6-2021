@@ -16,7 +16,7 @@ export default function Cabecalho() {
                 </Link>
                 <div class="collapse navbar-collapse" id="controleNavegacao">
                 <ul id="navegacao" class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li className="home nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
+                    <li className="sobreNos nav-item"><Link className="nav-link" to="/sobre-nos">Sobre Nós</Link></li>
                     <li className="projeto nav-item"><Link className="nav-link" to="/projeto">O Projeto</Link></li>
                     <li className="doador nav-item"><Link className="nav-link" to="/como-doar">Como Doar</Link></li>
                     <li className="parceiros nav-item"><Link className="nav-link" to="/parceiros">Parceiros</Link></li>

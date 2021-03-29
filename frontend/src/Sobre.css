@@ -1,0 +1,98 @@
+/*Nossa história*/
+#historia {
+    height: 600px;
+}
+
+#historia .container p {
+    text-align: justify;
+}
+
+
+/*Carousel*/
+#historia .carousel-item {
+    height: 32rem;
+    background-color: #000;
+    color: #000;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  #historia .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 10px;
+  }
+  
+  #historia .carousel-fundo1 {
+    background-image:url('./Imagens/carouselSobre1.jpg');
+  }
+  
+  #historia .carousel-fundo2 {
+    background-image:url('./Imagens/carouselSobre2.jpg');
+  
+  }
+  
+  #historia .carousel-fundo3 {
+    background-image:url('./Imagens/carouselSobre3.jpg');
+  }
+
+
+/*Missão, visão e valores*/
+#missao {
+    margin-top: 5px;    
+}
+
+#missao .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#missao .container div {
+margin-top: 20px;
+    padding-top: 15px;
+}
+
+
+/*Media Queries*/
+
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+
+    #historia .col-md-4 {
+        margin-bottom: 55px;
+    }
+    
+    #historia #carouselControle {
+        height: auto;     
+    }
+    #historia #carouselControle .carousel-item {
+        height: 20rem;
+    }
+}
+  
+/*Landscape phones, 576px and up*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+
+    #historia .col-md-4 {
+        margin-bottom: 55px;
+    }
+
+    #historia #carouselControle {
+        height: auto;     
+    }
+    #historia #carouselControle .carousel-item {
+        height: 20rem;
+    }
+}
+  
+/*Tablets, 768px and up*/
+@media (min-width: 768px) and (max-width: 991.98px){   
+
+    /*Carousel*/ 
+    #historia #carouselControle .carousel-item {
+        height: 30rem;
+    }
+}
