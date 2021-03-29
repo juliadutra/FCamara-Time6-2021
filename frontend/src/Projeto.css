@@ -1,11 +1,25 @@
-#projeto {
-    border: 1px solid red;
-}
+/*Nossa história*/
 
-#projeto .container .row {
+#historia .container .row {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-#projeto .container p {
+#historia .container p {
     text-align: justify;
+}
+
+/*Missão, visão e valores*/
+#missao {
+    margin-top: 10px;    
+}
+
+#missao .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#missao .container div {
+    margin-top: 20px;
+    padding-top: 15px;
 }

@@ -23,6 +23,25 @@ export default function Projeto() {
           </div>
         </div>
       </section>
+
+      {/*missão, visão e valores*/}
+      <section id="missao" className="bg-light">
+        <div className="container">
+          <h2 className="text-center display-5">Missão, Visão e Valores</h2>
+          <div>
+            <h3 className="display-6">Missão</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+          <div>
+            <h3 className="display-6">Visão</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+          <div>
+            <h3 className="display-6">Valores</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+      </section>
       </div>
     );
   }
