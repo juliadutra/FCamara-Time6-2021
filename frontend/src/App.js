@@ -15,7 +15,6 @@ function App(props) {
   }
   return (
     <div className="App" id="home">
-      {/*<h1>Programa de Formação FCamara 2021 - TIME 6</h1>*/}
       <Cabecalho/>
      {/*CAROUSEL*/}
     

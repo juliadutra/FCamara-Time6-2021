@@ -10,6 +10,7 @@ import Projeto from "./Projeto";
 import Parceiros from "./Parceiros";
 import FaleConosco from "./FaleConosco";
 import DoarKit from "./DoarKit";
+import CadastrarPedido from "./CadastrarPedido";
 
 export default function Root() {
     return (
@@ -19,6 +20,9 @@ export default function Root() {
           <Switch>
             <Route path="/sobre-nos">
                 <Sobre />
+            </Route>
+            <Route path="/pedido-doacao">
+                <CadastrarPedido />
             </Route>
             <Route path="/projeto">
                 <Projeto />
