@@ -3,6 +3,7 @@ import UFs from "./UFs"
 import Municipios from "./Municipios";
 import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica";
 import { isNumber } from "util";
+import NumeroKits from "./NumeroKits";
 
 export default function DadosDoacao() {
 
@@ -66,14 +67,9 @@ export default function DadosDoacao() {
                                     aoClicarNao={aoClicarNaoEscolaEspecifica}
                                 />
 
-                                <label className="form-label">Quantos Kits deseja doar?</label>
-                                <input
-                                    value={numeroKits}
+                                <NumeroKits
+                                    valorAtual={numeroKits}
                                     onChange={aoAlterarNumeroKits}
-                                    type="number"
-                                    className="form-control"
-                                    style={{ maxWidth: 100 }}
-                                    maxLength={3}
                                 />
                             </>
                         )
