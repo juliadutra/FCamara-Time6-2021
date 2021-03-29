@@ -93,10 +93,12 @@ function App(props) {
             <i className="fas fa-quote-left fa-3x"></i>
             <figure className="text-center pt-4">
               <blockquote className="blockquote">
-                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ."</p>
+                <p className="lead">"Parabéns pelo projeto!
+                  Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.
+                </p>
               </blockquote>
               <figcaption className="blockquote-footer">
-                <cite title="Source Title">Doador 1</cite>
+                <cite title="Source Title">Luciana da Silva</cite>
               </figcaption>
             </figure>                        
           </div>
@@ -104,10 +106,12 @@ function App(props) {
             <i className="fas fa-quote-left fa-3x"></i>
             <figure className="text-center pt-4">
               <blockquote className="blockquote">
-                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
+                <p className="lead">
+                  ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.
+                </p>
               </blockquote>
               <figcaption className="blockquote-footer">
-                <cite title="Source Title">Doador 2</cite>
+                <cite title="Source Title">José Carvalho</cite>
               </figcaption>
             </figure>         
           </div>
@@ -115,15 +119,18 @@ function App(props) {
             <i className="fas fa-quote-left fa-3x"></i>
             <figure className="text-center pt-4">
               <blockquote className="blockquote">
-                <p className="lead">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "</p>
+                <p className="lead">
+                  Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.
+                </p>
               </blockquote>
               <figcaption className="blockquote-footer">
-                <cite title="Source Title">Doador 3</cite>
+                <cite title="Source Title">Cibele Sousa</cite>
               </figcaption>
             </figure>         
           </div>
         </div>
       </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
     </section>
 
     </div>
