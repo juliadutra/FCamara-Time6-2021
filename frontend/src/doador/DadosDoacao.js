@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import UFs from "./UFs"
 import Municipios from "./Municipios";
 import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica";
-import { isNumber } from "util";
 import NumeroKits from "./NumeroKits";
 
-export default function DadosDoacao() {
+export default function DadosDoacao(props) {
 
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
-    const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(null)
+    const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(false)
     const [numeroKits, setNumeroKits] = useState(1)
 
     async function aoAlterarUF(evento) {
         const siglaUF = evento.target.value
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/ufs/" + siglaUF + ".json"
+        props.setCarregando(true)
         const ufRecuperada = await fetch(url)
         const ufRecuperadaJson = await ufRecuperada.json()
 
@@ -25,7 +25,7 @@ export default function DadosDoacao() {
         }
         setMunicipioSelecionado(null)
         setSeEscolaEspecifica(null)
-
+        props.setCarregando(false)
     }
 
     function aoAlterarMunicipio(evento) {
@@ -71,6 +71,9 @@ export default function DadosDoacao() {
                                     valorAtual={numeroKits}
                                     onChange={aoAlterarNumeroKits}
                                 />
+
+                                <button type="button" class="btn btn-success btn-lg">Gerar Tickets de Doação</button>
+
                             </>
                         )
                     } 

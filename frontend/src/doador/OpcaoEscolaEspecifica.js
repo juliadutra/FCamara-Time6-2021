@@ -4,10 +4,7 @@ export default function OpcaoEscolaEspecifica(props) {
     let classesBotaoSim = "btn "
     let classesBotaoNao = "btn "
 
-    if (props.valorAtual === null) {
-        classesBotaoSim = classesBotaoSim + " btn-outline-dark"
-        classesBotaoNao = classesBotaoNao + " btn-outline-dark"
-    } else if(props.valorAtual) {
+    if(props.valorAtual === true) {
         classesBotaoSim = classesBotaoSim + " btn-primary"
         classesBotaoNao = classesBotaoNao + " btn-outline-dark"
     } else {
