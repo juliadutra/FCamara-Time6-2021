@@ -1,0 +1,11 @@
+#projeto {
+    border: 1px solid red;
+}
+
+#projeto .container .row {
+    padding-top: 30px;
+  }
+
+#projeto .container p {
+    text-align: justify;
+}
