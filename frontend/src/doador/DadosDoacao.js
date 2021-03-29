@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import UFs from "./UFs"
 import Municipios from "./Municipios";
 
-
-
 export default function DadosDoacao() {
 
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
@@ -42,20 +40,19 @@ export default function DadosDoacao() {
 
     let classesBotaoSim = "btn "
     let classesBotaoNao = "btn "
-    
+
     if (seEscolaEspecifica === null) {
-        console.log(1)
         classesBotaoSim = classesBotaoSim + " btn-outline-dark"
         classesBotaoNao = classesBotaoNao + " btn-outline-dark"
     } else if(seEscolaEspecifica) {
-        console.log(2)
         classesBotaoSim = classesBotaoSim + " btn-primary"
         classesBotaoNao = classesBotaoNao + " btn-outline-dark"
     } else {
-        console.log(3)
         classesBotaoSim = classesBotaoSim + " btn-outline-dark"
         classesBotaoNao = classesBotaoNao + " btn-primary"
     }
+
+    console.log(municipioSelecionado)
 
     return (
         <div className="card m-4">
@@ -74,8 +71,7 @@ export default function DadosDoacao() {
                                 <button className={classesBotaoNao} onClick={aoClicarNaoEscolaEspecifica}>Não</button>
                             </>
                         )
-                    }
-                    
+                    } 
                 </div>
             </div>
         </div>

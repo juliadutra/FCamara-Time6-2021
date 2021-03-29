@@ -7,7 +7,7 @@ export default function Municipios(props) {
         return <p>Infelizmente, não há nenhuma escola cadastradada nesta UF.</p>
     } else {
         return (
-            <>
+            <div className="mb-3">
                 <label htmlFor="municipio" className="form-label">Selecione o Município</label>
                 <select name="municipio" className="form-select col-6" onChange={props.onChange}>
                     <option value="">---</option>
@@ -17,7 +17,7 @@ export default function Municipios(props) {
                         ))
                     }
                 </select>
-            </>
+            </div>
         )
     }
 }

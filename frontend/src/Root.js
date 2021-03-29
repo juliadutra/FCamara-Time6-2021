@@ -4,12 +4,12 @@ import {
   Switch,
   Route} from "react-router-dom";
 import App from "./App";
-import Doador from "./Doador";
+import Doador from "./doador/Doador";
 import Sobre from "./Sobre";
 import Projeto from "./Projeto";
 import Parceiros from "./Parceiros";
 import FaleConosco from "./FaleConosco";
-import DoarKit from "./DoarKit";
+import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
 
 export default function Root() {
