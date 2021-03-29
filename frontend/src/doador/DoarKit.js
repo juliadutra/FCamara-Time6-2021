@@ -1,12 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import Cabecalho from "../Cabecalho"
 import DadosDoacao from "./DadosDoacao"
-
+import Carregando from "../Carregando"
 
 export default function DoarKit() {
+    const [ carregando, setCarregando ] = useState(false)
     return (
         <>
             <Cabecalho />
+            <Carregando exibir={carregando}/>
             <div className="container">
                 <h1 className="p-4 mt-3">DOADOR(A) </h1>
                 <div className="leader m-3 p-4">
@@ -14,7 +16,7 @@ export default function DoarKit() {
                 </div>
                 <div className="row">
                     <div className="col-lg-8">
-                        <DadosDoacao />
+                        <DadosDoacao setCarregando={setCarregando} />
                     </div>
                 </div>
             </div>
