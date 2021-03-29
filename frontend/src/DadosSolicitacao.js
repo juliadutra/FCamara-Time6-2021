@@ -39,7 +39,7 @@ export default function DadosSolicitacao() {
                     <input
                         type="text"
                         className="form-control"
-                        style={{ maxWidth: 200 }}
+                        style={{ maxWidth: 350 }}
                         maxLength={14}
                         onChange={aoAlterarCPF}
                         placeholder="Ex.: 078.840.390-79"
@@ -53,10 +53,10 @@ export default function DadosSolicitacao() {
                         )
                     }
 
-                    <button className="btn btn-primary" onClick={aoClicarEmRecuperarSolicitacoes}>
+                    <button className="btn btn-primary btn-sm btn-block" onClick={aoClicarEmRecuperarSolicitacoes}>
                         Recuperar Solicitações
                     </button>
-                    <button className="btn btn-primary" onClick={aoClicarEmNovaSolicitacao}>
+                    <button className="btn btn-secondary btn-sm btn-block" onClick={aoClicarEmNovaSolicitacao}>
                         Nova Solicitação
                     </button>
                     
