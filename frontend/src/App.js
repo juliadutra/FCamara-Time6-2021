@@ -14,7 +14,7 @@ function App(props) {
     props.history.push("como-doar")
   }
   return (
-    <div className="App" id="home">
+    <div className="App">
       <Cabecalho/>
      {/*CAROUSEL*/}
     
