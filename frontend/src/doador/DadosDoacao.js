@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UFs from "./UFs"
 import Municipios from "./Municipios";
+import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica";
 
 export default function DadosDoacao() {
 
@@ -38,22 +39,6 @@ export default function DadosDoacao() {
         setSeEscolaEspecifica(false)
     }
 
-    let classesBotaoSim = "btn "
-    let classesBotaoNao = "btn "
-
-    if (seEscolaEspecifica === null) {
-        classesBotaoSim = classesBotaoSim + " btn-outline-dark"
-        classesBotaoNao = classesBotaoNao + " btn-outline-dark"
-    } else if(seEscolaEspecifica) {
-        classesBotaoSim = classesBotaoSim + " btn-primary"
-        classesBotaoNao = classesBotaoNao + " btn-outline-dark"
-    } else {
-        classesBotaoSim = classesBotaoSim + " btn-outline-dark"
-        classesBotaoNao = classesBotaoNao + " btn-primary"
-    }
-
-    console.log(municipioSelecionado)
-
     return (
         <div className="card m-4">
             <div className="card-header">
@@ -66,9 +51,11 @@ export default function DadosDoacao() {
                     {
                         municipioSelecionado && (
                             <>
-                                <label htmlFor="seEscolaEspecifica" className="form-label">Deseja doar para uma escola específica deste município?</label>
-                                <button className={classesBotaoSim} onClick={aoClicarSimEscolaEspecifica}>Sim</button>
-                                <button className={classesBotaoNao} onClick={aoClicarNaoEscolaEspecifica}>Não</button>
+                                <OpcaoEscolaEspecifica
+                                    valorAtual={seEscolaEspecifica}
+                                    aoClicarSim={aoClicarSimEscolaEspecifica}
+                                    aoClicarNao={aoClicarNaoEscolaEspecifica}
+                                />
                             </>
                         )
                     } 
