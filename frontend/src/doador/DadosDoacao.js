@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import UFs from "./UFs"
 import Municipios from "./Municipios";
 import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica";
+import { isNumber } from "util";
 
 export default function DadosDoacao() {
 
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
     const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(null)
+    const [numeroKits, setNumeroKits] = useState(1)
 
     async function aoAlterarUF(evento) {
         const siglaUF = evento.target.value
@@ -39,6 +41,13 @@ export default function DadosDoacao() {
         setSeEscolaEspecifica(false)
     }
 
+    function aoAlterarNumeroKits(evento) {
+        const numeroKits = evento.target.value
+        if(Number(numeroKits) > 0 && Number(numeroKits) < 11) {
+            setNumeroKits(numeroKits)
+        }
+    }
+
     return (
         <div className="card m-4">
             <div className="card-header">
@@ -55,6 +64,16 @@ export default function DadosDoacao() {
                                     valorAtual={seEscolaEspecifica}
                                     aoClicarSim={aoClicarSimEscolaEspecifica}
                                     aoClicarNao={aoClicarNaoEscolaEspecifica}
+                                />
+
+                                <label className="form-label">Quantos Kits deseja doar?</label>
+                                <input
+                                    value={numeroKits}
+                                    onChange={aoAlterarNumeroKits}
+                                    type="number"
+                                    className="form-control"
+                                    style={{ maxWidth: 100 }}
+                                    maxLength={3}
                                 />
                             </>
                         )

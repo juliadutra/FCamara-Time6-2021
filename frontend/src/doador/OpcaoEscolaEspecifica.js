@@ -16,9 +16,11 @@ export default function OpcaoEscolaEspecifica(props) {
     }
     return (
         <>
-            <label htmlFor="seEscolaEspecifica" className="form-label">Deseja doar para uma escola específica deste município?</label>
-            <button className={classesBotaoSim} onClick={props.aoClicarSim}>Sim</button>
-            <button className={classesBotaoNao} onClick={props.aoClicarNao}>Não</button>
+            <label className="form-label">Deseja doar para uma escola específica deste município?</label>
+            <div className="mb-3">
+                <button className={classesBotaoSim} onClick={props.aoClicarSim}>Sim</button>
+                <button className={classesBotaoNao} onClick={props.aoClicarNao}>Não</button>
+            </div>
         </>
     )
 }
