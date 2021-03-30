@@ -1,12 +1,85 @@
+/*Capa*/
 #capaFaleConosco {
-    border: 1px solid red;
     background-image: url('./Imagens/capaFaleConosco.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
-    height: 500px;
+    height: 580px;
 }
 
+#capaFaleConosco h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;    
+}
+
+/*Texto e formulário*/
 #secaoFaleConosco {
-    border: 1px solid blue;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+#secaoFaleConosco h1 {
+    padding-bottom: 20px;
+}
+
+
+#secaoFaleConosco button {
+    width: 256px;
+    height: 52px;
+}
+
+
+/*Media Queries*/
+
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+    #capaFaleConosco {
+        height: 300px;
+    }
+    #capaFaleConosco h1 {
+        font-size: 2.5rem;
+    }
+
+    /*Contato*/
+    #secaoFaleConosco form {
+        /*border: 1px solid green;*/
+        margin-bottom: 30px;
+    }
+    #secaoFaleConosco button {
+        /*codigo*/
+    }
+    #secaoFaleConosco form legend, #secaoFaleConosco h1 {
+        text-align: center;
+    }
+}
+  
+/*Landscape phones, 576px and up*/
+@media (min-width: 576px) and (max-width: 767.98px){ 
+    #capaFaleConosco {
+        height: 300px;
+    }
+    #capaFaleConosco h1 {
+        font-size: 2.5rem;
+    }
+
+    /*Contato*/
+    #secaoFaleConosco form {
+        /*border: 1px solid green;*/
+        margin-bottom: 30px;
+    }
+   
+    #secaoFaleConosco form legend, #secaoFaleConosco h1 {
+        text-align: center;
+    }
+}
+  
+/*Tablets, 768px and up*/
+@media (min-width: 768px) and (max-width: 991.98px){   
+    #capaFaleConosco {
+        height: 480px;
+    }
+    #capaFaleConosco h1 {
+        font-size: 3.5rem;
+    }
 }
