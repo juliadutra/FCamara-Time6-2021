@@ -3,13 +3,16 @@ import UFs from "./UFs"
 import Municipios from "./Municipios";
 import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica";
 import NumeroKits from "./NumeroKits";
+import DoacaoCadastrada from "./DoacaoCadastrada";
 
 export default function DadosDoacao(props) {
 
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
+    const [escolaSelecionada, setEscolaSelecionada] = useState(null)
     const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(false)
     const [numeroKits, setNumeroKits] = useState(1)
+    const [ticketsCadastrados, setTicketsCadastrados] = useState(null)
 
     async function aoAlterarUF(evento) {
         const siglaUF = evento.target.value
@@ -42,6 +45,26 @@ export default function DadosDoacao(props) {
         setSeEscolaEspecifica(false)
     }
 
+    async function aoClicarEmGerarTickets() {
+        const ticket = {
+            municipio: municipioSelecionado,
+            escola: escolaSelecionada
+        }
+        const tickets = []
+
+        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets.json"
+        for(var i=1;i<=numeroKits;i++) {
+            const ticketCadastrado = await fetch(url, {
+                method: "POST",
+                body: JSON.stringify(ticket)
+            })
+
+            const ticketCadastradoJson = await ticketCadastrado.json()
+            tickets.push(ticketCadastradoJson)
+        }
+        setTicketsCadastrados(tickets)
+    }
+
     function aoAlterarNumeroKits(evento) {
         const numeroKits = evento.target.value
         if(Number(numeroKits) > 0 && Number(numeroKits) < 11) {
@@ -50,36 +73,49 @@ export default function DadosDoacao(props) {
     }
 
     return (
-        <div className="card m-4">
-            <div className="card-header">
-                <h4 className="my-0 font-weight-normal">Dados da Doação</h4>
-            </div>
-            <div className="card-body">
-                <div>
-                    <UFs onChange={aoAlterarUF} />
-                    <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
-                    {
-                        municipioSelecionado && (
-                            <>
-                                <OpcaoEscolaEspecifica
-                                    valorAtual={seEscolaEspecifica}
-                                    aoClicarSim={aoClicarSimEscolaEspecifica}
-                                    aoClicarNao={aoClicarNaoEscolaEspecifica}
-                                />
+        <>
+            <DoacaoCadastrada tickets={ticketsCadastrados} />
+            {
+                ticketsCadastrados == null && (
+                    <div className="card m-4">
+                        <div className="card-header">
+                            <h4 className="my-0 font-weight-normal">Dados da Doação</h4>
+                        </div>
+                        <div className="card-body">
+                            <div>
+                                <UFs onChange={aoAlterarUF} />
+                                <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
+                                {
+                                    municipioSelecionado && (
+                                        <>
+                                            <OpcaoEscolaEspecifica
+                                                valorAtual={seEscolaEspecifica}
+                                                aoClicarSim={aoClicarSimEscolaEspecifica}
+                                                aoClicarNao={aoClicarNaoEscolaEspecifica}
+                                            />
 
-                                <NumeroKits
-                                    valorAtual={numeroKits}
-                                    onChange={aoAlterarNumeroKits}
-                                />
+                                            <NumeroKits
+                                                valorAtual={numeroKits}
+                                                onChange={aoAlterarNumeroKits}
+                                            />
 
-                                <button type="button" class="btn btn-success btn-lg">Gerar Tickets de Doação</button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-success btn-lg"
+                                                onClick={aoClicarEmGerarTickets}
+                                            >
+                                                    Gerar Tickets de Doação
+                                            </button>
 
-                            </>
-                        )
-                    } 
-                </div>
-            </div>
-        </div>
+                                        </>
+                                    )
+                                } 
+                            </div>
+                        </div>
+                    </div>
+                )
+            }
+        </>
     )
 
 }
