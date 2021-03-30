@@ -53,6 +53,7 @@ export default function DadosDoacao(props) {
         const tickets = []
 
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets.json"
+        props.setCarregando(true)
         for(var i=1;i<=numeroKits;i++) {
             const ticketCadastrado = await fetch(url, {
                 method: "POST",
@@ -62,6 +63,7 @@ export default function DadosDoacao(props) {
             const ticketCadastradoJson = await ticketCadastrado.json()
             tickets.push(ticketCadastradoJson)
         }
+        props.setCarregando(false)
         setTicketsCadastrados(tickets)
     }
 
