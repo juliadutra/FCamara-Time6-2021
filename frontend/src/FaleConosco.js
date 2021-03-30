@@ -11,12 +11,14 @@ export default function FaleConosco() {
 
         {/*Capa*/}
         <section id="capaFaleConosco">
-        capa
+          <div className="container">
+            <h1 className="display-4 text-center">FALE CONOSCO</h1>
+          </div>
         </section>
 
 
         {/*Texto e formulário*/}
-        <section id="faleConosco">
+        <section id="secaoFaleConosco">
           <div className="container">
             <div className="row">
               <div className="col-md-6">

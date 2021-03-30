@@ -1,0 +1,12 @@
+#capaFaleConosco {
+    border: 1px solid red;
+    background-image: url('./Imagens/capaFaleConosco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 500px;
+}
+
+#secaoFaleConosco {
+    border: 1px solid blue;
+}
