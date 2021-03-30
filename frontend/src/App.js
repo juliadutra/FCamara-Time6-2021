@@ -82,6 +82,23 @@ function App(props) {
       </div>
     </section>
 
+    {/*Fazer parte do projeto*/}
+
+    <section id="fazerParte" className="d-flex">
+      <div className="container align-self-center">
+        <div className="row">
+          <div className="col-md">
+            <h2 className="display-4 pb-4">Cadastre-se para fazer parte do projeto</h2>
+            <p className="lead">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <button type="button" className="btn btn-outline-dark">Nome Indefinido</button>        
+          </div>
+        </div>
+      </div>
+    </section>
+
+
       {/*Depoimentos*/}
     
       <section id="depoimento" className="d-flex bg-light">

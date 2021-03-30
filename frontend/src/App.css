@@ -86,12 +86,11 @@
 }
 
 
-/*conheça mais sobre o projeto*/
+/*Conheça mais sobre o projeto*/
 .App #conhecaMais .container{
   position: relative;
   margin-top: 50px;
   height: 400px;
- /* border: 1px solid red;*/
 }
 
 .App #conhecaMais .container .row {
@@ -103,18 +102,32 @@
   text-align: justify;
 }
 
+/*Fazer parte do projeto*/
 
-/*depoimento*/
-.App #depoimento .container{
+.App #fazerParte .container, .App #fazerParte p {
+  padding-top: 30px;  
+  
+}
+
+
+/*Depoimentos*/
+.App #depoimento {
+ 
+  margin-top: 45px;
+}
+
+.App #depoimento .container, .App #fazerParte .container{
   position: relative;
   margin-top: 50px;
   height: 400px;
 }
 
-.App #depoimento .container .row {
+.App #depoimento, #fazerParte .container .row, .App  #fazerParte .container .row {
   padding-top: 30px;
+  margin-bottom: 45px;
 }
 
+/*Espaçamento entre o título depoimento e as aspas*/
 .App #depoimento .container .secao-depoimento {
   padding-top: 20px;
 }
