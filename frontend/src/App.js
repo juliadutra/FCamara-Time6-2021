@@ -55,14 +55,14 @@ function App(props) {
             </div>        
         </div>
 
-        <a class="carousel-control-prev" data-bs-target="#carouselControle" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <a className="carousel-control-prev" data-bs-target="#carouselControle" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
         </a>
 
-        <a class="carousel-control-next" data-bs-target="#carouselControle" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <a className="carousel-control-next" data-bs-target="#carouselControle" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </a>
       </div>
     </section>
