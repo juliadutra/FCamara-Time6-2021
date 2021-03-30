@@ -92,7 +92,7 @@ function App(props) {
             <p className="lead">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
-            <button type="button" className="btn btn-outline-dark">Nome Indefinido</button>        
+            <button type="button" className="btn btn-outline-dark">Sobre Nós</button>        
           </div>
         </div>
       </div>

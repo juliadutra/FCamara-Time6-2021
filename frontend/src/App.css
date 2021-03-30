@@ -87,10 +87,11 @@
 
 
 /*Conheça mais sobre o projeto*/
+
 .App #conhecaMais .container{
   position: relative;
   margin-top: 50px;
-  height: 400px;
+  height: 300px;
 }
 
 .App #conhecaMais .container .row {
@@ -106,7 +107,11 @@
 
 .App #fazerParte .container, .App #fazerParte p {
   padding-top: 30px;  
-  
+}
+
+.App #fazerParte button {
+  width: 256px;
+  height: 52px;
 }
 
 
