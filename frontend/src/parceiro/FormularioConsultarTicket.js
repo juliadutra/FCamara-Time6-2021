@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FormularioConsultarTicket(props) {
     return (
-        <div className="container">
+        <>
             <h1>Consultar Ticket</h1>
             <div className="row">
                 <div className="col-lg-8">
@@ -24,6 +24,6 @@ export default function FormularioConsultarTicket(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
