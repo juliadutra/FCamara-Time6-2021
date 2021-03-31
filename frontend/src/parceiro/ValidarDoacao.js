@@ -6,6 +6,11 @@ export default function ValidarDoacao() {
     function aoAlterarNumeroTicket(evento) {
         setNumeroTicket(evento.target.value)
     }
+
+    function aoClicarConsultarTicket() {
+        console.log(numeroTicket)
+    }
+
     return (
         <>
             <Cabecalho />
@@ -21,6 +26,13 @@ export default function ValidarDoacao() {
                                 className="form-control"
                                 style={{ maxWidth: 350 }}
                             />
+                            <div className="mb-3">
+                                <button
+                                    className="btn btn-outline-primary"
+                                    onClick={aoClicarConsultarTicket}>
+                                    Consultar
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
