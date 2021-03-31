@@ -11,6 +11,7 @@ import Parceiros from "./Parceiros";
 import FaleConosco from "./FaleConosco";
 import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
+import ValidarDoacao from "./parceiro/ValidarDoacao";
 
 export default function Root() {
     return (
@@ -23,6 +24,9 @@ export default function Root() {
             </Route>
             <Route path="/pedido-doacao">
                 <CadastrarPedido />
+            </Route>
+            <Route path="/validar-doacao">
+                <ValidarDoacao />
             </Route>
             <Route path="/projeto">
                 <Projeto />
