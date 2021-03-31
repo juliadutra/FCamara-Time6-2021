@@ -2,6 +2,7 @@ import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Parceiros.css';
 import foto1 from './Imagens/parceria1.jpg';
+import { Link } from "react-router-dom";
 
 export default function Parceiros() {
     return (
@@ -18,6 +19,9 @@ export default function Parceiros() {
                   <p className="lead">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   </p>
+                  <Link to="/validar-doacao">
+                    Sou parceiro e quero validar uma doação
+                  </Link>
               </div>
               <div id="fundoParceria" className="col-md-6">
                 <img src={foto1} className="img-fluid" />                  
