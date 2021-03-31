@@ -12,10 +12,10 @@ function App(props) {
     props.history.push("/projeto")
   }
   function redirecionaParaComoDoar() {
-    props.history.push("como-doar")
+    props.history.push("/como-doar")
   }
   function redirecionaParaNomeIndefinido() {
-    props.history.push("nome-indefinido")
+    props.history.push("/nome-indefinido")
   }
   return (
     <div className="App">

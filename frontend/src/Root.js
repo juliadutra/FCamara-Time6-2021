@@ -12,7 +12,7 @@ import FaleConosco from "./FaleConosco";
 import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
-import nomeIndefinido from "./nomeIndefinido";
+import NomeIndefinido from "./NomeIndefinido";
 
 export default function Root() {
     return (
@@ -42,10 +42,10 @@ export default function Root() {
                 <FaleConosco />
             </Route>
             <Route path="/doar-kit">
-                <DoarKit/>
+                <DoarKit />
             </Route>
             <Route path="/nome-indefinido">
-                <nomeIndefinido />
+                <NomeIndefinido/>
             </Route>
             <Route path="/">
               <App />
