@@ -1,0 +1,14 @@
+
+#secaoParceiros, #tonarParceiro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#tonarParceiro h1 {
+    margin-bottom: 30px;
+}
+
+#tonarParceiro button{
+    width: 256px;
+    height: 52px;
+}
