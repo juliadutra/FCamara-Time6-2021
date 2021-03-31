@@ -13,7 +13,7 @@ import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
 import NomeIndefinido from "./NomeIndefinido";
-import ConsultarTicket from "./ConsultarTicket";
+import ConsultarTicket from "./doador/ConsultarTicket";
 
 export default function Root() {
     return (
