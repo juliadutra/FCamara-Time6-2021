@@ -13,6 +13,7 @@ import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
 import NomeIndefinido from "./NomeIndefinido";
+import ConsultarTicket from "./ConsultarTicket";
 
 export default function Root() {
     return (
@@ -46,6 +47,9 @@ export default function Root() {
             </Route>
             <Route path="/nome-indefinido">
                 <NomeIndefinido/>
+            </Route>
+            <Route path="/consultar-ticket">
+                <ConsultarTicket/>
             </Route>
             <Route path="/">
               <App />
