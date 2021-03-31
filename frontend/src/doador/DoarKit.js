@@ -3,6 +3,7 @@ import Cabecalho from "../Cabecalho"
 import Carregando from "../Carregando"
 import DoacaoCadastrada from "./DoacaoCadastrada"
 import FormularioGeracaoTickets from "./FormularioGeracaoTickets"
+import CabecalhoDoarKit from "./CabecalhoDoarKit"
 
 export default function DoarKit() {
     const [carregando, setCarregando] = useState(false)
@@ -72,15 +73,21 @@ export default function DoarKit() {
             setNumeroKits(numeroKits)
         }
     }
+
+    function exibirCabecalho() {
+        console.log(ticketsCadastrados)
+        if (ticketsCadastrados === null) {
+            return <CabecalhoDoarKit />
+        }
+    }
+
     return (
         <>
             <Cabecalho />
             <Carregando exibir={carregando} />
             <div className="container">
-                <h1 className="p-4 mt-3">DOADOR(A) </h1>
-                <div className="leader m-3 p-4">
-                    Sua doação é muito importante para a transformação de vida das crianças.
-                </div>
+                { exibirCabecalho() }
+
                 <div className="row">
                     <div className="col-lg-8">
                         <DoacaoCadastrada tickets={ticketsCadastrados} />
