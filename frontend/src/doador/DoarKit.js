@@ -2,10 +2,7 @@ import React, { useState } from "react"
 import Cabecalho from "../Cabecalho"
 import Carregando from "../Carregando"
 import DoacaoCadastrada from "./DoacaoCadastrada"
-import UFs from "./UFs"
-import Municipios from "./Municipios"
-import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica"
-import NumeroKits from "./NumeroKits"
+import FormularioGeracaoTickets from "./FormularioGeracaoTickets"
 
 export default function DoarKit() {
     const [carregando, setCarregando] = useState(false)
@@ -94,35 +91,18 @@ export default function DoarKit() {
                                         <h4 className="my-0 font-weight-normal">Dados da Doação</h4>
                                     </div>
                                     <div className="card-body">
-                                        <div>
-                                            <UFs onChange={aoAlterarUF} />
-                                            <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
-                                            {
-                                                municipioSelecionado && (
-                                                    <>
-                                                        <OpcaoEscolaEspecifica
-                                                            valorAtual={seEscolaEspecifica}
-                                                            aoClicarSim={aoClicarSimEscolaEspecifica}
-                                                            aoClicarNao={aoClicarNaoEscolaEspecifica}
-                                                        />
-
-                                                        <NumeroKits
-                                                            valorAtual={numeroKits}
-                                                            onChange={aoAlterarNumeroKits}
-                                                        />
-
-                                                        <button
-                                                            type="button"
-                                                            class="btn btn-success btn-lg"
-                                                            onClick={aoClicarEmGerarTickets}
-                                                        >
-                                                            Gerar Tickets de Doação
-                                            </button>
-
-                                                    </>
-                                                )
-                                            }
-                                        </div>
+                                        <FormularioGeracaoTickets
+                                            aoAlterarUF={aoAlterarUF}
+                                            municipiosDaUF={municipiosDaUF}
+                                            aoAlterarMunicipio={aoAlterarMunicipio}
+                                            municipioSelecionado={municipioSelecionado}
+                                            seEscolaEspecifica={seEscolaEspecifica}
+                                            aoClicarSimEscolaEspecifica={aoClicarSimEscolaEspecifica}
+                                            aoClicarNaoEscolaEspecifica={aoClicarNaoEscolaEspecifica}
+                                            numeroKits={numeroKits}
+                                            aoAlterarNumeroKits={aoAlterarNumeroKits}
+                                            aoClicarEmGerarTickets={aoClicarEmGerarTickets}
+                                        />
                                     </div>
                                 </div>
                             )
