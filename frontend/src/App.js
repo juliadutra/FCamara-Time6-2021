@@ -112,7 +112,7 @@ function App(props) {
 
     {/*Depoimentos - Pessoas que já ajudaram*/}
     <section id="pessoasAjudaram">
-      <h3 className="display-6">Depoimentos das pessoas que já ajudaram</h3>
+      <h3 className="display-6">Depoimentos de pessoas que já receberam ajuda</h3>
 
     <div id="carouselControle2" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
@@ -125,8 +125,7 @@ function App(props) {
             <div className="row">
               <div className="col-md-4">                
               <div className="card" >              
-                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>
-                <div id="fundoCard1"></div>
+                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>      
                 <div className="card-body">
                   <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
                   <cite>Fulano</cite>
@@ -136,8 +135,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">                
                 <div className="card" >              
-                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>
-                  <div id="fundoCard2"></div>
+                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
                   <div className="card-body">
                     <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
                     <cite>Fulano</cite>
@@ -147,8 +145,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">
                 <div className="card" >              
-                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>
-                   <div id="fundoCard3"></div>
+                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>                
                     <div className="card-body">
                       <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
                       <cite>Fulano</cite>
@@ -164,8 +161,7 @@ function App(props) {
             <div className="row">
               <div className="col-md-4">                
               <div className="card" >              
-                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>
-                <div id="fundoCard1"></div>
+                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>               
                 <div className="card-body">
                   <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
                   <cite>Fulano</cite>
@@ -175,8 +171,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">                
                 <div className="card" >              
-                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>
-                  <div id="fundoCard2"></div>
+                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>                 
                   <div className="card-body">
                     <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
                     <cite>Fulano</cite>
@@ -186,8 +181,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">
                 <div className="card" >              
-                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>
-                   <div id="fundoCard3"></div>
+                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>     
                     <div className="card-body">
                       <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
                       <cite>Fulano</cite>
@@ -212,9 +206,102 @@ function App(props) {
 
     </section>
 
+        {/*Depoimentos - Pessoas que já ajudaram*/}
+  <section id="pessoasAReceberam">
+      <h3 className="display-6">Depoimentos de pessoas que já receberam ajuda</h3>
 
+    <div id="carouselControle3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div className="carousel-indicators">
+        <button type="button" data-bs-target="#carouselControle3" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselControle3" data-bs-slide-to="1" aria-label="Slide 2"></button>       
+      </div>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4">                
+              <div className="card" >              
+                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>      
+                <div className="card-body">
+                  <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
+                  <cite>Fulano</cite>
+                </div>
+              </div>
 
-<br/><br/><br/><br/>
+              </div>
+              <div className="col-md-4 d-none d-md-block">                
+                <div className="card" >              
+                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
+                  <div className="card-body">
+                    <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
+                    <cite>Fulano</cite>
+                  </div>
+                </div>
+
+              </div>
+              <div className="col-md-4 d-none d-md-block">
+                <div className="card" >              
+                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>                
+                    <div className="card-body">
+                      <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
+                      <cite>Fulano</cite>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          
+        <div className="container">
+            <div className="row">
+              <div className="col-md-4">                
+              <div className="card" >              
+                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>               
+                <div className="card-body">
+                  <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
+                  <cite>Fulano</cite>
+                </div>
+              </div>
+
+              </div>
+              <div className="col-md-4 d-none d-md-block">                
+                <div className="card" >              
+                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>                 
+                  <div className="card-body">
+                    <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
+                    <cite>Fulano</cite>
+                  </div>
+                </div>
+
+              </div>
+              <div className="col-md-4 d-none d-md-block">
+                <div className="card" >              
+                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>     
+                    <div className="card-body">
+                      <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
+                      <cite>Fulano</cite>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselControle3" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselControle3" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    </section>
+
 
       {/*Depoimentos*/}
     {/*

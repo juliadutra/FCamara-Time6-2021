@@ -132,12 +132,14 @@
 }
 
 /*Depoimentos - pessoas que já ajudaram*/
-.App #pessoasAjudaram h3 {
+.App #pessoasAjudaram h3, .App #pessoasAReceberam h3 {
   padding-bottom: 20px;
 }
 
-.App #pessoasAjudaram .card {
-  width: 20rem;
+/*Depoimentos - pessoas que já receberam*/
+.App #pessoasAReceberam {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -183,6 +185,18 @@
     margin-top: 10px;
   }
 
+  /*Depoimentos - pessoas que ajudaram*/
+  .App #pessoasAjudaram #carouselControle2 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
+  /*Depoimentos - pessoas que receberam ajuda*/
+  .App #pessoasAReceberam #carouselControle3 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
 }
 
 /*Landscape phones, 576px and up*/
@@ -212,14 +226,16 @@
     margin-top: 50px;
   }
 
-  .App #pessoasAjudaram #carouselControle2 .carousel-item {
-    /*border: 1px solid red; */
-    height: 600px; 
+  .App #pessoasAjudaram #carouselControle2 .card img{
+    width: auto;
+    height: 18rem;
   }
- /* .App #pessoasAjudaram #carouselControle2 .container .card{
-    border: 1px solid blue;    
-  }*/
 
+  /*Depoimentos - pessoas que receberam ajuda*/
+  .App #pessoasAReceberam #carouselControle3 .card img{
+    width: auto;
+    height: 18rem;
+    }
 }
 
 /*Tablets, 768px and up*/
@@ -227,27 +243,8 @@
   .App #fazerParte .container {
     margin-top: 80px;
   }
-
-  .App #pessoasAjudaram #carouselControle2 .carousel-item {
-   /* border: 1px solid red;  */
-    height: 600px;
-  }
-
-  .App #pessoasAjudaram #carouselControle2 .container .card{
-  /*  border: 1px solid blue; */
-    width: auto;
-  }  
-
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .App #pessoasAjudaram #carouselControle2 .carousel-item {
-    /* border: 1px solid red;  */
-     height: 600px;
-   }
  
-   .App #pessoasAjudaram #carouselControle2 .container .card{
-   /*  border: 1px solid blue; */
-     width: auto;
-   }  
 }
