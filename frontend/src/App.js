@@ -13,9 +13,7 @@ function App(props) {
   function redirecionaParaComoDoar() {
     props.history.push("/como-doar")
   }
-  function redirecionaParaNomeIndefinido() {
-    props.history.push("/nome-indefinido")
-  }
+
   return (
     <div className="App">
       <Cabecalho/>
@@ -95,7 +93,7 @@ function App(props) {
             <p className="lead">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
-            <button type="button" className="btn btn-outline-dark" onClick={redirecionaParaNomeIndefinido}>Sobre Nós</button>        
+            <button type="button" className="btn btn-outline-dark">Sobre Nós</button>        
           </div>
         </div>
       </div>
