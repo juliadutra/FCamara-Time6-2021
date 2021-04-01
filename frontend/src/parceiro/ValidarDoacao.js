@@ -2,10 +2,12 @@ import React, {useState} from "react"
 import Cabecalho from "../Cabecalho"
 import { useAlert } from "react-alert"
 import { withRouter } from "react-router-dom"
+import Carregando from "../Carregando"
 
 function ValidarDoacao(props) {
     const [codigoTicket, setCodigoTicket] = useState("")
     const [chaveValidacao, setChaveValidacao] = useState("")
+    const [carregando, setCarregando] = useState(false)
     const alert = useAlert()
     function aoAlterarCodigoTicket(evento) {
         setCodigoTicket(evento.target.value)
@@ -18,6 +20,7 @@ function ValidarDoacao(props) {
         if (codigoTicket === "" || chaveValidacao === "") {
             alert.info("Por favor, informe o código do ticket e a chave de validação.")
         } else {
+            setCarregando(true)
             const urlTicket = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets/" + codigoTicket + ".json"
             const ticket = await fetch(urlTicket)
             const ticketJson = await ticket.json()
@@ -39,11 +42,13 @@ function ValidarDoacao(props) {
                     }
                 }
             }
+            setCarregando(false)
         }
     }
     return (
         <>
             <Cabecalho />
+            <Carregando exibir={carregando} />
             <div className="container">
                 <h3>Validar Doação</h3>
                 <h6>Informe o código do ticket que deseja validar e a chave de validação</h6>
