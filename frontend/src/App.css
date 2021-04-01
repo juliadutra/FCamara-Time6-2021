@@ -57,7 +57,7 @@
 /*Carousel*/
 .App section .carousel-item {
   height: 32rem;
-  background-color: #000;
+  background-color: white;
   color: #000;
   position: relative;
   background-position: center center;
@@ -193,6 +193,11 @@
   .App #fazerParte .col-md-6 {
     margin-top: 10px;
   }
+
+  /*Depoimentos - pessoas que já ajudaram*/
+  .App #pessoasAjudaram {
+    margin-top: 50px;
+  }
 }
 
 /*Tablets, 768px and up*/
@@ -200,4 +205,5 @@
   .App #fazerParte .container {
     margin-top: 80px;
   }
+
 }

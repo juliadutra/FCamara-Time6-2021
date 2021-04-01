@@ -20,7 +20,7 @@ function App(props) {
      {/*CAROUSEL*/}
     
      <section>
-        <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
+        <div id="carouselControle" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
             <li data-bs-target="#carouselControle" data-bs-slide-to="1"></li>
@@ -109,6 +109,42 @@ function App(props) {
         </div>
       </div>
     </section>
+
+    {/*Depoimentos - Pessoas que já ajudaram*/}
+    <section id="pessoasAjudaram">
+      <h3 className="display-6">Depoimentos das pessoas que já ajudaram</h3>
+
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    </section>
+
+
+
 
 
       {/*Depoimentos*/}
