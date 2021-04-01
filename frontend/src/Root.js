@@ -12,7 +12,6 @@ import FaleConosco from "./FaleConosco";
 import DoarKit from "./doador/DoarKit";
 import CadastrarPedido from "./CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
-import NomeIndefinido from "./NomeIndefinido";
 import ConsultarTicket from "./doador/ConsultarTicket";
 import Obrigado from "./Obrigado";
 
