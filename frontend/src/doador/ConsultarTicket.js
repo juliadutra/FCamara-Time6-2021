@@ -28,22 +28,25 @@ export default function ConsultarTicket() {
             } else {
                 ticketEncontrado = {
                     codigo: numeroTicket,
-                    municipio: respostaJson.municipio
+                    municipio: respostaJson.municipio,
+                    parceiroValidou: respostaJson.parceiroValidou
                 }
             }
-            console.log(respostaJson)
-            
             setTicketEncontrado(ticketEncontrado)
         }
     }
 
     function detalheTicket() {
         if (ticketEncontrado) {
+            let status = "Aguardando validação..."
+            if(ticketEncontrado.parceiroValidou) {
+                status = "Ticket validado por um parceiro, liberado para retirada do responsável"           
+            } 
             return (
-                <div className="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ maxWidth: "25rem" }}>
                     <div className="card-body">
                         <h5 className="card-title">{ticketEncontrado.codigo}</h5>
-                        <h6 className="card-subtitle mb-2 text-muted">Aguardando validação...</h6>
+                        <h6 className="card-subtitle mb-2 text-muted">{status}</h6>
                     </div>
                 </div>
             )
