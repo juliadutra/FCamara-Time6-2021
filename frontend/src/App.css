@@ -53,6 +53,10 @@
   font-weight: bold;
 }
 
+/*Controle carousel - Afastar*/
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+}
 
 /*Carousel*/
 .App section .carousel-item {
@@ -127,6 +131,15 @@
   height: 52px;
 }
 
+/*Depoimentos - pessoas que já ajudaram*/
+.App #pessoasAjudaram h3 {
+  padding-bottom: 20px;
+}
+
+.App #pessoasAjudaram .card {
+  width: 20rem;
+}
+
 
 /*Depoimentos
 .App #depoimento { 
@@ -198,6 +211,15 @@
   .App #pessoasAjudaram {
     margin-top: 50px;
   }
+
+  .App #pessoasAjudaram #carouselControle2 .carousel-item {
+    /*border: 1px solid red; */
+    height: 600px; 
+  }
+ /* .App #pessoasAjudaram #carouselControle2 .container .card{
+    border: 1px solid blue;    
+  }*/
+
 }
 
 /*Tablets, 768px and up*/
@@ -206,4 +228,26 @@
     margin-top: 80px;
   }
 
+  .App #pessoasAjudaram #carouselControle2 .carousel-item {
+   /* border: 1px solid red;  */
+    height: 600px;
+  }
+
+  .App #pessoasAjudaram #carouselControle2 .container .card{
+  /*  border: 1px solid blue; */
+    width: auto;
+  }  
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .App #pessoasAjudaram #carouselControle2 .carousel-item {
+    /* border: 1px solid red;  */
+     height: 600px;
+   }
+ 
+   .App #pessoasAjudaram #carouselControle2 .container .card{
+   /*  border: 1px solid blue; */
+     width: auto;
+   }  
 }
