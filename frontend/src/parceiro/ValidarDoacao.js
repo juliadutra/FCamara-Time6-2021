@@ -1,8 +1,9 @@
 import React, {useState} from "react"
 import Cabecalho from "../Cabecalho"
 import { useAlert } from "react-alert"
+import { withRouter } from "react-router-dom"
 
-export default function ValidarDoacao() {
+function ValidarDoacao(props) {
     const [codigoTicket, setCodigoTicket] = useState("")
     const [chaveValidacao, setChaveValidacao] = useState("")
     const alert = useAlert()
@@ -32,8 +33,9 @@ export default function ValidarDoacao() {
                     if(parceiroJson.municipio !== ticketJson.municipio) {
                         alert.error("Parceiro não pode validar ticket de outro município.")
                     } else {
-                        ticket.parceiroValidou = chaveValidacao
-                        fetch(urlTicket, { method: "PUT", body: JSON.stringify(ticket) })
+                        ticketJson.parceiroValidou = chaveValidacao
+                        fetch(urlTicket, { method: "PUT", body: JSON.stringify(ticketJson) })
+                        props.history.push("/obrigado")
                     }
                 }
             }
@@ -79,3 +81,5 @@ export default function ValidarDoacao() {
         </>
     )
 }
+
+export default withRouter(ValidarDoacao)

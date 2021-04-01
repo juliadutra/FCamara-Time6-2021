@@ -14,6 +14,7 @@ import CadastrarPedido from "./CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
 import NomeIndefinido from "./NomeIndefinido";
 import ConsultarTicket from "./doador/ConsultarTicket";
+import Obrigado from "./Obrigado";
 
 export default function Root() {
     return (
@@ -23,6 +24,9 @@ export default function Root() {
           <Switch>
             <Route path="/sobre-nos">
                 <Sobre />
+            </Route>
+            <Route path="/obrigado">
+                <Obrigado />
             </Route>
             <Route path="/pedido-doacao">
                 <CadastrarPedido />

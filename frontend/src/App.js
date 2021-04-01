@@ -1,6 +1,5 @@
 import './App.css';
 import {withRouter} from "react-router-dom";
-import {Link} from "react-router-dom";
 import Cabecalho from './Cabecalho';
 
 
