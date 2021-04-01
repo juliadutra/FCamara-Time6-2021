@@ -29,7 +29,12 @@ export default function ValidarDoacao() {
                 if(parceiroJson === null) {
                     alert.error("Chave de validação incorreta")
                 } else {
-                    alert.info("Tudo certo para validar...")
+                    if(parceiroJson.municipio !== ticketJson.municipio) {
+                        alert.error("Parceiro não pode validar ticket de outro município.")
+                    } else {
+                        ticket.parceiroValidou = chaveValidacao
+                        fetch(urlTicket, { method: "PUT", body: JSON.stringify(ticket) })
+                    }
                 }
             }
         }

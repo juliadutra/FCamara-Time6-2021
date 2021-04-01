@@ -31,6 +31,7 @@ export default function ConsultarTicket() {
                     municipio: respostaJson.municipio
                 }
             }
+            console.log(respostaJson)
             
             setTicketEncontrado(ticketEncontrado)
         }
