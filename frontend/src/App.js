@@ -76,7 +76,7 @@ function App(props) {
               vídeo
           </div>
           <div className="col-md-6">
-              <h2 className="display-6">Conheça mais sobre o projeto</h2>
+              <h2 className="display-6">Conheça mais sobre o projeto!</h2>
               <p className="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
@@ -88,12 +88,23 @@ function App(props) {
     <section id="fazerParte" className="d-flex">
       <div className="container align-self-center">
         <div className="row">
-          <div className="col-md">
-            <h2 className="display-4 pb-4">Cadastre-se para fazer parte do projeto</h2>
-            <p className="lead">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-            <button type="button" className="btn btn-outline-dark">Sobre Nós</button>        
+          <div className="col-md-6">
+              <div className="border border-dark rounded">
+                <h3 className="display-6">Como Ajudar</h3>
+                <p className="lead">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button type="button" className="btn btn-outline-dark">Seja um Padrinho</button>
+              </div>
+          </div>
+          <div className="col-md-6">
+            <div className="border border-dark rounded">
+              <h3 className="display-6">Receba Ajuda</h3>
+              <p className="lead">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <button type="button" className="btn btn-outline-dark">Receber Ajuda</button>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +112,7 @@ function App(props) {
 
 
       {/*Depoimentos*/}
-    
+    {/*
       <section id="depoimento" className="d-flex bg-light">
       <div className="container align-self-center">
         <div className="row">
@@ -147,8 +158,8 @@ function App(props) {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/>
-    </section>
+      
+    </section>*/}
 
     </div>
     
