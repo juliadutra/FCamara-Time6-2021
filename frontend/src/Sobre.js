@@ -2,6 +2,7 @@ import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Sobre.css';
 
+
 export default function Sobre() {
     return (
       <div id="sobreNos">
@@ -13,7 +14,7 @@ export default function Sobre() {
   <div className="container">
     <div className="row mt-4">
       <div className="col-md-4">
-        <h1 className="display-6">Nossa história</h1>
+        <h1 className="display-6">Como tudo começou?</h1>
           <p className="lead pt-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           </p>
@@ -29,7 +30,7 @@ export default function Sobre() {
 
         <div className="carousel-inner">      
           <div className="carousel-item active carousel-fundo1" data-bs-interval="6000">
-              
+            
           </div>
 
           <div className="carousel-item carousel-fundo2" data-bs-interval="6000">
@@ -56,7 +57,8 @@ export default function Sobre() {
 </div>
 </section>
 
-{/*missão, visão e valores*/}
+
+{/*missão, visão e valores */}
 <section id="missao" className="bg-light">
   <div className="container">
     <h2 className="text-center display-5">Missão, Visão e Valores</h2>
@@ -74,6 +76,7 @@ export default function Sobre() {
     </div>
   </div>
 </section>
+
 
 
 </div>
