@@ -57,7 +57,7 @@
 /*Carousel*/
 .App section .carousel-item {
   height: 32rem;
-  background-color: #000;
+  background-color: white;
   color: #000;
   position: relative;
   background-position: center center;
@@ -105,8 +105,21 @@
 
 /*Fazer parte do projeto*/
 
-.App #fazerParte .container, .App #fazerParte p {
-  padding-top: 30px;  
+.App #fazerParte {
+ /* border: 1px solid red; */
+  margin-top: 20px;
+}
+
+.App #fazerParte .container {
+  position: relative;
+}
+
+.App #fazerParte h3, .App #fazerParte p {
+  padding: 15px
+}
+
+.App #fazerParte button {
+  margin-bottom: 15px;
 }
 
 .App #fazerParte button {
@@ -115,7 +128,7 @@
 }
 
 
-/*Depoimentos*/
+/*Depoimentos
 .App #depoimento { 
   margin-top: 45px;
 }
@@ -123,7 +136,7 @@
 .App #depoimento .container, .App #fazerParte .container{
   position: relative;
   margin-top: 50px;
-  height: 400px;
+ /* height: 400px;
 }
 
 .App #depoimento, #fazerParte .container .row, .App  #fazerParte .container .row {
@@ -131,11 +144,11 @@
   margin-bottom: 45px;
 }
 
-/*Espaçamento entre o título depoimento e as aspas*/
+/*Espaçamento entre o título depoimento e as aspas
 .App #depoimento .container .secao-depoimento {
   padding-top: 20px;
 }
-
+*/
 
 /*Media queries*/
 
@@ -148,6 +161,13 @@
 
   .App #depoimento .fa-3x {
     font-size: 2em;
+  }
+  .App #fazerParte .container {
+    margin-top: 30px;
+  }
+
+  .App #fazerParte .col-md-6 {
+    margin-top: 10px;
   }
 
 }
@@ -162,9 +182,28 @@
   .App #depoimento .fa-3x {
     font-size: 2em;
   }
+  /*Fazer parte*/
+  .App #fazerParte{
+    height: 700px;
+  }
 
+  .App #fazerParte button{
+    margin-bottom: 25px;
+  }
+  .App #fazerParte .col-md-6 {
+    margin-top: 10px;
+  }
+
+  /*Depoimentos - pessoas que já ajudaram*/
+  .App #pessoasAjudaram {
+    margin-top: 50px;
+  }
 }
 
 /*Tablets, 768px and up*/
 @media (min-width: 768px) and (max-width: 991.98px){
+  .App #fazerParte .container {
+    margin-top: 80px;
+  }
+
 }

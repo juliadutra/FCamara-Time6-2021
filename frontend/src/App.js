@@ -20,7 +20,7 @@ function App(props) {
      {/*CAROUSEL*/}
     
      <section>
-        <div id="carouselControle" className="carousel slide carousel-fade" data-bs-ride="carousel" >
+        <div id="carouselControle" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel" >
           <ol className="carousel-indicators">
             <li data-bs-target="#carouselControle" data-bs-slide-to="0" className="active"></li>
             <li data-bs-target="#carouselControle" data-bs-slide-to="1"></li>
@@ -76,7 +76,7 @@ function App(props) {
               vídeo
           </div>
           <div className="col-md-6">
-              <h2 className="display-6">Conheça mais sobre o projeto</h2>
+              <h2 className="display-6">Conheça mais sobre o projeto!</h2>
               <p className="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
@@ -88,20 +88,67 @@ function App(props) {
     <section id="fazerParte" className="d-flex">
       <div className="container align-self-center">
         <div className="row">
-          <div className="col-md">
-            <h2 className="display-4 pb-4">Cadastre-se para fazer parte do projeto</h2>
-            <p className="lead">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-            <button type="button" className="btn btn-outline-dark">Sobre Nós</button>        
+          <div className="col-md-6">
+              <div className="border border-dark rounded">
+                <h3 className="display-6">Como Ajudar</h3>
+                <p className="lead">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <button type="button" className="btn btn-outline-dark">Seja um Padrinho</button>
+              </div>
+          </div>
+          <div className="col-md-6">
+            <div className="border border-dark rounded">
+              <h3 className="display-6">Receba Ajuda</h3>
+              <p className="lead">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+              <button type="button" className="btn btn-outline-dark">Receber Ajuda</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    {/*Depoimentos - Pessoas que já ajudaram*/}
+    <section id="pessoasAjudaram">
+      <h3 className="display-6">Depoimentos das pessoas que já ajudaram</h3>
+
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    </section>
+
+
+
+
 
       {/*Depoimentos*/}
-    
+    {/*
       <section id="depoimento" className="d-flex bg-light">
       <div className="container align-self-center">
         <div className="row">
@@ -147,8 +194,8 @@ function App(props) {
           </div>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/>
-    </section>
+      
+    </section>*/}
 
     </div>
     
