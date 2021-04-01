@@ -21,7 +21,6 @@ export default function ConsultarTicket() {
             setExibirCarregando(true)
             const resposta = await fetch(url)
             const respostaJson = await resposta.json()
-            setExibirCarregando(false)
             let ticketEncontrado = null
             if (respostaJson === null) {
                 alert.error("Nenhum ticket encontrado com o código " + numeroTicket)
@@ -31,22 +30,41 @@ export default function ConsultarTicket() {
                     municipio: respostaJson.municipio,
                     parceiroValidou: respostaJson.parceiroValidou
                 }
+                if (respostaJson.parceiroValidou) {
+                    const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/parceiros/" + respostaJson.parceiroValidou + ".json"
+                    const parceiro = await fetch(url)
+                    const parceiroJson = await parceiro.json()
+                    ticketEncontrado.dadosParceiroValidou = parceiroJson
+                }
+                
             }
             setTicketEncontrado(ticketEncontrado)
+            setExibirCarregando(false)
         }
     }
 
     function detalheTicket() {
         if (ticketEncontrado) {
-            let status = "Aguardando validação..."
-            if(ticketEncontrado.parceiroValidou) {
-                status = "Ticket validado por um parceiro, liberado para retirada do responsável"           
+            let status = "Ticket aguardando validação por um parceiro credenciado"
+            if(ticketEncontrado.dadosParceiroValidou) {
+                status = "Ticket validado por um parceiro, liberado para retirada do responsável"
             } 
             return (
                 <div className="card" style={{ maxWidth: "25rem" }}>
                     <div className="card-body">
                         <h5 className="card-title">{ticketEncontrado.codigo}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">{status}</h6>
+                        {
+                            ticketEncontrado.dadosParceiroValidou && (
+                                <>
+                                    <p>Dados do parceiro:</p>
+                                    <h6>{ticketEncontrado.dadosParceiroValidou.nome}</h6>
+                                    <p>{ticketEncontrado.dadosParceiroValidou.endereco}</p>
+                                    <p>{ticketEncontrado.dadosParceiroValidou.telefone}</p>
+                                </>
+                            )
+                        }
+                        
                     </div>
                 </div>
             )
