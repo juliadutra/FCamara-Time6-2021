@@ -3,6 +3,7 @@ import UFs from "./UFs"
 import Municipios from "./Municipios"
 import OpcaoEscolaEspecifica from "./OpcaoEscolaEspecifica"
 import NumeroKits from "./NumeroKits"
+import Escolas from "./Escolas"
 
 export default function FormularioGeracaoTickets(props) {
     return (
@@ -17,6 +18,12 @@ export default function FormularioGeracaoTickets(props) {
                             aoClicarSim={props.aoClicarSimEscolaEspecifica}
                             aoClicarNao={props.aoClicarNaoEscolaEspecifica}
                         />
+
+                        {
+                            props.seEscolaEspecifica && (
+                                <Escolas />
+                            )
+                        }
 
                         <NumeroKits
                             valorAtual={props.numeroKits}
