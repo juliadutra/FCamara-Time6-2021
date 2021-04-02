@@ -1,42 +1,17 @@
+/*Foto capa*/
+#capaSobre {
+    background-image: url("./Imagens/carouselSobre2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 580px;
+}
 
 /*Nossa história*/
-
 #historia .container p {
     text-align: justify;
 }
 
-
-/*Carousel*/
-#historia .carousel-item {
-    height: 32rem;
-    background-color: #000;
-    color: #000;
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-  }
-  
-  #historia .container {
-    position: relative; /*Antes: absolute*/
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-  }
-  
-  
-  #historia .carousel-fundo1 {
-    background-image:url('./Imagens/carouselSobre1.jpg');
-  }
-  
-  #historia .carousel-fundo2 {
-    background-image:url('./Imagens/carouselSobre2.jpg');
-  
-  }
-  
-  #historia .carousel-fundo3 {
-    background-image:url('./Imagens/carouselSobre3.jpg');
-  }
 
 /*Como estamos hoje*/
 #situacaoAtual h1 {
@@ -69,6 +44,11 @@
 
 /*Portrait phones, less than 579px*/
 @media (max-width: 575.98px){
+   /*Foto capa*/
+    #capaSobre {
+        height: 300px;
+    }
+
     #historia .col-md-4 {
         margin-bottom: 40px;
     }
@@ -83,6 +63,10 @@
   
 /*Landscape phones, 576px and up*/
 @media (min-width: 576px) and (max-width: 767.98px){ 
+    /*Foto capa*/
+    #capaSobre {
+        height: 300px;
+    }
 
     #historia .col-md-4 {
         margin-bottom: 40px;
@@ -98,7 +82,10 @@
   
 /*Tablets, 768px and up*/
 @media (min-width: 768px) and (max-width: 991.98px){   
-
+    /*Foto capa*/
+    #capaSobre {
+        height: 480px;
+    }
     /*Carousel*/ 
     #historia #carouselControle .carousel-item {
         height: 30rem;
