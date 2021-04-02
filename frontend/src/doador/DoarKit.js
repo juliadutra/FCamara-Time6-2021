@@ -9,6 +9,8 @@ export default function DoarKit() {
     const [carregando, setCarregando] = useState(false)
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
+    const [todasEscolas, setTodasEscolas] = useState(null)
+    const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
     const [escolaSelecionada, setEscolaSelecionada] = useState(null)
     const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(false)
     const [numeroKits, setNumeroKits] = useState(1)
@@ -33,15 +35,43 @@ export default function DoarKit() {
 
     function aoAlterarMunicipio(evento) {
         const municipioSelecionado = evento.target.value
+        const url = ""
         setMunicipioSelecionado(municipioSelecionado)
         setSeEscolaEspecifica(null)
     }
 
-    function aoClicarSimEscolaEspecifica() {
+    async function aoClicarSimEscolaEspecifica() {
+        let escolas = todasEscolas
+        if (todasEscolas === null) {
+            const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/escolas.json"
+            const response = await fetch(url)
+            const escolasJson = await response.json()
+            escolas = []
+            for (let key in escolasJson) {
+                escolas.push({
+                    codigo: key,
+                    sigla: escolasJson[key].sigla,
+                    nome: escolasJson[key].nome,
+                    municipio: escolasJson[key].municipio
+                })
+            }
+            setTodasEscolas(escolas)
+        }
+        if (escolasDoMunicipio === null) {
+            const listaEscolasMunicipio = []
+            for(let i in escolas) {
+                const escola = todasEscolas[i]
+                if (escola.municipio === municipioSelecionado) {
+                    listaEscolasMunicipio.push(escola)
+                }
+            }
+            setEscolasDoMunicipio(listaEscolasMunicipio)
+        }
         setSeEscolaEspecifica(true)
     }
 
     function aoClicarNaoEscolaEspecifica() {
+        setEscolaSelecionada(null)
         setSeEscolaEspecifica(false)
     }
 
@@ -75,7 +105,6 @@ export default function DoarKit() {
     }
 
     function exibirCabecalho() {
-        console.log(ticketsCadastrados)
         if (ticketsCadastrados === null) {
             return <CabecalhoDoarKit />
         }
@@ -109,6 +138,7 @@ export default function DoarKit() {
                                             numeroKits={numeroKits}
                                             aoAlterarNumeroKits={aoAlterarNumeroKits}
                                             aoClicarEmGerarTickets={aoClicarEmGerarTickets}
+                                            escolasDoMunicipio={escolasDoMunicipio}
                                         />
                                     </div>
                                 </div>

@@ -21,7 +21,7 @@ export default function FormularioGeracaoTickets(props) {
 
                         {
                             props.seEscolaEspecifica && (
-                                <Escolas />
+                                <Escolas lista={props.escolasDoMunicipio} />
                             )
                         }
 
