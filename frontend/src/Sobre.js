@@ -34,28 +34,28 @@ export default function Sobre() {
           <div className="row">
             <div className="col-sm">
               <div className="d-flex justify-content-around text-center">
-                <div className="pe-2">
-                  <h3>250</h3>
+                <div className="me-2">
+                  <h4>250</h4>
                   <p className="lead">Crianças alcançadas</p>
                 </div>
 
-                <div className="pe-2">
-                  <h3>250</h3>
+                <div className="me-2">
+                  <h4>250</h4>
                   <p className="lead">Parceiros</p>
                 </div>
 
-                <div className="pe-2">
-                  <h3>250</h3>
+                <div className="me-2">
+                  <h4>250</h4>
                   <p className="lead">Kits arrecadados</p>
                 </div>
               
-                <div className="pe-2">
-                  <h3>250</h3>
+                <div className="me-2">
+                  <h4>250</h4>
                   <p className="lead">Crianças esperando doação</p>
                 </div>
 
-                <div className="pe-2">
-                  <h3>250</h3>
+                <div className="me-2">
+                  <h4>250</h4>
                   <p className="lead">Estados alcançados</p>
                 </div>
 

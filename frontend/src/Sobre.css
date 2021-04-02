@@ -40,6 +40,7 @@
 }
 
 
+
 /*Media Queries*/
 
 /*Portrait phones, less than 579px*/
@@ -59,6 +60,14 @@
     #historia #carouselControle .carousel-item {
         height: 20rem;
     }
+
+    /*Como estamos hoje*/
+    #situacaoAtual h4 {
+        font-size: 18px;
+    }
+    #situacaoAtual p {
+        font-size: 16px;
+    }
 }
   
 /*Landscape phones, 576px and up*/
@@ -77,6 +86,14 @@
     }
     #historia #carouselControle .carousel-item {
         height: 20rem;
+    }
+
+    /*Como estamos hoje*/
+    #situacaoAtual h4 {
+        font-size: 18px;
+    }
+    #situacaoAtual p {
+        font-size: 16px;
     }
 }
   
