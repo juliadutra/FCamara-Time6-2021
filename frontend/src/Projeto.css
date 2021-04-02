@@ -22,7 +22,7 @@
     padding-bottom: 20px;
 }
 
-#encontrarEscola button{
+#encontrarEscola #botaoPadrao{
   width: 256px;
   height: 52px;
   border-radius: 500px;

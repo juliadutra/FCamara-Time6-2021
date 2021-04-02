@@ -50,8 +50,11 @@ export default function Projeto() {
                       </div>
 
                       <div className="form-group mb-4">
-                        <label for="escolaEspecifica">Deseja doar para uma escola específica ?</label>
-                        {/*botao*/}
+                        <label for="escolaEspecifica">Deseja doar para uma escola específica ?</label><br/>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="btn btn-outline-dark">Sim</button>
+                          <button type="button" class="btn btn-outline-dark">Não</button>                         
+                        </div>
                       </div>
 
                       <div className="form-group mb-4">
@@ -61,11 +64,14 @@ export default function Projeto() {
 
                       <div className="form-group mb-4">
                         <input className="form-check-input" type="checkbox" id="identificacao" />
-                        <label className="form-check-label ms-4" for="identificacao">Deseja se identificar ? </label>
-                        {/*botao*/}
+                        <label className="form-check-label ms-2" for="identificacao">Deseja se identificar ? </label><br/>
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="btn btn-outline-dark">Sim</button>
+                          <button type="button" class="btn btn-outline-dark">Não</button>                         
+                        </div>
                       </div>
 
-                      <button type="button" className="btn btn-outline-dark justify-content-md-center">Enviar</button>
+                      <button id="botaoPadrao" type="button" className="btn btn-outline-dark justify-content-md-center">Enviar</button>
                       
                   </fieldset>
               </form>
