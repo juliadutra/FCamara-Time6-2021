@@ -60,7 +60,7 @@ export default function DoarKit() {
         if (escolasDoMunicipio === null) {
             const listaEscolasMunicipio = []
             for(let i in escolas) {
-                const escola = todasEscolas[i]
+                const escola = escolas[i]
                 if (escola.municipio === municipioSelecionado) {
                     listaEscolasMunicipio.push(escola)
                 }
