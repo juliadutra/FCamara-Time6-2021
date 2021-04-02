@@ -163,7 +163,7 @@ function App(props) {
               <div className="card" >              
                 <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>               
                 <div className="card-body">
-                  <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
+                  <p className="card-text lead">Meu filho se sensibilizou e pediu para doar alguns livros que não estava mais usando para tentar ajudar outras crianças. Parabéns pela iniciativa.</p>
                   <cite>Fulano</cite>
                 </div>
               </div>
@@ -173,7 +173,7 @@ function App(props) {
                 <div className="card" >              
                   <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>                 
                   <div className="card-body">
-                    <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
+                    <p className="card-text lead">Esse projeto é um grande exemplo de inspiração para todo mundo! Gratidão por fazer parte.</p>
                     <cite>Fulano</cite>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ function App(props) {
                 <div className="card" >              
                    <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>     
                     <div className="card-body">
-                      <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
+                      <p className="card-text lead">Estou muito feliz em poder ajudar esse projeto. Um projeto com pessoas dedicadas em fazer o bem!</p>
                       <cite>Fulano</cite>
                     </div>
                   </div>
@@ -206,10 +206,9 @@ function App(props) {
 
     </section>
 
-        {/*Depoimentos - Pessoas que já ajudaram*/}
+    {/*Depoimentos - Pessoas que já ajudaram*/}
   <section id="pessoasAReceberam">
       <h3 className="display-6">Depoimentos de pessoas que já receberam ajuda</h3>
-
     <div id="carouselControle3" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselControle3" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
