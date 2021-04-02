@@ -222,7 +222,7 @@ function App(props) {
               <div className="card" >              
                 <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>      
                 <div className="card-body">
-                  <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
+                  <p className="card-text lead">Graças a este projeto meus filhos conseguiram o material escolar que faltava. Muito obrigada.</p>
                   <cite>Fulano</cite>
                 </div>
               </div>
@@ -232,7 +232,7 @@ function App(props) {
                 <div className="card" >              
                   <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
                   <div className="card-body">
-                    <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
+                    <p className="card-text lead">Antigamente eu não tinha condição de pagar pelo material do meu filho, mas graças a essa ONG meu filho conseguiu obter um kit.</p>
                     <cite>Fulano</cite>
                   </div>
                 </div>
@@ -242,7 +242,7 @@ function App(props) {
                 <div className="card" >              
                    <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>                
                     <div className="card-body">
-                      <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
+                      <p className="card-text lead">Nesses períodos de incertezas somos gratos por essa ONG ajduar nossas crianças.</p>
                       <cite>Fulano</cite>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ function App(props) {
               <div className="card" >              
                 <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>               
                 <div className="card-body">
-                  <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
+                  <p className="card-text lead">Precisamos agradecer imensamente pela ajuda de vocês, mais um ano ajudando nossos filhos.</p>
                   <cite>Fulano</cite>
                 </div>
               </div>
@@ -268,7 +268,7 @@ function App(props) {
                 <div className="card" >              
                   <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>                 
                   <div className="card-body">
-                    <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
+                    <p className="card-text lead">Agradeço a essa ONG por mais uma vez contribuir com os nossos filhos neste momento tão difícil que todos nós estamos passando.</p>
                     <cite>Fulano</cite>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ function App(props) {
                 <div className="card" >              
                    <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>     
                     <div className="card-body">
-                      <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
+                      <p className="card-text lead">Estou muito grato pela ajuda, não sei o que seria dos meus filhos sem essa ONG.</p>
                       <cite>Fulano</cite>
                     </div>
                   </div>
