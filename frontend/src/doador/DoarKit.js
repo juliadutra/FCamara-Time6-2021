@@ -35,9 +35,9 @@ export default function DoarKit() {
 
     function aoAlterarMunicipio(evento) {
         const municipioSelecionado = evento.target.value
-        const url = ""
         setMunicipioSelecionado(municipioSelecionado)
         setSeEscolaEspecifica(null)
+        setEscolasDoMunicipio(null)
     }
 
     async function aoClicarSimEscolaEspecifica() {
