@@ -1,7 +1,6 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Parceiros.css';
-import foto1 from './Imagens/parceria1.jpg';
 import { Link } from "react-router-dom";
 
 export default function Parceiros() {
@@ -15,17 +14,15 @@ export default function Parceiros() {
 
           <div className="container pt-4">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-12">
                   <p className="lead">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
                   <Link to="/validar-doacao">
                     Sou parceiro e quero validar uma doação
                   </Link>
               </div>
-              <div id="fundoParceria" className="col-md-6">
-                <img src={foto1} className="img-fluid" />                  
-              </div>
+              
             </div>
           </div>
         </section>
@@ -35,24 +32,21 @@ export default function Parceiros() {
 
           <div className="container pt-4">
             <div className="row">
-              <div className="col-md-6">
-                  <p className="lead">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  </p>
-              </div>
-              <div id="fundoParceria" className="col-md-6">
-                imagem logo         
+              <div className="col-md-12">
+                  Imagens
               </div>
             </div>
           </div>
         </section>
 
-        <section id="tonarParceiro" className="d-flex">
+        <section id="tonarParceiro" className="d-flex text-center">
           <div className="container align-self-center">
             <div className="row">
-              <div className="col-md">
-                  <h1 className="display-6 pt-4 text-center pb-4">Seja um parceiro você também</h1>
-          
+              <div className="col-md-12">
+                  <h1 className="display-6 pt-4 pb-4">Seja um parceiro você também</h1>
+                  <p className="lead">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  </p>
                 <div class="d-grid gap-2 d-flex justify-content-center">
                   <button class="btn btn-outline-dark" type="button">Quero me tornar um parceiro</button>
                 </div>

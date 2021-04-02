@@ -144,27 +144,6 @@
 }
 
 
-/*Depoimentos
-.App #depoimento { 
-  margin-top: 45px;
-}
-
-.App #depoimento .container, .App #fazerParte .container{
-  position: relative;
-  margin-top: 50px;
- /* height: 400px;
-}
-
-.App #depoimento, #fazerParte .container .row, .App  #fazerParte .container .row {
-  padding-top: 30px;
-  margin-bottom: 45px;
-}
-
-/*Espaçamento entre o título depoimento e as aspas
-.App #depoimento .container .secao-depoimento {
-  padding-top: 20px;
-}
-*/
 
 /*Media queries*/
 
