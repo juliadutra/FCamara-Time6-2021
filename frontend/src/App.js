@@ -298,59 +298,7 @@ function App(props) {
         <span className="visually-hidden">Next</span>
       </button>
     </div>
-
-    </section>
-
-
-      {/*Depoimentos*/}
-    {/*
-      <section id="depoimento" className="d-flex bg-light">
-      <div className="container align-self-center">
-        <div className="row">
-          <h2 className="display-4 pb-4">DEPOIMENTOS</h2>
-          <div className="col-md-4 secao-depoimento">
-            <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center pt-4">
-              <blockquote className="blockquote">
-                <p className="lead">"Parabéns pelo projeto!
-                  Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                <cite title="Source Title">Luciana da Silva</cite>
-              </figcaption>
-            </figure>                        
-          </div>
-          <div className="col-md-4 secao-depoimento">
-            <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center pt-4">
-              <blockquote className="blockquote">
-                <p className="lead">
-                  ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                <cite title="Source Title">José Carvalho</cite>
-              </figcaption>
-            </figure>         
-          </div>
-          <div className="col-md-4 secao-depoimento">
-            <i className="fas fa-quote-left fa-3x"></i>
-            <figure className="text-center pt-4">
-              <blockquote className="blockquote">
-                <p className="lead">
-                  Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.
-                </p>
-              </blockquote>
-              <figcaption className="blockquote-footer">
-                <cite title="Source Title">Cibele Sousa</cite>
-              </figcaption>
-            </figure>         
-          </div>
-        </div>
-      </div>
-      
-    </section>*/}
+  </section>
 
     </div>
     

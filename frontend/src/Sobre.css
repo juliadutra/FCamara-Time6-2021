@@ -1,3 +1,4 @@
+
 /*Nossa história*/
 
 #historia .container p {
@@ -38,6 +39,9 @@
   }
 
 /*Como estamos hoje*/
+#situacaoAtual h1 {
+    margin-bottom: 50px;
+}
 
 
 /*Missão, visão e valores*/
@@ -63,7 +67,7 @@
 /*Portrait phones, less than 579px*/
 @media (max-width: 575.98px){
     #historia .col-md-4 {
-        margin-bottom: 55px;
+        margin-bottom: 40px;
     }
     
     #historia #carouselControle {
@@ -78,7 +82,7 @@
 @media (min-width: 576px) and (max-width: 767.98px){ 
 
     #historia .col-md-4 {
-        margin-bottom: 55px;
+        margin-bottom: 40px;
     }
 
     #historia #carouselControle {
