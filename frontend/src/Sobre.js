@@ -58,33 +58,33 @@ export default function Sobre() {
   </section>
 
   {/*como estamos hoje*/}
-  <section id="situacaoAtual">
+  <section id="situacaoAtual" className="bg-light">
     <div className="container-fluid">
       <h1 className="display-4 text-center">Como estamos hoje ?</h1>
       <div className="row">
         <div className="col-sm">
           <div className="d-flex justify-content-around text-center">
-            <div className="me-1">
+            <div className="pe-2">
               <h3>250</h3>
               <p className="lead">Crianças alcançadas</p>
             </div>
 
-            <div className="me-1">
+            <div className="pe-2">
               <h3>250</h3>
               <p className="lead">Parceiros</p>
             </div>
 
-            <div className="me-1">
+            <div className="pe-2">
               <h3>250</h3>
               <p className="lead">Kits arrecadados</p>
             </div>
           
-            <div className="me-1">
+            <div className="pe-2">
               <h3>250</h3>
               <p className="lead">Crianças esperando doação</p>
             </div>
 
-            <div className="me-1">
+            <div className="pe-2">
               <h3>250</h3>
               <p className="lead">Estados alcançados</p>
             </div>
@@ -97,20 +97,38 @@ export default function Sobre() {
 
 
   {/*missão, visão e valores */}
-  <section id="missao" className="bg-light">
-    <div className="container">
-      <h2 className="text-center display-5">Missão, Visão e Valores</h2>
-      <div>
-        <h3 className="display-6">Missão</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-      </div>
-      <div>
-        <h3 className="display-6">Visão</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-      </div>
-      <div>
-        <h3 className="display-6">Valores</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+  <section id="lema" className="text-center">
+    <h1 className="display-4">Nosso lema</h1>
+
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-4">
+          <div class="card">
+            <h3 className="text-center">Missão</h3>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-4">
+          <div class="card">
+          <h3 className="text-center">Visão</h3>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col-md-4">
+          <div class="card">
+          <h3 className="text-center">Valores</h3>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

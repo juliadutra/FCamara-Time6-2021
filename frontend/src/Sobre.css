@@ -45,20 +45,23 @@
 
 
 /*Missão, visão e valores*/
-#missao {
-    position: relative;
-    margin-top: 50px;    
-    height: 300px;
+
+#lema {
+    margin-top: 30px;
+    margin-bottom: 30px;    
 }
 
-#missao .container {
-    padding-top: 30px;
-    padding-bottom: 10px;
+#lema h3 {
+    padding-top: 5px;
 }
-
-#missao .container div {
-    margin-top: 20px;
+ 
+#lema h1, #lema .col-md-4 {
     padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#lema .card {
+    border: 1px solid black;
 }
 
 
