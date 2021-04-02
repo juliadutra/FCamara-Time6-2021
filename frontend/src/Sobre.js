@@ -1,7 +1,7 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Sobre.css';
-
+import Rodape from './Rodape';
 
 export default function Sobre() {
     return (
@@ -102,6 +102,9 @@ export default function Sobre() {
           </div>
         </div>
       </section>
+
+      {/*Rodapé*/}
+      <Rodape />
 
     </div>
     );

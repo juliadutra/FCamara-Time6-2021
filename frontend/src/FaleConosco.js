@@ -1,6 +1,7 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './FaleConosco.css';
+import Rodape from './Rodape';
 
 export default function FaleConosco() {
     return (
@@ -72,6 +73,9 @@ export default function FaleConosco() {
             </div>
           </div>
         </section>
+
+        {/*Rodapé*/}
+        <Rodape />
       </div>
     );
   }

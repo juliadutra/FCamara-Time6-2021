@@ -2,6 +2,7 @@ import './App.css';
 import {withRouter} from "react-router-dom";
 import Cabecalho from './Cabecalho';
 import fotoRosto from './Imagens/rosto.jpg';
+import Rodape from './Rodape';
 
 function App(props) {
   function redirecionarParaSobreNos() {
@@ -15,7 +16,7 @@ function App(props) {
   }
 
   return (
-    <div className="App">
+  <div className="App">
       <Cabecalho/>
      {/*CAROUSEL*/}
     
@@ -299,8 +300,9 @@ function App(props) {
       </button>
     </div>
   </section>
+    <Rodape/>
 
-    </div>
+  </div>
     
 
   );

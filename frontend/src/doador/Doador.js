@@ -1,7 +1,8 @@
 import React from 'react'
 import Cabecalho from '../Cabecalho';
 import { Link } from "react-router-dom";
-import './Doador.css'
+import './Doador.css';
+import Rodape from '../Rodape';
 
 export default function Doador() {
   return (
@@ -70,7 +71,9 @@ export default function Doador() {
         </div>
 
       </section>
-   
+      
+      {/*Rodapé*/}
+      <Rodape />
     </div>
   );
 }

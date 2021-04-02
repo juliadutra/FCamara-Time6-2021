@@ -1,6 +1,7 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Projeto.css';
+import Rodape from './Rodape';
 
 export default function Projeto() {
     return (
@@ -80,6 +81,8 @@ export default function Projeto() {
         </div>
     </section>
 
-      </div>
+      {/*Rodapé*/}
+      <Rodape />      
+    </div>
     );
   }

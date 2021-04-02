@@ -2,6 +2,7 @@ import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Parceiros.css';
 import { Link } from "react-router-dom";
+import Rodape from './Rodape';
 
 export default function Parceiros() {
     return (
@@ -54,6 +55,9 @@ export default function Parceiros() {
             </div>
           </div>
         </section>
+
+        {/*Rodapé*/}
+        <Rodape />
 
       </div>
     );
