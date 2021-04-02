@@ -11,7 +11,7 @@ export default function DoarKit() {
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
     const [todasEscolas, setTodasEscolas] = useState(null)
     const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
-    const [escolaSelecionada, setEscolaSelecionada] = useState(null)
+    const [escolaSelecionada, setEscolaSelecionada] = useState("")
     const [seEscolaEspecifica, setSeEscolaEspecifica] = useState(false)
     const [numeroKits, setNumeroKits] = useState(1)
     const [ticketsCadastrados, setTicketsCadastrados] = useState(null)
@@ -38,6 +38,10 @@ export default function DoarKit() {
         setMunicipioSelecionado(municipioSelecionado)
         setSeEscolaEspecifica(null)
         setEscolasDoMunicipio(null)
+    }
+
+    function aoAlterarEscola(evento) {
+        setEscolaSelecionada(evento.target.value)
     }
 
     async function aoClicarSimEscolaEspecifica() {
@@ -71,7 +75,7 @@ export default function DoarKit() {
     }
 
     function aoClicarNaoEscolaEspecifica() {
-        setEscolaSelecionada(null)
+        setEscolaSelecionada("")
         setSeEscolaEspecifica(false)
     }
 
@@ -80,6 +84,7 @@ export default function DoarKit() {
             municipio: municipioSelecionado,
             escola: escolaSelecionada
         }
+        
         const tickets = []
 
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets.json"
@@ -133,6 +138,8 @@ export default function DoarKit() {
                                             aoAlterarMunicipio={aoAlterarMunicipio}
                                             municipioSelecionado={municipioSelecionado}
                                             seEscolaEspecifica={seEscolaEspecifica}
+                                            aoAlterarEscola={aoAlterarEscola}
+                                            escolaSelecionada={escolaSelecionada}
                                             aoClicarSimEscolaEspecifica={aoClicarSimEscolaEspecifica}
                                             aoClicarNaoEscolaEspecifica={aoClicarNaoEscolaEspecifica}
                                             numeroKits={numeroKits}

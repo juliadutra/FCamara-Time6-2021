@@ -9,8 +9,8 @@ export default function Escolas(props) {
         return (
             <div className="mb-3">
                 <label htmlFor="escola" className="form-label">Selecione a escola</label>
-                <select name="escola" className="form-select col-6" onChange={props.onChange}>
-                    <option value="">---</option>
+                <select name="escola" className="form-select col-6" value={props.valorAtual} onChange={props.onChange}>
+                    <option value="" disabled>---</option>
                     {
                         props.lista.map((escola) => (
                             <option key={escola.codigo} value={escola.codigo}>{escola.nome}</option>
