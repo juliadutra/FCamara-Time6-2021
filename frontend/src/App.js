@@ -2,6 +2,11 @@ import './App.css';
 import {withRouter} from "react-router-dom";
 import Cabecalho from './Cabecalho';
 import fotoRosto from './Imagens/rosto.jpg';
+import fotoRosto2 from './Imagens/rosto2.jpg';
+import fotoRosto3 from './Imagens/rosto3.jpg';
+import fotoRosto4 from './Imagens/rosto4.jpg';
+import fotoRosto5 from './Imagens/rosto5.jpg';
+import fotoRosto6 from './Imagens/rosto6.jpg';
 import Rodape from './Rodape';
 
 function App(props) {
@@ -126,30 +131,30 @@ function App(props) {
             <div className="row">
               <div className="col-md-4">                
               <div className="card" >              
-                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>      
+               <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Ana Fonseca"/>      
                 <div className="card-body">
                   <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
-                  <cite>Fulano</cite>
+                  <cite>Ana Fonseca</cite>
                 </div>
               </div>
 
               </div>
               <div className="col-md-4 d-none d-md-block">                
                 <div className="card" >              
-                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
+                  <img src={fotoRosto2} className="icard-img-top img-fluid" alt="Depoimento - Isabele Lima"/>          
                   <div className="card-body">
                     <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionado pelo trabalho de vocês. Parabéns pela ação.</p>
-                    <cite>Fulano</cite>
+                    <cite>Isabele Lima</cite>
                   </div>
                 </div>
 
               </div>
               <div className="col-md-4 d-none d-md-block">
                 <div className="card" >              
-                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>                
+                    <img src={fotoRosto3} className="card-img-top img-fluid" alt="Depoimento - João Nascimento"/>                
                     <div className="card-body">
                       <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
-                      <cite>Fulano</cite>
+                      <cite>João Nascimento</cite>
                     </div>
                   </div>
               </div>
@@ -162,30 +167,30 @@ function App(props) {
             <div className="row">
               <div className="col-md-4">                
               <div className="card" >              
-                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento 1"/>               
+                <img src={fotoRosto4} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Milena Silva"/>               
                 <div className="card-body">
                   <p className="card-text lead">Meu filho se sensibilizou e pediu para doar alguns livros que não estava mais usando para tentar ajudar outras crianças. Parabéns pela iniciativa.</p>
-                  <cite>Fulano</cite>
+                  <cite>Milena Silva</cite>
                 </div>
               </div>
 
               </div>
               <div className="col-md-4 d-none d-md-block">                
                 <div className="card" >              
-                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>                 
+                  <img src={fotoRosto5} className="icard-img-top mg-fluid" alt="Depoimento - Luisa Teixeira"/>                 
                   <div className="card-body">
                     <p className="card-text lead">Esse projeto é um grande exemplo de inspiração para todo mundo! Gratidão por fazer parte.</p>
-                    <cite>Fulano</cite>
+                    <cite>Luisa Teixeira</cite>
                   </div>
                 </div>
 
               </div>
               <div className="col-md-4 d-none d-md-block">
                 <div className="card" >              
-                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>     
+                   <img src={fotoRosto6} className="card-img-top img-fluid" alt="Depoimento - Monique Aguiar"/>                      
                     <div className="card-body">
                       <p className="card-text lead">Estou muito feliz em poder ajudar esse projeto. Um projeto com pessoas dedicadas em fazer o bem!</p>
-                      <cite>Fulano</cite>
+                      <cite>Monique Aguiar</cite>
                     </div>
                   </div>
               </div>
@@ -207,7 +212,7 @@ function App(props) {
 
     </section>
 
-    {/*Depoimentos - Pessoas que já ajudaram*/}
+    {/*Depoimentos - Pessoas que receberam ajuda*/}
   <section id="pessoasAReceberam">
       <h3 className="display-6">Depoimentos de pessoas que já receberam ajuda</h3>
     <div id="carouselControle3" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -231,7 +236,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">                
                 <div className="card" >              
-                  <img src={fotoRosto} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
+                  <img src={fotoRosto2} className="icard-img-top mg-fluid" alt="Depoimento 2"/>          
                   <div className="card-body">
                     <p className="card-text lead">Antigamente eu não tinha condição de pagar pelo material do meu filho, mas graças a essa ONG meu filho conseguiu obter um kit.</p>
                     <cite>Fulano</cite>
@@ -241,7 +246,7 @@ function App(props) {
               </div>
               <div className="col-md-4 d-none d-md-block">
                 <div className="card" >              
-                   <img src={fotoRosto} className="card-img-top img-fluid" alt="Depoimento 2"/>                
+                   <img src={fotoRosto3} className="card-img-top img-fluid" alt="Depoimento 3"/>                
                     <div className="card-body">
                       <p className="card-text lead">Nesses períodos de incertezas somos gratos por essa ONG ajduar nossas crianças.</p>
                       <cite>Fulano</cite>
