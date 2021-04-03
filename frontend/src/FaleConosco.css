@@ -49,6 +49,10 @@
     #secaoFaleConosco form legend, #secaoFaleConosco h1 {
         text-align: center;
     }
+    #secaoFaleConosco form legend {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
   
 /*Landscape phones, 576px and up*/
@@ -68,6 +72,10 @@
    
     #secaoFaleConosco form legend, #secaoFaleConosco h1 {
         text-align: center;
+    }
+    #secaoFaleConosco form legend {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
   
