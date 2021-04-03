@@ -7,11 +7,10 @@ export default function Sobre() {
     return (
       <div id="sobreNos">
         <Cabecalho/>
-       {/* <h1>Sobre Nós</h1>*/}
+      {/* <h1>Sobre Nós</h1>*/}
     
       {/*Foto da capa*/}
-      <section id="capaSobre">
-      </section>     
+      <section id="capaSobre"></section>     
 
       {/*Nossa história*/}
       <section id="historia">
@@ -20,7 +19,7 @@ export default function Sobre() {
             <div className="col-md-12">
               <h1 className="display-4">Como tudo começou?</h1>
                 <p className="lead pt-4 d-flex justify-content-center">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Observando sanar as desconfianças e receios que se manifestavam em barreiras que impediam nossas crianças de serem ajudadas após sermos desafiados em um hackathon, desenvolvemos uma resposta que aplaca as dificuldades na doação e fortalecem a confiabilidade no processo.
                 </p>
             </div>                
         </div>
@@ -103,7 +102,7 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/*Rodapé*/}
+      {/*Footer*/}
       <Rodape />
 
     </div>

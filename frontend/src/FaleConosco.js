@@ -76,7 +76,7 @@ export default function FaleConosco() {
           </div>
         </section>
 
-        {/*Rodapé*/}
+        {/*Footer*/}
         <Rodape />
       </div>
     );

@@ -56,7 +56,7 @@ export default function Parceiros() {
           </div>
         </section>
 
-        {/*Rodapé*/}
+        {/*Footer*/}
         <Rodape />
 
       </div>
