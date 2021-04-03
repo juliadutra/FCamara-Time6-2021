@@ -24,7 +24,7 @@ export default function Projeto() {
 
     {/*Encontre escola*/}
     <section id="encontrarEscola">
-        <h1 className="display-6 text-center">Encontrar uma escola</h1>
+        <h1 className="display-5 text-center">Encontrar uma escola</h1>
         <div className="container">
           <div className="row">
             <div className="col-md-6">

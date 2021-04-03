@@ -130,7 +130,7 @@ function App(props) {
 
     {/*Depoimentos - Pessoas que já ajudaram*/}
     <section id="pessoasAjudaram">
-      <h3 className="display-6">Depoimentos de pessoas que já receberam ajuda</h3>
+      <h3 className="display-6">Depoimentos de pessoas que já ajudaram</h3>
 
     <div id="carouselControle2" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div className="carousel-indicators">

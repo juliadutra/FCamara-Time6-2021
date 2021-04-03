@@ -38,6 +38,16 @@
   }
 }
 
+/*Fonts*/
+@font-face {
+  font-family: "tituloPrincipal";
+  src: url("./Fonts/leaves_and_ground.ttf");
+}
+
+h1, h2, h3 {
+  font-family: tituloPrincipal;
+}
+
 /*Menu*/
 .App header {
   text-align: left;

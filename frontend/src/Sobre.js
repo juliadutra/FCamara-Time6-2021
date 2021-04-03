@@ -18,7 +18,7 @@ export default function Sobre() {
         <div className="container text-center">
           <div className="row mt-4">
             <div className="col-md-12">
-              <h1 className="display-6">Como tudo começou?</h1>
+              <h1 className="display-4">Como tudo começou?</h1>
                 <p className="lead pt-4 d-flex justify-content-center">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 </p>
