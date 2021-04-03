@@ -13,6 +13,8 @@ import fotoRosto9 from './Imagens/rosto9.jpg';
 import fotoRosto10 from './Imagens/rosto10.jpg';
 import fotoRosto11 from './Imagens/rosto11.jpg';
 import fotoRosto12 from './Imagens/rosto12.jpg';
+import VideoPlayer from 'react-video-js-player';
+import video1 from './Vídeos/video.mp4';
 import Rodape from './Rodape';
 
 function App(props) {
@@ -25,6 +27,8 @@ function App(props) {
   function redirecionaParaComoDoar() {
     props.history.push("/como-doar")
   }
+
+
 
   return (
   <div className="App">
@@ -85,7 +89,9 @@ function App(props) {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-              vídeo
+              <div id="video" className="d-flex align-self-center">
+                <VideoPlayer src={video1} widht="230" height="230" />
+              </div>
           </div>
           <div className="col-md-6">
               <h2 className="display-6">Conheça mais sobre o projeto!</h2>

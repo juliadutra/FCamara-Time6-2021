@@ -166,6 +166,15 @@
     margin-top: 10px;
   }
 
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 550px;
+  }
+
+  .App #conhecaMais #video {
+    padding-bottom: 20px;
+  }
+
   /*Depoimentos - pessoas que ajudaram*/
   .App #pessoasAjudaram #carouselControle2 .card img{
     width: auto;
@@ -202,6 +211,16 @@
     margin-top: 10px;
   }
 
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 550px;
+  }
+  
+  .App #conhecaMais #video {
+    padding-bottom: 20px;
+  }
+  
+
   /*Depoimentos - pessoas que já ajudaram*/
   .App #pessoasAjudaram {
     margin-top: 50px;
@@ -216,7 +235,7 @@
   .App #pessoasAReceberam #carouselControle3 .card img{
     width: auto;
     height: 18rem;
-    }
+  }
 }
 
 /*Tablets, 768px and up*/
@@ -224,6 +243,16 @@
   .App #fazerParte .container {
     margin-top: 80px;
   }
+
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 320px;
+  }
+  
+  .App #conhecaMais #video {
+    margin-left: -60px;
+  }
+  
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
