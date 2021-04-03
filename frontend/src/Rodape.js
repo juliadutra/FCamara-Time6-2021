@@ -6,7 +6,7 @@ export default function Rodape () {
     return (
 
         <footer id="rodape" className="d-flex bg-light">
-           <div className="container align-self-center">
+           <div className="container align-self-center text-center">
             <div className="row">
                 <div className="col-md-6">
                     <p className="lead"><b>&copy; Todos os direitos reservados 2021.</b></p>
