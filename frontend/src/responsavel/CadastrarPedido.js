@@ -132,6 +132,9 @@ export default function CadastrarPedido() {
                     <UFs onChange={aoAlterarUF} />
                     <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
                     <Escolas lista={escolasDoMunicipio} valorAtual={escolaSelecionada} onChange={aoAlterarEscola} />
+                    
+                    <label className="form-label">Informe a Matrícula</label>
+                    <input className="form-control" />
                 </>
             )
         } else {
