@@ -116,6 +116,14 @@ export default function CadastrarPedido() {
         setCadastrando(false)
     }
 
+    function aoClicarEmCadastrar() {
+        if (nome.trim() === "") {
+            alert.error("Por favor, informe o seu nome")
+        }
+
+        console.log("Cadastrar")
+    }
+
     function exibirBotoesIniciais() {
         if (cadastrando) {
             return null
@@ -153,6 +161,7 @@ export default function CadastrarPedido() {
                     <label className="form-label">Informe a Matrícula</label>
                     <input className="form-control mb-3" />
 
+                    <button className="btn btn-primary" onClick={aoClicarEmCadastrar}>Cadastrar</button>
                     <button className="btn btn-link" onClick={aoClicarEmCancelar}>Cancelar</button>
                 </>
             )
