@@ -7,6 +7,7 @@ import CabecalhoDoarKit from "./CabecalhoDoarKit"
 
 export default function DoarKit() {
     const [carregando, setCarregando] = useState(false)
+    const [ufSelecionada, setUFSelecionada] = useState("")
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
     const [todasEscolas, setTodasEscolas] = useState(null)
@@ -28,6 +29,7 @@ export default function DoarKit() {
         } else {
             setMunicipiosDaUF([])
         }
+        setUFSelecionada(siglaUF)
         setMunicipioSelecionado(null)
         setSeEscolaEspecifica(null)
         setCarregando(false)
@@ -81,6 +83,7 @@ export default function DoarKit() {
 
     async function aoClicarEmGerarTickets() {
         const ticket = {
+            uf: ufSelecionada,
             municipio: municipioSelecionado,
             escola: escolaSelecionada
         }

@@ -7,7 +7,7 @@ export default function DoacaoCadastrada(props) {
         <div className="m-3">
             <h4>Tickets gerados</h4>
             <h6>Abaixo estão a lista de tickets de doação gerados e dos parceiros que você pode procurar para validá-los. Você informará o código do ticket ao parceiro e, uma vez validado, o ticket de doação gerará o direito de uma das nossas crianças retirar um kit material escolar no parceiro que efetuou a validação.</h6>
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
