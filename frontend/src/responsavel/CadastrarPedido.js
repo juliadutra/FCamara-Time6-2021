@@ -10,6 +10,7 @@ function mascaraCpf(valor) {
 export default function CadastrarPedido() {
     const alert = useAlert()
     const [cpf, setCPF] = useState("")
+    const [cadastrando, setCadastrando] = useState(false)
     const [solicitacoes, setSolicitacoes] = useState(null)
     function aoAlterarCPF(event) {
         const cpf = event.target.value
@@ -36,7 +37,11 @@ export default function CadastrarPedido() {
     }
 
     function aoClicarEmNovaSolicitacao() {
-        alert.show("Clicou em nova solicitação")
+        if (validate(cpf)) {
+            setCadastrando(true)
+        } else {
+            alert.error("O CPF informado não é válido")
+        }
     }
 
     const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
@@ -60,6 +65,7 @@ export default function CadastrarPedido() {
                                     <label htmlFor="cpf" className="form-label">Informe o seu CPF</label>
                                     <input
                                         type="text"
+                                        disabled={cadastrando}
                                         className="form-control"
                                         style={{ maxWidth: 350 }}
                                         maxLength={14}
