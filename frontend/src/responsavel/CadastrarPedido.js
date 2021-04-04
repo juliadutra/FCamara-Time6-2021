@@ -106,12 +106,9 @@ export default function CadastrarPedido() {
             <Cabecalho />
 
             <div className="container">
-                <div className="leader p-3">
-                    Quero Solicitar Kit de Material Escolar
-                </div>
                 <div className="row">
                     <div className="col-lg-8">
-                        <div className="card m-3">
+                        <div className="card m-2">
                             <div className="card-header">
                                 <h4 className="my-0 font-weight-normal">Dados da Solicitação</h4>
                             </div>
@@ -150,7 +147,7 @@ export default function CadastrarPedido() {
                     {
                         solicitacoes && solicitacoes.map((solicitacao) => (
                             <div className="col-sm-12 col-md-6 col-lg-4">
-                                <div className="card m-3">
+                                <div className="card m-2">
                                     <div className="card-header">
                                         Solicitação
                                     </div>
