@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { validate } from 'gerador-validador-cpf';
 import { useAlert } from "react-alert";
 import Cabecalho from "../Cabecalho";
+import UFs from "../doador/UFs";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
@@ -72,6 +73,9 @@ export default function CadastrarPedido() {
                     <input className="form-control mb-3" />
 
                     <p>Em qual escola ela estuda?</p>
+                    <hr />
+
+                    <UFs />
                 </>
             )
         } else {
@@ -85,7 +89,7 @@ export default function CadastrarPedido() {
             <Cabecalho />
 
             <div className="container">
-                <div className="leader p-4">
+                <div className="leader p-3">
                     Quero Solicitar Kit de Material Escolar
                 </div>
                 <div className="row">
