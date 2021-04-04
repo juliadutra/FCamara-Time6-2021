@@ -112,6 +112,10 @@ export default function CadastrarPedido() {
         }
     }
 
+    function aoClicarEmCancelar() {
+        setCadastrando(false)
+    }
+
     function exibirBotoesIniciais() {
         if (cadastrando) {
             return null
@@ -121,7 +125,7 @@ export default function CadastrarPedido() {
                     <button className="btn btn-primary btn-sm btn-block" onClick={aoClicarEmRecuperarSolicitacoes}>
                         Recuperar Solicitações
                     </button>
-                    <button className="btn btn-secondary btn-sm btn-block" onClick={aoClicarEmNovaSolicitacao}>
+                    <button className="btn btn-link btn-sm btn-block" onClick={aoClicarEmNovaSolicitacao}>
                         Nova Solicitação
                     </button>
                 </>
@@ -147,7 +151,9 @@ export default function CadastrarPedido() {
                     <Escolas lista={escolasDoMunicipio} valorAtual={escolaSelecionada} onChange={aoAlterarEscola} />
                     
                     <label className="form-label">Informe a Matrícula</label>
-                    <input className="form-control" />
+                    <input className="form-control mb-3" />
+
+                    <button className="btn btn-link" onClick={aoClicarEmCancelar}>Cancelar</button>
                 </>
             )
         } else {
@@ -200,7 +206,7 @@ export default function CadastrarPedido() {
                 </div>
                 <div className="row">
                     {
-                        solicitacoes && solicitacoes.map((solicitacao) => (
+                        !cadastrando && solicitacoes && solicitacoes.map((solicitacao) => (
                             <div className="col-sm-12 col-md-6 col-lg-4">
                                 <div className="card m-2">
                                     <div className="card-header">
