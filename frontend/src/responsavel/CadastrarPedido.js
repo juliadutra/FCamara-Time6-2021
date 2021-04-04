@@ -13,15 +13,22 @@ function mascaraCpf(valor) {
 export default function CadastrarPedido() {
     const alert = useAlert()
     const [cpf, setCPF] = useState("")
+    const [nome, setNome] = useState("")
     const [cadastrando, setCadastrando] = useState(false)
     const [solicitacoes, setSolicitacoes] = useState(null)
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [todasEscolas, setTodasEscolas] = useState(null)
     const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
     const [escolaSelecionada, setEscolaSelecionada] = useState("")
+
     function aoAlterarCPF(event) {
         const cpf = event.target.value
         setCPF(cpf)
+    }
+
+    function aoAlterarNome(evento) {
+        const nome = evento.target.value
+        setNome(nome)
     }
 
     async function aoAlterarUF(evento) {
@@ -121,7 +128,7 @@ export default function CadastrarPedido() {
             return (
                 <>
                     <label className="form-label">Qual o seu nome?</label>
-                    <input className="form-control mb-3" />
+                    <input className="form-control mb-3" value={nome} onChange={aoAlterarNome} />
 
                     <label className="form-label">Qual o nome da criança?</label>
                     <input className="form-control mb-3" />
