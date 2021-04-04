@@ -11,7 +11,7 @@ import Projeto from "./Projeto";
 import Parceiros from "./Parceiros";
 import FaleConosco from "./FaleConosco";
 import DoarKit from "./doador/DoarKit";
-import CadastrarPedido from "./CadastrarPedido";
+import CadastrarPedido from "./responsavel/CadastrarPedido";
 import ValidarDoacao from "./parceiro/ValidarDoacao";
 import ConsultarTicket from "./doador/ConsultarTicket";
 import Obrigado from "./Obrigado";

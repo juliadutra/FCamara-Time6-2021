@@ -1,5 +1,5 @@
 import React from "react";
-import Cabecalho from "./Cabecalho";
+import Cabecalho from "../Cabecalho";
 import DadosSolicitacao from "./DadosSolicitacao";
 
 export default function CadastrarPedido() {
