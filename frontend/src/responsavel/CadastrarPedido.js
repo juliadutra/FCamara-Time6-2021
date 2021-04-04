@@ -61,6 +61,24 @@ export default function CadastrarPedido() {
         }
     }
 
+    function exibirFormularioCadastro() {
+        if (cadastrando) {
+            return (
+                <>
+                    <label className="form-label">Qual o seu nome?</label>
+                    <input className="form-control mb-3" />
+
+                    <label className="form-label">Qual o nome da criança?</label>
+                    <input className="form-control mb-3" />
+
+                    <p>Em qual escola ela estuda?</p>
+                </>
+            )
+        } else {
+            return null
+        }
+    }
+
     const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
     return (
         <>
@@ -83,7 +101,7 @@ export default function CadastrarPedido() {
                                     <input
                                         type="text"
                                         disabled={cadastrando}
-                                        className="form-control"
+                                        className="form-control mb-3"
                                         style={{ maxWidth: 350 }}
                                         maxLength={14}
                                         onChange={aoAlterarCPF}
@@ -98,9 +116,9 @@ export default function CadastrarPedido() {
                                         )
                                     }
 
-                                    {exibirBotoesIniciais()}
+                                    { exibirBotoesIniciais() }
 
-
+                                    { exibirFormularioCadastro() }
 
                                 </div>
                             </div>
