@@ -23,7 +23,7 @@ export default function CadastrarPedido() {
             return
         }
 
-        const cpfBuscar = cpf.replace(".", "").replace("-", "")
+        const cpfBuscar = cpf.replaceAll(".", "").replaceAll("-", "")
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/cpfs/" + cpfBuscar + ".json"
         const resultado = await fetch(url)
         const cpfJSON = await resultado.json()
@@ -50,7 +50,7 @@ export default function CadastrarPedido() {
                 </div>
                 <div className="row">
                     <div className="col-lg-8">
-                        <div className="card m-4">
+                        <div className="card m-3">
                             <div className="card-header">
                                 <h4 className="my-0 font-weight-normal">Dados da Solicitação</h4>
                             </div>
@@ -86,6 +86,19 @@ export default function CadastrarPedido() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="row">
+                    {
+                        solicitacoes && solicitacoes.map((solicitacao) => (
+                            <div className="col-sm-12 col-md-6 col-lg-4">
+                                <div className="card m-3">
+                                    <div className="card-header">
+                                        Solicitação
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
 
