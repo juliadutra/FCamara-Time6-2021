@@ -32,6 +32,10 @@ function App(props) {
     props.history.push("/seja-padrinho")
   }
 
+  function redirecionaParaReceberAjuda() {
+    props.history.push("/pedido-doacao")
+  }
+
 
   return (
     <div className="App">
@@ -120,7 +124,7 @@ function App(props) {
               <p className="lead">
                 Para receber uma doação através de nossa plataforma, cadastre-se preenchendo o formulário com os dados do seu filho, ou procure nossas ONG's ou nossos outros parceiros.
               </p>
-              <button type="button" className="btn btn-outline-dark">Receber Ajuda</button>
+              <button type="button" className="btn btn-outline-dark" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
             </div>
           </div>
         </div>
