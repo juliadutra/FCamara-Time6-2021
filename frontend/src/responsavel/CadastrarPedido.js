@@ -3,6 +3,7 @@ import { validate } from 'gerador-validador-cpf';
 import { useAlert } from "react-alert";
 import Cabecalho from "../Cabecalho";
 import UFs from "../doador/UFs";
+import Municipios from "../doador/Municipios";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
@@ -13,9 +14,24 @@ export default function CadastrarPedido() {
     const [cpf, setCPF] = useState("")
     const [cadastrando, setCadastrando] = useState(false)
     const [solicitacoes, setSolicitacoes] = useState(null)
+    const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     function aoAlterarCPF(event) {
         const cpf = event.target.value
         setCPF(cpf)
+    }
+
+    async function aoAlterarUF(evento) {
+        const siglaUF = evento.target.value
+        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/ufs/" + siglaUF + ".json"
+
+        const ufRecuperada = await fetch(url)
+        const ufRecuperadaJson = await ufRecuperada.json()
+
+        if (ufRecuperadaJson) {
+            setMunicipiosDaUF(ufRecuperadaJson.municipios)
+        } else {
+            setMunicipiosDaUF([])
+        }
     }
 
     async function aoClicarEmRecuperarSolicitacoes() {
@@ -75,7 +91,8 @@ export default function CadastrarPedido() {
                     <p>Em qual escola ela estuda?</p>
                     <hr />
 
-                    <UFs />
+                    <UFs onChange={aoAlterarUF} />
+                    <Municipios lista={municipiosDaUF} />
                 </>
             )
         } else {
