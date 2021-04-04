@@ -14,6 +14,7 @@ export default function CadastrarPedido() {
     const alert = useAlert()
     const [cpf, setCPF] = useState("")
     const [nome, setNome] = useState("")
+    const [nomeCrianca, setNomeCrianca] = useState("")
     const [cadastrando, setCadastrando] = useState(false)
     const [solicitacoes, setSolicitacoes] = useState(null)
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
@@ -29,6 +30,11 @@ export default function CadastrarPedido() {
     function aoAlterarNome(evento) {
         const nome = evento.target.value
         setNome(nome)
+    }
+
+    function aoAlterarNomeCrianca(evento) {
+        const nomeCrianca = evento.target.value
+        setNomeCrianca(nomeCrianca)
     }
 
     async function aoAlterarUF(evento) {
@@ -131,7 +137,7 @@ export default function CadastrarPedido() {
                     <input className="form-control mb-3" value={nome} onChange={aoAlterarNome} />
 
                     <label className="form-label">Qual o nome da criança?</label>
-                    <input className="form-control mb-3" />
+                    <input className="form-control mb-3" value={nomeCrianca} onChange={aoAlterarNomeCrianca} />
 
                     <p>Em qual escola ela estuda?</p>
                     <hr />
