@@ -36,7 +36,7 @@ export default function FormularioGeracaoTickets(props) {
 
                         <button
                             type="button"
-                            class="btn btn-success btn-lg"
+                            className="btn btn-success btn-lg"
                             onClick={props.aoClicarEmGerarTickets}>
                             Gerar Tickets de Doação
                         </button>
