@@ -127,6 +127,11 @@ export default function CadastrarPedido() {
             return
         }
 
+        if (escolaSelecionada === "") {
+            alert.error("Por favor, informe a escola onde a criança estuda")
+            return
+        }
+
         console.log("Cadastrar")
     }
 
