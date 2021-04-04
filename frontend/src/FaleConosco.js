@@ -1,6 +1,7 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './FaleConosco.css';
+import Rodape from './Rodape';
 
 export default function FaleConosco() {
     return (
@@ -21,6 +22,20 @@ export default function FaleConosco() {
         <section id="secaoFaleConosco">
           <div className="container">
             <div className="row">
+              {/*Contato*/}   
+              <div className="col-md-6">
+                <h1 className="display-6">Nossos Contatos</h1>                             
+                <p className="lead">
+                  <i class="fas fa-phone-alt"></i> <b>Telefone:</b> (99) 99999-9999<br/>                                    
+                </p>
+                <p className="lead">
+                  <i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> (99) 99999-9999<br/>
+                </p>
+                <p className="lead">
+                  <i class="far fa-envelope"></i> <b>E-Mail:</b> informacoes@padrinhosdobem.com<br/>
+                </p>
+              </div>
+              
               <div className="col-md-6">
                 <form>
                   <fieldset>
@@ -56,22 +71,13 @@ export default function FaleConosco() {
                 </form>
               </div>
 
-              {/*Contato*/}   
-              <div className="col-md-6">
-                <h1 className="display-6">Nossos Contatos</h1>                             
-                <p className="lead">
-                  <i class="fas fa-phone-alt"></i> <b>Telefone:</b> (99) 99999-9999<br/>                                    
-                </p>
-                <p className="lead">
-                  <i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> (99) 99999-9999<br/>
-                </p>
-                <p className="lead">
-                  <i class="far fa-envelope"></i> <b>E-Mail:</b> informacoes@padrinhosdobem.com<br/>
-                </p>
-              </div>
+              
             </div>
           </div>
         </section>
+
+        {/*Footer*/}
+        <Rodape />
       </div>
     );
   }

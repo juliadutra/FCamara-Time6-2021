@@ -1,69 +1,57 @@
-/*Nossa história*/
+/*Foto capa*/
+#capaSobre {
+    background-image: url("./Imagens/carouselSobre2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 580px;
+}
 
+/*Nossa história*/
 #historia .container p {
     text-align: justify;
 }
 
 
-/*Carousel*/
-#historia .carousel-item {
-    height: 32rem;
-    background-color: #000;
-    color: #000;
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-  }
-  
-  #historia .container {
-    position: relative; /*Antes: absolute*/
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 50px;
-  }
-  
-  
-  #historia .carousel-fundo1 {
-    background-image:url('./Imagens/carouselSobre1.jpg');
-  }
-  
-  #historia .carousel-fundo2 {
-    background-image:url('./Imagens/carouselSobre2.jpg');
-  
-  }
-  
-  #historia .carousel-fundo3 {
-    background-image:url('./Imagens/carouselSobre3.jpg');
-  }
-
 /*Como estamos hoje*/
+#situacaoAtual h1 {
+    margin-bottom: 50px;
+}
 
 
 /*Missão, visão e valores*/
-#missao {
-    position: relative;
-    margin-top: 50px;    
-    height: 300px;
+
+#situacaoAtual, #lema {
+    margin-top: 30px;
+    margin-bottom: 30px;    
 }
 
-#missao .container {
-    padding-top: 30px;
-    padding-bottom: 10px;
+#lema h3 {
+    padding-top: 5px;
 }
-
-#missao .container div {
-    margin-top: 20px;
+ 
+#lema h1, #lema .col-md-4 {
     padding-top: 15px;
+    padding-bottom: 15px;
 }
+
+#lema .card {
+    border: 1px solid black;
+}
+
 
 
 /*Media Queries*/
 
 /*Portrait phones, less than 579px*/
 @media (max-width: 575.98px){
+   /*Foto capa*/
+    #capaSobre {
+        height: 300px;
+    }
+
     #historia .col-md-4 {
-        margin-bottom: 55px;
+        margin-bottom: 40px;
     }
     
     #historia #carouselControle {
@@ -72,13 +60,25 @@
     #historia #carouselControle .carousel-item {
         height: 20rem;
     }
+
+    /*Como estamos hoje*/
+    #situacaoAtual h4 {
+        font-size: 18px;
+    }
+    #situacaoAtual p {
+        font-size: 16px;
+    }
 }
   
 /*Landscape phones, 576px and up*/
 @media (min-width: 576px) and (max-width: 767.98px){ 
+    /*Foto capa*/
+    #capaSobre {
+        height: 300px;
+    }
 
     #historia .col-md-4 {
-        margin-bottom: 55px;
+        margin-bottom: 40px;
     }
 
     #historia #carouselControle {
@@ -87,11 +87,22 @@
     #historia #carouselControle .carousel-item {
         height: 20rem;
     }
+
+    /*Como estamos hoje*/
+    #situacaoAtual h4 {
+        font-size: 18px;
+    }
+    #situacaoAtual p {
+        font-size: 16px;
+    }
 }
   
 /*Tablets, 768px and up*/
 @media (min-width: 768px) and (max-width: 991.98px){   
-
+    /*Foto capa*/
+    #capaSobre {
+        height: 480px;
+    }
     /*Carousel*/ 
     #historia #carouselControle .carousel-item {
         height: 30rem;

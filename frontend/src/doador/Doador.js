@@ -1,7 +1,8 @@
 import React from 'react'
 import Cabecalho from '../Cabecalho';
 import { Link } from "react-router-dom";
-import './Doador.css'
+import './Doador.css';
+import Rodape from '../Rodape';
 
 export default function Doador() {
   return (
@@ -9,8 +10,7 @@ export default function Doador() {
       <Cabecalho />
       <section>
         <div className="text-center">
-          <p className="display-4 mt-4">Entenda Como Você Pode Contribuir
-          </p>
+          <h1 className="display-4 mt-4">Entenda Como Você Pode Contribuir</h1>
           <div className="leader m-3 p-4">Nós da Iniciativa X acreditamos que toda criança pode sonhar com um futuro melhor.
             Ser um doador significa dar a uma criança em situação de vulnerabilidade a oportunidade de ser protagonista da própria vida. Gostaria de fazer isso por alguém? Saiba como:
           </div>
@@ -70,7 +70,9 @@ export default function Doador() {
         </div>
 
       </section>
-   
+      
+      {/*Rodapé*/}
+      <Rodape />
     </div>
   );
 }

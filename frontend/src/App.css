@@ -38,6 +38,16 @@
   }
 }
 
+/*Fonts*/
+@font-face {
+  font-family: "tituloPrincipal";
+  src: url("./Fonts/leaves_and_ground.ttf");
+}
+
+h1, h2, h3 {
+  font-family: tituloPrincipal;
+}
+
 /*Menu*/
 .App header {
   text-align: left;
@@ -144,27 +154,7 @@
 }
 
 
-/*Depoimentos
-.App #depoimento { 
-  margin-top: 45px;
-}
 
-.App #depoimento .container, .App #fazerParte .container{
-  position: relative;
-  margin-top: 50px;
- /* height: 400px;
-}
-
-.App #depoimento, #fazerParte .container .row, .App  #fazerParte .container .row {
-  padding-top: 30px;
-  margin-bottom: 45px;
-}
-
-/*Espaçamento entre o título depoimento e as aspas
-.App #depoimento .container .secao-depoimento {
-  padding-top: 20px;
-}
-*/
 
 /*Media queries*/
 
@@ -184,6 +174,15 @@
 
   .App #fazerParte .col-md-6 {
     margin-top: 10px;
+  }
+
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 550px;
+  }
+
+  .App #conhecaMais #video {
+    padding-bottom: 20px;
   }
 
   /*Depoimentos - pessoas que ajudaram*/
@@ -222,6 +221,16 @@
     margin-top: 10px;
   }
 
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 550px;
+  }
+  
+  .App #conhecaMais #video {
+    padding-bottom: 20px;
+  }
+  
+
   /*Depoimentos - pessoas que já ajudaram*/
   .App #pessoasAjudaram {
     margin-top: 50px;
@@ -236,7 +245,7 @@
   .App #pessoasAReceberam #carouselControle3 .card img{
     width: auto;
     height: 18rem;
-    }
+  }
 }
 
 /*Tablets, 768px and up*/
@@ -244,6 +253,16 @@
   .App #fazerParte .container {
     margin-top: 80px;
   }
+
+  /*Vídeo*/
+  .App #conhecaMais  {
+    height: 320px;
+  }
+  
+  .App #conhecaMais #video {
+    margin-left: -60px;
+  }
+  
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
