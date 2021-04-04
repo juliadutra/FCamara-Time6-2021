@@ -4,6 +4,7 @@ import { useAlert } from "react-alert";
 import Cabecalho from "../Cabecalho";
 import UFs from "../doador/UFs";
 import Municipios from "../doador/Municipios";
+import Escolas from "../doador/Escolas";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
@@ -15,6 +16,8 @@ export default function CadastrarPedido() {
     const [cadastrando, setCadastrando] = useState(false)
     const [solicitacoes, setSolicitacoes] = useState(null)
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
+    const [todasEscolas, setTodasEscolas] = useState(null)
+    const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
     function aoAlterarCPF(event) {
         const cpf = event.target.value
         setCPF(cpf)
@@ -50,7 +53,36 @@ export default function CadastrarPedido() {
         } else {
             setSolicitacoes(cpfJSON.solicitacoes)
         }
+    }
 
+    async function aoAlterarMunicipio(evento) {
+        const municipioSelecionado = evento.target.value
+        let escolas = todasEscolas
+        if (todasEscolas === null) {
+            const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/escolas.json"
+            const response = await fetch(url)
+            const escolasJson = await response.json()
+            escolas = []
+            for (let key in escolasJson) {
+                escolas.push({
+                    codigo: key,
+                    sigla: escolasJson[key].sigla,
+                    nome: escolasJson[key].nome,
+                    municipio: escolasJson[key].municipio
+                })
+            }
+            setTodasEscolas(escolas)
+        }
+        if (escolasDoMunicipio === null) {
+            const listaEscolasMunicipio = []
+            for(let i in escolas) {
+                const escola = escolas[i]
+                if (escola.municipio === municipioSelecionado) {
+                    listaEscolasMunicipio.push(escola)
+                }
+            }
+            setEscolasDoMunicipio(listaEscolasMunicipio)
+        }
     }
 
     function aoClicarEmNovaSolicitacao() {
@@ -92,7 +124,8 @@ export default function CadastrarPedido() {
                     <hr />
 
                     <UFs onChange={aoAlterarUF} />
-                    <Municipios lista={municipiosDaUF} />
+                    <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
+                    <Escolas lista={escolasDoMunicipio} />
                 </>
             )
         } else {
