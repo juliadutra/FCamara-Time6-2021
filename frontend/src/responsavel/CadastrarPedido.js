@@ -4,7 +4,7 @@ import { useAlert } from "react-alert";
 import Cabecalho from "../Cabecalho";
 
 function mascaraCpf(valor) {
-    return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"$1.$2.$3-$4");
+    return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
 }
 
 export default function CadastrarPedido() {
@@ -41,6 +41,23 @@ export default function CadastrarPedido() {
             setCadastrando(true)
         } else {
             alert.error("O CPF informado não é válido")
+        }
+    }
+
+    function exibirBotoesIniciais() {
+        if (cadastrando) {
+            return null
+        } else {
+            return (
+                <>
+                    <button className="btn btn-primary btn-sm btn-block" onClick={aoClicarEmRecuperarSolicitacoes}>
+                        Recuperar Solicitações
+                    </button>
+                    <button className="btn btn-secondary btn-sm btn-block" onClick={aoClicarEmNovaSolicitacao}>
+                        Nova Solicitação
+                    </button>
+                </>
+            )
         }
     }
 
@@ -81,12 +98,9 @@ export default function CadastrarPedido() {
                                         )
                                     }
 
-                                    <button className="btn btn-primary btn-sm btn-block" onClick={aoClicarEmRecuperarSolicitacoes}>
-                                        Recuperar Solicitações
-                                    </button>
-                                    <button className="btn btn-secondary btn-sm btn-block" onClick={aoClicarEmNovaSolicitacao}>
-                                        Nova Solicitação
-                                    </button>
+                                    {exibirBotoesIniciais()}
+
+
 
                                 </div>
                             </div>
