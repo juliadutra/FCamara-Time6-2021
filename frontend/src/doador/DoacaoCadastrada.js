@@ -6,8 +6,6 @@ export default function DoacaoCadastrada(props) {
         return null;
     }
 
-    console.log(props.parceirosDoMunicipio)
-
     return props.tickets && (
         <>
             <div className="row">
@@ -39,7 +37,7 @@ export default function DoacaoCadastrada(props) {
             <div className="row p-1">
                 {
                     props.parceirosDoMunicipio.map((parceiro) => (
-                        <div className="col-sm-12 col-md-6 col-lg-4">
+                        <div className="col-sm-12 col-md-6 col-lg-4" key={parceiro.codigo}>
                             <div className="card">
                                 <div className="card-header">
                                     {parceiro.nome}
