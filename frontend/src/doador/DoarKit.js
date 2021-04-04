@@ -8,6 +8,7 @@ import CabecalhoDoarKit from "./CabecalhoDoarKit"
 export default function DoarKit() {
     const [carregando, setCarregando] = useState(false)
     const [ufSelecionada, setUFSelecionada] = useState("")
+    const [parceirosDoMunicipio, setParceirosDoMunicipio] = useState(null)
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [municipioSelecionado, setMunicipioSelecionado] = useState(null)
     const [todasEscolas, setTodasEscolas] = useState(null)
@@ -102,6 +103,24 @@ export default function DoarKit() {
             ticket.codigo = ticketCadastradoJson.name
             tickets.push(ticket)
         }
+
+        const resposta = await fetch("https://doacao-de-material-escolar-default-rtdb.firebaseio.com/parceiros.json")
+        const dadosParceiros = await resposta.json()
+        const parceirosDoMunicipio = []
+        for(var key in dadosParceiros) {
+            if(dadosParceiros[key].municipio === municipioSelecionado) {
+                const parceiro = {
+                    codigo: key,
+                    nome: dadosParceiros[key].nome,
+                    municipio: dadosParceiros[key].municipio,
+                    endereco: dadosParceiros[key].endereco,
+                    telefone: dadosParceiros[key].telefone
+                }
+                parceirosDoMunicipio.push(parceiro)
+            }
+        }
+        setParceirosDoMunicipio(parceirosDoMunicipio)
+
         setCarregando(false)
         setTicketsCadastrados(tickets)
     }
@@ -125,10 +144,10 @@ export default function DoarKit() {
             <Carregando exibir={carregando} />
             <div className="container">
                 { exibirCabecalho() }
+                <DoacaoCadastrada tickets={ticketsCadastrados} parceirosDoMunicipio={parceirosDoMunicipio} />
 
                 <div className="row">
                     <div className="col-lg-8">
-                        <DoacaoCadastrada tickets={ticketsCadastrados} />
                         {
                             ticketsCadastrados == null && (
                                 <div className="card m-4">
