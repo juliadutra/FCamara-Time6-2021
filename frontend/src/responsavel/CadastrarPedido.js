@@ -147,7 +147,7 @@ export default function CadastrarPedido() {
                             </div>
                             <div className="card-body">
                                 <div>
-                                    <p>Digite o seu CPF para registrar uma nova solicitação de Kit Escolar ou para consultar solicitações já registradas</p>
+                                    { !cadastrando && (<p>Digite o seu CPF para registrar uma nova solicitação de Kit Escolar ou para consultar solicitações já registradas</p>) }
                                     <label htmlFor="cpf" className="form-label">Informe o seu CPF</label>
                                     <input
                                         type="text"
