@@ -9,6 +9,7 @@ function mascaraCpf(valor) {
 export default function DadosSolicitacao() {
     const alert = useAlert()
     const [ cpf, setCPF ] = useState("")
+    const [ solicitacoes, setSolicitacoes ] = useState(null)
     function aoAlterarCPF(event) {
         const cpf = event.target.value
         setCPF(cpf)
@@ -28,7 +29,7 @@ export default function DadosSolicitacao() {
         if (cpfJSON === null) {
             alert.error("Não há registro de solicitações para o CPF informado")
         } else {
-            alert.info(JSON.stringify(cpfJSON))
+            setSolicitacoes(cpfJSON.solicitacoes)
         }
 
     }
