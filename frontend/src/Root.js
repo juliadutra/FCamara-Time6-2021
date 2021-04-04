@@ -16,6 +16,7 @@ import ValidarDoacao from "./parceiro/ValidarDoacao";
 import ConsultarTicket from "./doador/ConsultarTicket";
 import Obrigado from "./Obrigado";
 import sejaPadrinho from './sejaPadrinho';
+import SejaPadrinhoNovo from "./SejaPadrinhoNovo";
 
 export default function Root() {
     return (
@@ -53,8 +54,8 @@ export default function Root() {
                 <Route path="/consultar-ticket">
                     <ConsultarTicket />
                 </Route>
-                <Route path="/sejaPadrinho">
-                    <sejaPadrinho />
+                <Route path="/seja-padrinho">
+                    <SejaPadrinhoNovo />
                 </Route>
                 <Route path="/">
                     <App />

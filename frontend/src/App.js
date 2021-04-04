@@ -29,7 +29,7 @@ function App(props) {
   }
 
   function redirecionaParaSejaPadrinho() {
-    props.history.push("/sejaPadrinho")
+    props.history.push("/seja-padrinho")
   }
 
 
