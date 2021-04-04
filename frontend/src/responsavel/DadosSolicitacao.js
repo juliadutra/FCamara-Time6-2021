@@ -9,16 +9,28 @@ function mascaraCpf(valor) {
 export default function DadosSolicitacao() {
     const alert = useAlert()
     const [ cpf, setCPF ] = useState("")
-    const [ cpfValido, setCPFValido ] = useState(true)
     function aoAlterarCPF(event) {
         const cpf = event.target.value
-        const cpfValido = validate(cpf)
         setCPF(cpf)
-        setCPFValido(cpfValido)
     }
 
-    function aoClicarEmRecuperarSolicitacoes() {
-        alert.show("Clicou em recuperar solicitações")
+    async function aoClicarEmRecuperarSolicitacoes() {
+        const cpfValido = validate(cpf)
+        if (!cpfValido) {
+            alert.error("O CPF informado não é válido")
+            return
+        }
+
+        const cpfBuscar = cpf.replace(".", "").replace("-", "")
+        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/cpfs/" + cpf + ".json"
+        const resultado = await fetch(url)
+        const cpfJSON = await resultado.json()
+        if (cpfJSON === null) {
+            alert.error("Não há registro de solicitações para o CPF informado")
+        } else {
+            alert.info(JSON.stringify(cpfJSON))
+        }
+
     }
     
     function aoClicarEmNovaSolicitacao() {
@@ -26,7 +38,7 @@ export default function DadosSolicitacao() {
     }
 
 
-    const exibirMensagemCPFInvalido = cpf.length > 10 && !cpfValido
+    const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
     return (
         <div className="card m-4">
             <div className="card-header">
