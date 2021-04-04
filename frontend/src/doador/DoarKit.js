@@ -84,7 +84,7 @@ export default function DoarKit() {
             municipio: municipioSelecionado,
             escola: escolaSelecionada
         }
-        
+
         const tickets = []
 
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets.json"
@@ -96,7 +96,8 @@ export default function DoarKit() {
             })
 
             const ticketCadastradoJson = await ticketCadastrado.json()
-            tickets.push(ticketCadastradoJson)
+            ticket.codigo = ticketCadastradoJson.name
+            tickets.push(ticket)
         }
         setCarregando(false)
         setTicketsCadastrados(tickets)
