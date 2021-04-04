@@ -18,6 +18,7 @@ export default function CadastrarPedido() {
     const [municipiosDaUF, setMunicipiosDaUF] = useState(null)
     const [todasEscolas, setTodasEscolas] = useState(null)
     const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
+    const [escolaSelecionada, setEscolaSelecionada] = useState("")
     function aoAlterarCPF(event) {
         const cpf = event.target.value
         setCPF(cpf)
@@ -85,6 +86,11 @@ export default function CadastrarPedido() {
         }
     }
 
+    function aoAlterarEscola(evento) {
+        const escolaSelecionada = evento.target.value
+        setEscolaSelecionada(escolaSelecionada)
+    }
+
     function aoClicarEmNovaSolicitacao() {
         if (validate(cpf)) {
             setCadastrando(true)
@@ -125,7 +131,7 @@ export default function CadastrarPedido() {
 
                     <UFs onChange={aoAlterarUF} />
                     <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
-                    <Escolas lista={escolasDoMunicipio} />
+                    <Escolas lista={escolasDoMunicipio} valorAtual={escolaSelecionada} onChange={aoAlterarEscola} />
                 </>
             )
         } else {
