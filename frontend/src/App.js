@@ -28,6 +28,10 @@ function App(props) {
     props.history.push("/como-doar")
   }
 
+  function redirecionaParaSejaPadrinho() {
+    props.history.push("/sejaPadrinho")
+  }
+
 
   return (
     <div className="App">
@@ -107,7 +111,7 @@ function App(props) {
               <p className="lead">
                 Junto de nossos parceiros, escolha uma opção de kit mais adequada à faixa etária da criança ou escolha um valor que está ao seu alcance. 
               </p>
-              <button type="button" className="btn btn-outline-dark">Seja um Padrinho</button>
+              <button type="button" className="btn btn-outline-dark" onClick={redirecionaParaSejaPadrinho}>Seja um Padrinho</button>
             </div>
           </div>
           <div className="col-md-6">
