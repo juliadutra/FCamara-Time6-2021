@@ -119,6 +119,12 @@ export default function CadastrarPedido() {
     function aoClicarEmCadastrar() {
         if (nome.trim() === "") {
             alert.error("Por favor, informe o seu nome")
+            return
+        }
+
+        if (nomeCrianca.trim() === "") {
+            alert.error("Por favor, informe o nome da criança")
+            return
         }
 
         console.log("Cadastrar")
