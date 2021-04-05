@@ -83,17 +83,16 @@ export default function DoarKit() {
     }
 
     async function aoClicarEmGerarTickets() {
-        const ticket = {
-            uf: ufSelecionada,
-            municipio: municipioSelecionado,
-            escola: escolaSelecionada
-        }
-
         const tickets = []
 
         const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/tickets.json"
         setCarregando(true)
         for (var i = 1; i <= numeroKits; i++) {
+            const ticket = {
+                uf: ufSelecionada,
+                municipio: municipioSelecionado,
+                escola: escolaSelecionada
+            }
             const ticketCadastrado = await fetch(url, {
                 method: "POST",
                 body: JSON.stringify(ticket)

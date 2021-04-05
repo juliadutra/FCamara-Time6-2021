@@ -116,16 +116,16 @@ export default function CadastrarPedido() {
             }
             setTodasEscolas(escolas)
         }
-        if (escolasDoMunicipio === null) {
-            const listaEscolasMunicipio = []
-            for(let i in escolas) {
-                const escola = escolas[i]
-                if (escola.municipio === municipioSelecionado) {
-                    listaEscolasMunicipio.push(escola)
-                }
+
+        const listaEscolasMunicipio = []
+        for(let i in escolas) {
+            const escola = escolas[i]
+            if (escola.municipio === municipioSelecionado) {
+                listaEscolasMunicipio.push(escola)
             }
-            setEscolasDoMunicipio(listaEscolasMunicipio)
         }
+        setEscolasDoMunicipio(listaEscolasMunicipio)
+        setEscolaSelecionada("")
     }
 
     function aoAlterarEscola(evento) {
