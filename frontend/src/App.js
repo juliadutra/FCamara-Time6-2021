@@ -25,7 +25,7 @@ function App(props) {
     props.history.push("/projeto")
   }
   function redirecionaParaComoDoar() {
-    props.history.push("/como-doar")
+    props.history.push("/doador")
   }
 
   function redirecionaParaSejaPadrinho() {
