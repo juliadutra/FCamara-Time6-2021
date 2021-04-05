@@ -154,14 +154,19 @@ h1, h2, h3 {
 }
 
 .App #fazerParte button {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .App #fazerParte .borda-roxa {
+  height: 351px;
   border: 1px solid #3F0259;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+}
+
+.App #fazerParte #botaRecebaAjuda {
+  margin-top: 30px;
 }
 
 .App #fazerParte button {
@@ -184,6 +189,7 @@ h1, h2, h3 {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  height: 548px;
 }
 
 /*Depoimentos - pessoas que já receberam*/
@@ -197,6 +203,7 @@ h1, h2, h3 {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  height: 548px;
 }
 
 
@@ -209,7 +216,7 @@ h1, h2, h3 {
 @media (max-width: 575.98px){
   /*Depoimento*/
   .App #depoimento .container {
-    height: 730px;
+    height: 780px;
   }
 
   .App #depoimento .fa-3x {
@@ -232,6 +239,11 @@ h1, h2, h3 {
     padding-bottom: 20px;
   }
 
+  /*Receba Ajuda*/
+  .App #fazerParte .borda-roxa {
+    height: 480px;
+  }
+
   /*Depoimentos - pessoas que ajudaram*/
   .App #pessoasAjudaram #carouselControle2 .card img{
     width: auto;
@@ -250,7 +262,7 @@ h1, h2, h3 {
 @media (min-width: 576px) and (max-width: 767.98px){
   /*Depoimento*/
   .App #depoimento .container {
-    height: 700px;
+    height: 780px;
   }
 
   .App #depoimento .fa-3x {
@@ -258,7 +270,7 @@ h1, h2, h3 {
   }
   /*Fazer parte*/
   .App #fazerParte{
-    height: 700px;
+    height: 820px;
   }
 
   .App #fazerParte button{
@@ -266,6 +278,11 @@ h1, h2, h3 {
   }
   .App #fazerParte .col-md-6 {
     margin-top: 10px;
+  }
+
+   /*Receba Ajuda*/
+   .App #fazerParte .borda-roxa {
+    height: 400px;
   }
 
   /*Vídeo*/
@@ -299,7 +316,7 @@ h1, h2, h3 {
 @media (min-width: 768px) and (max-width: 991.98px){
   .App #fazerParte .container {
     margin-top: 80px;
-  }
+  }     
 
   /*Vídeo*/
   .App #conhecaMais  {
@@ -309,9 +326,30 @@ h1, h2, h3 {
   .App #conhecaMais #video {
     margin-left: -60px;
   }
+
+  /*Receba Ajuda*/
+  .App #fazerParte .borda-roxa {
+    height: 480px;
+  }
   
+  .App #fazerParte #botaRecebaAjuda {
+    margin-top: 60px;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+   /*Fazer parte*/
+   .App #fazerParte{
+    height: 820px;
+  }
  
+  /*Receba Ajuda*/
+  .App #fazerParte .borda-roxa {
+    height: 480px;
+  }
+
+  .App #fazerParte #botaRecebaAjuda {
+    margin-top: 10px;
+  }
 }

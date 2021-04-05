@@ -57,7 +57,7 @@ export default function Sobre() {
             <h1 className="display-4 text-center">Como estamos hoje !</h1>            
           </div>
           <div className="row">
-            <div className="col-sm bg-roxo">
+            <div className="col-md bg-roxo">
               <div className="d-flex justify-content-around text-center pt-4 pb-4">
                   <div className="me-2 text-amarelo">
                     <h4>250</h4>
@@ -73,12 +73,12 @@ export default function Sobre() {
                     <h4>150</h4>
                     <p className="lead">Kits arrecadados</p>
                   </div>
-                
+   
                   <div className="me-2 text-amarelo">
                     <h4>100</h4>
                     <p className="lead text-amarelo">Crianças esperando doação</p>
                   </div>
-
+                       
                   <div className="me-2 text-amarelo">
                     <h4>5</h4>
                     <p className="lead">Estados alcançados</p>

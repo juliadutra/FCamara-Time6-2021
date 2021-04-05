@@ -127,7 +127,7 @@ function App(props) {
               <p className="lead">
                 Se você tem um filho que está precisando de materiais escolares, mas não em condições de comprar, receber ajuda através de nossa plataforma. Cadastre-se preenchendo o formulário com os seus dados e os dados do seu filho.
               </p>
-              <button type="button" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
+              <button id="botaRecebaAjuda" type="button" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
             </div>
           </div>
         </div>
