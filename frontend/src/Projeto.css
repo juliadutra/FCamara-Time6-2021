@@ -15,19 +15,19 @@
 }
 
 /*Imagens Padrão*/
-img {
+#montagemKit img, #quemSeDestina img {
     border: 1px solid #3F0259;
 }
 
-.inner {
+#montagemKit .inner, #quemSeDestina .inner {
     overflow: hidden;
 }
 
-.inner img {
+#montagemKit .inner img, #quemSeDestina .inner img {
     transition: all 1.2s ease;
 }
 
-.inner:hover img{
+#montagemKit .inner:hover img, #quemSeDestina .inner:hover img{
     transform: scale(1.2);
 }
 
