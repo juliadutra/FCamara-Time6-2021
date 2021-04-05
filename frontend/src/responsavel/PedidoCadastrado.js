@@ -27,7 +27,7 @@ export default function PedidoCadastrado(props) {
                                 <p>Criança: {props.solicitacaoCadastrada.nomeCrianca}</p>
                                 <p>Escola: {recuperarNomeEscola()}</p>
                                 <p>Matrícula: {props.solicitacaoCadastrada.matricula}</p>
-                                <button className="btn btn-primary">OK</button>
+                                <button className="btn btn-primary" onClick={props.aoConfirmar}>OK</button>
                             </div>
                         </div>
                     </div>

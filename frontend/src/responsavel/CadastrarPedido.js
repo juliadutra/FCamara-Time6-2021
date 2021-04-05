@@ -217,6 +217,12 @@ export default function CadastrarPedido() {
         }
     }
 
+    function limparPreenchimento() {
+        setCadastrando(false)
+        setSolicitacaoCadastrada(null)
+        setEscolaSelecionada("")
+    }
+
     function exibirFormularioCadastro() {
         if (cadastrando) {
             return (
@@ -245,13 +251,18 @@ export default function CadastrarPedido() {
             return null
         }
     }
-    
+
     const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
 
     return (
         <>
             <Cabecalho />
-            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} cpf={cpf} todasEscolas={todasEscolas} />
+            <PedidoCadastrado
+                solicitacaoCadastrada={solicitacaoCadastrada}
+                cpf={cpf}
+                todasEscolas={todasEscolas}
+                aoConfirmar={limparPreenchimento}
+            />
             {
                 solicitacaoCadastrada == null && (
                     <div className="container">
