@@ -22,6 +22,7 @@ export default function CadastrarPedido() {
     const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
     const [escolaSelecionada, setEscolaSelecionada] = useState("")
     const [matricula, setMatricula] = useState("")
+    const [solicitacaoCadastrada, setSolicitacaoCadastrada] = useState(null)
 
     function aoAlterarCPF(event) {
         const cpf = event.target.value
@@ -64,15 +65,19 @@ export default function CadastrarPedido() {
             return
         }
 
-        const cpfBuscar = cpf.replaceAll(".", "").replaceAll("-", "")
-        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/cpfs/" + cpfBuscar + ".json"
-        const resultado = await fetch(url)
-        const cpfJSON = await resultado.json()
+        const cpfJSON = await recuperarCPF()
         if (cpfJSON === null) {
             alert.error("Não há registro de solicitações para o CPF informado")
         } else {
             setSolicitacoes(cpfJSON.solicitacoes)
         }
+    }
+
+    async function recuperarCPF() {
+        const cpfBuscar = cpf.replaceAll(".", "").replaceAll("-", "")
+        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/cpfs/" + cpfBuscar + ".json"
+        const resultado = await fetch(url)
+        return await resultado.json()
     }
 
     async function aoAlterarMunicipio(evento) {
@@ -113,6 +118,9 @@ export default function CadastrarPedido() {
     function aoClicarEmNovaSolicitacao() {
         if (validate(cpf)) {
             setCadastrando(true)
+            setEscolaSelecionada("")
+            setEscolasDoMunicipio(null)
+            setMunicipiosDaUF(null)
         } else {
             alert.error("O CPF informado não é válido")
         }
@@ -122,7 +130,7 @@ export default function CadastrarPedido() {
         setCadastrando(false)
     }
 
-    function aoClicarEmCadastrar() {
+    async function aoClicarEmCadastrar() {
         if (nome.trim() === "") {
             alert.error("Por favor, informe o seu nome")
             return
@@ -143,7 +151,39 @@ export default function CadastrarPedido() {
             return
         }
 
-        console.log("Cadastrar")
+        const cpfJSON = await recuperarCPF()
+        
+        const cpfSemFormatacao = cpf.replaceAll(".", "").replaceAll("-", "")
+        let solicitacoes = []
+
+        if (cpfJSON !== null) {
+            solicitacoes = cpfJSON.solicitacoes
+        }
+
+        const url = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/pedidos.json"
+        const resposta = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify({
+                cpf: cpfSemFormatacao
+            })
+        })
+        const dadosPedido = await resposta.json()
+
+        const solicitacaoCadastrar = {
+            escola: escolaSelecionada,
+            matricula: matricula,
+            nome: nome,
+            nomeCrianca: nomeCrianca,
+            codigoPedido: dadosPedido.name
+        }
+        solicitacoes.push(solicitacaoCadastrar)
+        
+        const urlCPF = "https://doacao-de-material-escolar-default-rtdb.firebaseio.com/cpfs/" + cpfSemFormatacao + ".json"
+        await fetch(urlCPF, {
+            method: "PUT", body: JSON.stringify({solicitacoes: solicitacoes})
+        })
+
+        setSolicitacaoCadastrada(solicitacaoCadastrar)
     }
 
     function exibirBotoesIniciais() {
@@ -197,58 +237,62 @@ export default function CadastrarPedido() {
         <>
             <Cabecalho />
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="card m-2">
-                            <div className="card-header">
-                                <h4 className="my-0 font-weight-normal">Dados da Solicitação</h4>
-                            </div>
-                            <div className="card-body">
-                                <div>
-                                    { !cadastrando && (<p>Digite o seu CPF para registrar uma nova solicitação de Kit Escolar ou para consultar solicitações já registradas</p>) }
-                                    <label htmlFor="cpf" className="form-label">Informe o seu CPF</label>
-                                    <input
-                                        type="text"
-                                        disabled={cadastrando}
-                                        className="form-control mb-3"
-                                        style={{ maxWidth: 350 }}
-                                        maxLength={14}
-                                        onChange={aoAlterarCPF}
-                                        placeholder="Ex.: 078.840.390-79"
-                                        value={mascaraCpf(cpf)}
-                                    />
-                                    {
-                                        exibirMensagemCPFInvalido && (
-                                            <div className="mt-2 text-danger">
-                                                Por favor, informe um CPF válido
-                                            </div>
-                                        )
-                                    }
-
-                                    { exibirBotoesIniciais() }
-
-                                    { exibirFormularioCadastro() }
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    {
-                        !cadastrando && solicitacoes && solicitacoes.map((solicitacao) => (
-                            <div className="col-sm-12 col-md-6 col-lg-4">
+            {
+                solicitacaoCadastrada == null && (
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8">
                                 <div className="card m-2">
                                     <div className="card-header">
-                                        Solicitação
+                                        <h4 className="my-0 font-weight-normal">Dados da Solicitação</h4>
+                                    </div>
+                                    <div className="card-body">
+                                        <div>
+                                            { !cadastrando && (<p>Digite o seu CPF para registrar uma nova solicitação de Kit Escolar ou para consultar solicitações já registradas</p>) }
+                                            <label htmlFor="cpf" className="form-label">Informe o seu CPF</label>
+                                            <input
+                                                type="text"
+                                                disabled={cadastrando}
+                                                className="form-control mb-3"
+                                                style={{ maxWidth: 350 }}
+                                                maxLength={14}
+                                                onChange={aoAlterarCPF}
+                                                placeholder="Ex.: 078.840.390-79"
+                                                value={mascaraCpf(cpf)}
+                                            />
+                                            {
+                                                exibirMensagemCPFInvalido && (
+                                                    <div className="mt-2 text-danger">
+                                                        Por favor, informe um CPF válido
+                                                    </div>
+                                                )
+                                            }
+
+                                            { exibirBotoesIniciais() }
+
+                                            { exibirFormularioCadastro() }
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        ))
-                    }
-                </div>
-            </div>
+                        </div>
+                        <div className="row">
+                            {
+                                !cadastrando && solicitacoes && solicitacoes.map((solicitacao) => (
+                                    <div className="col-sm-12 col-md-6 col-lg-4">
+                                        <div className="card m-2">
+                                            <div className="card-header">
+                                                Solicitação
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                )
+            }
 
         </>
     )
