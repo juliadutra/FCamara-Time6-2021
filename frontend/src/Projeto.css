@@ -1,31 +1,65 @@
-/*Contribuir*/
-#contribuir {
-    margin-top: 50px;
-    margin-bottom: 50px;
+/*Capa Principal*/
+#capaPrincipal, #capaSecundaria {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 580px;
 }
 
-#contribuir h1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+#capaPrincipal {
+    background-image: url('./Imagens/capaPrincipalProjeto.jpg');
 }
 
-#contribuir p {
-    text-align: justify;
+#capaSecundaria {
+    background-image: url('./Imagens/carouselSobre1.jpg');    
 }
 
-/*Encontrar escola*/
-
-#encontrarEscola {
-    margin-bottom: 20px;
+/*Imagens Padrão*/
+.inner {
+    overflow: hidden;
 }
 
-#encontrarEscola h1 {
-    padding-bottom: 20px;
+.inner img {
+    transition: all 1.2s ease;
 }
 
-#encontrarEscola #botaoPadrao{
-  width: 256px;
-  height: 52px;
-  border-radius: 500px;
-  margin-top: 30px;
+.inner:hover img{
+    transform: scale(1.2);
 }
+
+
+/*Media Queries*/
+
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+    /*Capa Principal e Capa Secundária*/
+    #capaPrincipal, #capaSecundaria {
+        height: 300px;
+    }
+
+    /*Montagem Kit*/
+    #quemSeDestina img, #montagemKit img{
+        padding-bottom: 15px;
+    }
+ }
+   
+ /*Landscape phones, 576px and up*/
+ @media (min-width: 576px) and (max-width: 767.98px){ 
+    /*Capa Principal e Capa Secundária*/
+    #capaPrincipal, #capaSecundaria {
+        height: 300px;
+    }
+
+    /*Montagem Kit*/
+    #quemSeDestina img, #montagemKit img{
+        padding-bottom: 15px;
+    }
+ }
+   
+ /*Tablets, 768px and up*/
+ @media (min-width: 768px) and (max-width: 991.98px){   
+    /*Capa Principal e Capa Secundária*/
+    #capaPrincipal, #capaSecundaria {
+        height: 480px;
+    }
+ }
