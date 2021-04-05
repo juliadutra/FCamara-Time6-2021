@@ -234,6 +234,7 @@ export default function CadastrarPedido() {
     }
 
     const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
+
     return (
         <>
             <Cabecalho />
@@ -281,10 +282,14 @@ export default function CadastrarPedido() {
                         <div className="row">
                             {
                                 !cadastrando && solicitacoes && solicitacoes.map((solicitacao) => (
-                                    <div className="col-sm-12 col-md-6 col-lg-4" key={solicitacao.codigo}>
+                                    <div className="col-sm-12 col-md-6 col-lg-4" key={solicitacao.codigoPedido}>
                                         <div className="card m-2">
                                             <div className="card-header">
-                                                Solicitação
+                                                Pedido nᵒ {solicitacao.codigoPedido}
+                                            </div>
+                                            <div className="card-body">
+                                                <p>Responsável: {solicitacao.nome}</p>
+                                                <p>Matrícula da criança: {solicitacao.matricula}</p>
                                             </div>
                                         </div>
                                     </div>

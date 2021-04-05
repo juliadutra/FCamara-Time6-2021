@@ -19,6 +19,7 @@ export default function PedidoCadastrado(props) {
                                 <p>Nome: {props.solicitacaoCadastrada.nome}</p>
                                 <p>Criança: {props.solicitacaoCadastrada.nomeCrianca}</p>
                                 <p>Matrícula: {props.solicitacaoCadastrada.matricula}</p>
+                                <button className="btn btn-primary">OK</button>
                             </div>
                         </div>
                     </div>
