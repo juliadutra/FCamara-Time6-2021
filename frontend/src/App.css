@@ -38,6 +38,11 @@
   }
 }
 
+/*Cores*/
+h1, h2, h3 {
+  color: #3F0259;
+}
+
 /*Fonts*/
 @font-face {
   font-family: "tituloPrincipal";
@@ -67,6 +72,20 @@ h1, h2, h3 {
 .carousel-control-next, .carousel-control-prev {
   width: 5%;
 }
+
+/*Carousel - padrão*/
+.App #carouselControle .carousel-indicators .active, 
+.App #pessoasAjudaram #carouselControle2 .carousel-indicators .active,
+.App #pessoasAReceberam #carouselControle3 .carousel-indicators .active {
+  background-color: #3F0259;
+}
+
+.App #carouselControle .carousel-control-next, .carousel-control-prev, 
+.App #pessoasAjudaram .carousel-control-next, .carousel-control-prev,
+.App #pessoasAReceberam .carousel-control-next, .carousel-control-prev {
+  color: #3F0259;
+}
+
 
 /*Carousel*/
 .App section .carousel-item {
@@ -120,7 +139,6 @@ h1, h2, h3 {
 /*Fazer parte do projeto*/
 
 .App #fazerParte {
- /* border: 1px solid red; */
   margin-top: 20px;
 }
 
@@ -136,10 +154,17 @@ h1, h2, h3 {
   margin-bottom: 15px;
 }
 
+.App #fazerParte .borda-roxa {
+  border: 1px solid #3F0259;
+  border-radius: 5px;
+}
+
 .App #fazerParte button {
   width: 256px;
   height: 52px;
   border-radius: 500px;
+  background-color: #F2B705;
+  border: 2px solid #F2B705;
 }
 
 /*Depoimentos - pessoas que já ajudaram*/
@@ -147,11 +172,22 @@ h1, h2, h3 {
   padding-bottom: 20px;
 }
 
+.App #pessoasAjudaram .card {
+  border: 2px solid #F2B705;
+  border-radius: 5px;
+}
+
 /*Depoimentos - pessoas que já receberam*/
 .App #pessoasAReceberam {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+.App #pessoasAReceberam .card {
+  border: 2px solid #F2B705;
+  border-radius: 5px;
+}
+
 
 
 
