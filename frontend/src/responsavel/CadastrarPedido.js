@@ -138,6 +138,11 @@ export default function CadastrarPedido() {
             return
         }
 
+        if (matricula.trim() === "") {
+            alert.error("Por favor, informe a matrícula")
+            return
+        }
+
         console.log("Cadastrar")
     }
 
