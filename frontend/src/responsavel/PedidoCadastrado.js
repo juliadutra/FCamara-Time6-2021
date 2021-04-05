@@ -4,6 +4,13 @@ export default function PedidoCadastrado(props) {
     if(props.solicitacaoCadastrada === null) {
         return null
     } else {
+        function recuperarNomeEscola() {
+            for(let i in props.todasEscolas) {
+                if (props.todasEscolas[i].codigo === props.solicitacaoCadastrada.escola) {
+                    return props.todasEscolas[i].nome
+                }
+            }
+        }
         return (
             <div className="container">
                 <div className="row">
@@ -18,6 +25,7 @@ export default function PedidoCadastrado(props) {
                                 <p>CPF: {props.cpf}</p> 
                                 <p>Nome: {props.solicitacaoCadastrada.nome}</p>
                                 <p>Criança: {props.solicitacaoCadastrada.nomeCrianca}</p>
+                                <p>Escola: {recuperarNomeEscola()}</p>
                                 <p>Matrícula: {props.solicitacaoCadastrada.matricula}</p>
                                 <button className="btn btn-primary">OK</button>
                             </div>

@@ -70,7 +70,20 @@ export default function CadastrarPedido() {
         if (cpfJSON === null) {
             alert.error("Não há registro de solicitações para o CPF informado")
         } else {
-            setSolicitacoes(cpfJSON.solicitacoes)
+            let solicitacoes = []
+            for (let i in cpfJSON.solicitacoes) {
+                const codigoEscola = cpfJSON.solicitacoes[i].escola
+                const resposta = await fetch("https://doacao-de-material-escolar-default-rtdb.firebaseio.com/escolas/" + codigoEscola + ".json")
+                const dadosEscola = await resposta.json()
+                const solicitacao = {
+                    codigoPedido: cpfJSON.solicitacoes[i].codigoPedido,
+                    nome: cpfJSON.solicitacoes[i].nome,
+                    matricula: cpfJSON.solicitacoes[i].matricula,
+                    dadosEscola: dadosEscola
+                }
+                solicitacoes.push(solicitacao)
+            }
+            setSolicitacoes(solicitacoes)
         }
     }
 
@@ -232,13 +245,13 @@ export default function CadastrarPedido() {
             return null
         }
     }
-
+    
     const exibirMensagemCPFInvalido = cpf.length > 10 && !validate(cpf)
 
     return (
         <>
             <Cabecalho />
-            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} cpf={cpf} />
+            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} cpf={cpf} todasEscolas={todasEscolas} />
             {
                 solicitacaoCadastrada == null && (
                     <div className="container">
@@ -289,7 +302,9 @@ export default function CadastrarPedido() {
                                             </div>
                                             <div className="card-body">
                                                 <p>Responsável: {solicitacao.nome}</p>
+                                                <p>Escola: {solicitacao.dadosEscola.nome}</p>
                                                 <p>Matrícula da criança: {solicitacao.matricula}</p>
+                                                <p>Situação: aguadando doação</p>
                                             </div>
                                         </div>
                                     </div>
