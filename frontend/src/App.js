@@ -92,7 +92,7 @@ function App(props) {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div id="video" className="d-flex align-self-center">
+            <div className="d-flex align-self-center">
               <VideoPlayer src={video1} widht="230" height="230" />
             </div>
           </div>

@@ -139,6 +139,7 @@ h1, h2, h3 {
   text-align: justify;
 }
 
+
 /*Fazer parte do projeto*/
 
 .App #fazerParte {
@@ -230,7 +231,6 @@ h1, h2, h3 {
     margin-top: 10px;
   }
 
-  /*Vídeo*/
   .App #conhecaMais  {
     height: 750px;
   }
@@ -241,7 +241,7 @@ h1, h2, h3 {
 
   /*Receba Ajuda*/
   .App #fazerParte .borda-roxa {
-    height: 480px;
+    height: 450px;
   }
 
   /*Depoimentos - pessoas que ajudaram*/
