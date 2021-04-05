@@ -65,12 +65,11 @@ export default function FaleConosco() {
                       <textarea className="form-control" id="mensagem"  rows="3" placeholder="Digite aqui a sua mensagem"></textarea>
                     </div>
 
-                    <button type="button" className="btn btn-outline-dark justify-content-md-center">Enviar</button>
+                    <button type="button" className="justify-content-md-center">Enviar</button>
                    
                   </fieldset>
                 </form>
               </div>
-
               
             </div>
           </div>

@@ -27,6 +27,11 @@
 #secaoFaleConosco button {
     width: 256px;
     height: 52px;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    background-color: #F2B705;
+    border: 2px solid #F2B705;
 }
 
 
