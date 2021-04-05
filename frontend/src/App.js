@@ -77,11 +77,11 @@ function App(props) {
         </div>
 
         <a className="carousel-control-prev" data-bs-target="#carouselControle" data-bs-slide="prev">
-          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
+          <i className="fas fa-angle-left fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Previous</span>
         </a>
         <a className="carousel-control-next" data-bs-target="#carouselControle" data-bs-slide="next">
-          <i class="fas fa-angle-right fa-3x" aria-hidden="true"></i>
+          <i className="fas fa-angle-right fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Next</span>
         </a>
       </div>
