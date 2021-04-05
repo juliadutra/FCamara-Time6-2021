@@ -256,6 +256,10 @@ h1, h2, h3 {
     height: 18rem;
   }
 
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
+  }
+
 }
 
 /*Landscape phones, 576px and up*/
@@ -305,6 +309,10 @@ h1, h2, h3 {
     height: 18rem;
   }
 
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
+  }
+
   /*Depoimentos - pessoas que receberam ajuda*/
   .App #pessoasAReceberam #carouselControle3 .card img{
     width: auto;
@@ -336,6 +344,21 @@ h1, h2, h3 {
     margin-top: 60px;
   }
 
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
+  }
+
+  .App #pessoasAjudaram #carouselControle2 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
+  /*Depoimentos - pessoas que receberam ajuda*/
+  .App #pessoasAReceberam #carouselControle3 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -349,6 +372,7 @@ h1, h2, h3 {
     height: 480px;
   }
 
+   /*Depoimentos - pessoas que receberam ajuda*/
   .App #fazerParte #botaRecebaAjuda {
     margin-top: 10px;
   }
