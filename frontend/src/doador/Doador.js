@@ -14,6 +14,9 @@ export default function Doador() {
           <p className="lead m-3 p-4">
             Nós da Padrinhos do bem acreditamos que toda criança pode sonhar com um futuro melhor. Ser um doador significa dar a uma criança em situação de vulnerabilidade a oportunidade de ser protagonista da própria vida. Gostaria de fazer isso por alguém? Escolha uma das opções abaixo e nos ajude a construindo um novo amanhã.
           </p>
+          <p>
+            <Link to="consultar-ticket">Quero consultar o andamento de uma doação</Link>
+          </p>
         </div>      
         <div className="container">
           <div className="row text-center">
