@@ -239,9 +239,6 @@ export default function CadastrarPedido() {
                     <label className="form-label">Qual o nome da criança?</label>
                     <input className="form-control mb-3" value={nomeCrianca} onChange={aoAlterarNomeCrianca} />
 
-                    <p>Em qual escola ela estuda?</p>
-                    <hr />
-
                     <UFs onChange={aoAlterarUF} />
                     <Municipios lista={municipiosDaUF} onChange={aoAlterarMunicipio} />
                     <Escolas lista={escolasDoMunicipio} valorAtual={escolaSelecionada} onChange={aoAlterarEscola} />
