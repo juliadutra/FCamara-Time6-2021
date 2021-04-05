@@ -15,6 +15,10 @@
 }
 
 /*Imagens Padrão*/
+img {
+    border: 1px solid #3F0259;
+}
+
 .inner {
     overflow: hidden;
 }
