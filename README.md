@@ -9,6 +9,10 @@ Para executar o frontend é necessário possuiro o <a target="_blank" href="http
 
 Dentro do diretório frontend basta executar os comandos `npm install` seguido de `npm start` para que a aplicação esteja executando em ambiente <a target="_blank" href="http://localhost:3000">local</a>.
 
+### Frontend
+
+Para o Frontend do projeto, foi utilizado o Framework Bootstrap responsável por deixar as aplicações do sistema responsivas, de forma que o sistema esteja disponível também para dispositivos móveis como celulares, tablets e notebooks. 
+
 ### Backend
 
 Para o escopo do hackaton optamos por utilizar o <a target="_blank" href="https://firebase.google.com/">Firebase</a> como backend por meio da sua realtime database exposta por meio de uma camada REST.
