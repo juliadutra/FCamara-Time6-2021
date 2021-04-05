@@ -3,5 +3,41 @@ nav {
 }
 
 nav #navegacao .nav-link {
-    color: white;
+    color: #F2B705;
 }
+
+/*Media Queries*/
+
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+    /*Menu home - Hamburger*/
+   #cabecalho .navbar-light .navbar-toggler {
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 40px;
+    }
+
+ }
+   
+ /*Landscape phones, 576px and up*/
+ @media (min-width: 576px) and (max-width: 767.98px){ 
+    /*Menu home - Hamburger*/
+   #cabecalho .navbar-light .navbar-toggler {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+ }
+   
+ /*Tablets, 768px and up*/
+ @media (min-width: 768px) and (max-width: 991.98px){   
+    /*Menu home - Hamburger*/
+   #cabecalho .navbar-light .navbar-toggler {
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+ }

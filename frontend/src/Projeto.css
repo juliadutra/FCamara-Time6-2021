@@ -1,18 +1,12 @@
 /*Capa Principal*/
-#capaPrincipal, #capaSecundaria {    
+#capaPrincipal{    
+    background-image: url('./Imagens/capaPrincipalProjeto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
     height: 580px;
 }
 
-#capaPrincipal {
-    background-image: url('./Imagens/capaPrincipalProjeto.jpg');
-}
-
-#capaSecundaria {
-    background-image: url('./Imagens/carouselSobre1.jpg');    
-}
 
 /*Imagens Padrão*/
 #montagemKit img, #quemSeDestina img {
@@ -31,6 +25,21 @@
     transform: scale(1.2);
 }
 
+/*Pra quem é o projeto / Montagem do kit / Entrega kit*/
+#quemSeDestina p, #montagemKit p, #entregaKit p {
+    text-align: justify;
+}
+
+/*Imagens Parceiros*/
+#ImagensParceiros {
+    margin-bottom: 20px;
+}
+
+#ImagensParceiros img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
 
 /*Media Queries*/
 
@@ -45,6 +54,12 @@
     #quemSeDestina img, #montagemKit img{
         padding-bottom: 15px;
     }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 120px;
+        width: 120px;
+    }
  }
    
  /*Landscape phones, 576px and up*/
@@ -58,6 +73,12 @@
     #quemSeDestina img, #montagemKit img{
         padding-bottom: 15px;
     }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 140px;
+        width: 140px;
+    }
  }
    
  /*Tablets, 768px and up*/
@@ -65,5 +86,11 @@
     /*Capa Principal e Capa Secundária*/
     #capaPrincipal, #capaSecundaria {
         height: 480px;
+    }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 180px;
+        width: 180px;
     }
  }
