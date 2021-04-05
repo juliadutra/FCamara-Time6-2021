@@ -181,6 +181,7 @@ h1, h2, h3 {
 }
 
 /*Depoimentos - pessoas que já ajudaram*/
+
 .App #pessoasAjudaram h3, .App #pessoasAReceberam h3 {
   padding-bottom: 20px;
 }
