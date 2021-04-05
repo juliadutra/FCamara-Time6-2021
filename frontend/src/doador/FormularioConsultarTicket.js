@@ -16,7 +16,7 @@ export default function FormularioConsultarTicket(props) {
                         />
                         <div className="mb-3">
                             <button
-                                className="btn btn-outline-primary"
+                                className="btn btn-primary"
                                 onClick={props.aoConsultar}>
                                 Consultar
                             </button>
