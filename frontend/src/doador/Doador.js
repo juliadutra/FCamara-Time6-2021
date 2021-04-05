@@ -2,6 +2,9 @@ import React from 'react'
 import Cabecalho from '../Cabecalho';
 import { Link } from "react-router-dom";
 import './Doador.css';
+import foto1 from '../Imagens/card1.png';
+import foto2 from '../Imagens/card2.jpg';
+import foto3 from '../Imagens/card3.jpg';
 import Rodape from '../Rodape';
 
 export default function Doador() {
@@ -21,15 +24,19 @@ export default function Doador() {
         <div className="container">
           <div className="row text-center">
             <div className="col-lg-4">
+
+        
               <div className="card m-4">
                 <div className="card-header">
                   <h4 className="my-0 font-weight-normal">Kit</h4>
                 </div>
-                <div id="cardFundo1"></div>
+               <Link to="/doar-kit">
+                <img src={foto1} className="img-fluid" alt="Imagem 1 - Kit de Material." />
+               </Link>
                 <div className="card-body">
                   <p>
                     Você pode adquirir Kits pré formulados por nós, em parceria com papelarias/livrarias conveniadas, com materiais adequados à realidade de cada faixa etária escolar. Cada kit custa R$120,00, 
-                  </p>
+                  </p>                
                   <Link to="/doar-kit">
                     <button className="btn btn-outline-dark">
                       DOE AGORA
@@ -43,7 +50,9 @@ export default function Doador() {
                 <div className="card-header">
                   <h4 className="my-0 font-weight-normal">Outros valores</h4>
                 </div>
-                <div id="cardFundo2"></div>
+               <Link>
+                <img src={foto2} className="img-fluid" alt="Imagem 2 - Aceitamos qualquer valor." />
+                </Link>
                 <div className="card-body">
                   <p>
                     Se você não pode contribuir com o Kit, não tem problema nenhum. Nós aceitamos a doação de qualquer valor também. A cada R$120,00 arrecadados, montamos um Kit para doação.
@@ -59,7 +68,9 @@ export default function Doador() {
                 <div className="card-header">
                   <h4 className="my-0 font-weight-normal">DOE ITENS</h4>
                 </div>
-                <div id="cardFundo3"></div>
+                <Link>
+                  <img src={foto3} className="img-fluid" alt="Imagens - Aceitamos material usado." />
+                </Link>
                 <div className="card-body">
                   <p>
                     Caso tenha material escolar disponível, novo e em boa condição de uso, pode doar diretamente em uma de nossas ONG's parceiras. Eles farão a separação e montagem de um Kit seguindo nossas diretrizes.
