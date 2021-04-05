@@ -62,7 +62,10 @@ export default function Projeto() {
 
        {/*Parceiros*/}
        <section>
-         imagens parcerias
+         <div className="container text-center pt-4">
+          <h1 className="display-4">Parceiros</h1>
+          imagens parcerias
+         </div>
        </section>
 
       {/*Footer*/}
