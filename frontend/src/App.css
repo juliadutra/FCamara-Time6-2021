@@ -139,6 +139,7 @@ h1, h2, h3 {
   text-align: justify;
 }
 
+
 /*Fazer parte do projeto*/
 
 .App #fazerParte {
@@ -230,7 +231,6 @@ h1, h2, h3 {
     margin-top: 10px;
   }
 
-  /*Vídeo*/
   .App #conhecaMais  {
     height: 750px;
   }
@@ -241,7 +241,7 @@ h1, h2, h3 {
 
   /*Receba Ajuda*/
   .App #fazerParte .borda-roxa {
-    height: 480px;
+    height: 450px;
   }
 
   /*Depoimentos - pessoas que ajudaram*/
@@ -254,6 +254,10 @@ h1, h2, h3 {
   .App #pessoasAReceberam #carouselControle3 .card img{
     width: auto;
     height: 18rem;
+  }
+
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
   }
 
 }
@@ -305,6 +309,10 @@ h1, h2, h3 {
     height: 18rem;
   }
 
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
+  }
+
   /*Depoimentos - pessoas que receberam ajuda*/
   .App #pessoasAReceberam #carouselControle3 .card img{
     width: auto;
@@ -336,6 +344,21 @@ h1, h2, h3 {
     margin-top: 60px;
   }
 
+  .App #pessoasAjudaram #carouselControle2 img {
+    margin-top: 40px;
+  }
+
+  .App #pessoasAjudaram #carouselControle2 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
+  /*Depoimentos - pessoas que receberam ajuda*/
+  .App #pessoasAReceberam #carouselControle3 .card img{
+    width: auto;
+    height: 18rem;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -349,6 +372,7 @@ h1, h2, h3 {
     height: 480px;
   }
 
+   /*Depoimentos - pessoas que receberam ajuda*/
   .App #fazerParte #botaRecebaAjuda {
     margin-top: 10px;
   }

@@ -11,7 +11,7 @@ export default function Cabecalho() {
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#controleNavegacao" aria-controls="controleNavegacao" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars fa-2x"></i>
+                    <i class="fas fa-bars fa-1x"></i>
                 </button>
                 <Link className="navbar-brand" to="/">
                     <img src={logoPrincipal} width="100" height="100" alt="Padrinhos do Bem"/>
