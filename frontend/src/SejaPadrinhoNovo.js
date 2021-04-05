@@ -35,9 +35,7 @@ export default function SejaPadrinhoNovo() {
                                 <div className="form-group mb-4">
                                     <label for="email">E-mail</label>
                                     <input className="form-control form-control" type="email" id="email" placeholder="Ex. joao@email.com"/>
-                                </div>
-                                
-                                <button type="button" className="justify-content-md-center">Enviar</button>
+                                </div>                                                                
                                 
                             </fieldset>
                         </form>
