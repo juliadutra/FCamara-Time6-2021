@@ -1,18 +1,12 @@
 /*Capa Principal*/
-#capaPrincipal, #capaSecundaria {    
+#capaPrincipal{    
+    background-image: url('./Imagens/capaPrincipalProjeto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
     height: 580px;
 }
 
-#capaPrincipal {
-    background-image: url('./Imagens/capaPrincipalProjeto.jpg');
-}
-
-#capaSecundaria {
-    background-image: url('./Imagens/carouselSobre1.jpg');    
-}
 
 /*Imagens Padrão*/
 #montagemKit img, #quemSeDestina img {
@@ -29,6 +23,11 @@
 
 #montagemKit .inner:hover img, #quemSeDestina .inner:hover img{
     transform: scale(1.2);
+}
+
+/*Pra quem é o projeto / Montagem do kit / Entrega kit*/
+#quemSeDestina p, #montagemKit p, #entregaKit p {
+    text-align: justify;
 }
 
 /*Imagens Parceiros*/

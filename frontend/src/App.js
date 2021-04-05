@@ -98,7 +98,10 @@ function App(props) {
           </div>
           <div className="col-md-6">
             <h2 className="display-6">Conheça mais sobre o projeto!</h2>
-            <p className="lead">Os Padrinhos do Bem decidiram conferir transparência, rapidez e segurança ao caminho que leva os materiais escolares dos doadores até às nossas crianças.</p>
+            <p className="lead">
+              O projeto é voltado para ajudar crianças e adolescentes que estudam em níveis básico, fundamental e médio, mas, não tem condições de comprar material escolar. A ajuda acontece por meio de doações de kits escolares, montados por nós (de acordo com os critérios de cada nível educacional) ou doações em dinheiro ou ainda doação de itens escolares que estão conservados e não serão mais utilizados.
+              Acreditamos que podemos fazer a diferença, mas, sabemos que não podemos mudar o mundo, mas acreditamos que podemos construir um novo amanhã.
+            </p>
           </div>
         </div>
       </div>
@@ -113,7 +116,7 @@ function App(props) {
             <div className="borda-roxa">
               <h3 className="display-6">Como Ajudar</h3>
               <p className="lead">
-                Junto de nossos parceiros, escolha uma opção de kit mais adequada à faixa etária da criança ou escolha um valor que está ao seu alcance. 
+                Nós temos três opções de contribuição, a primeira é a doação de um ki escolar, a segunda é doar por meio da vaquinha do bem e a terceira é a doação de itens que talvez você tenha guardado em casa e que não irá mais usar. Temos certeza de que de alguma forma você pode nos ajudar.
               </p>
               <button type="button" onClick={redirecionaParaSejaPadrinho}>Seja um Padrinho</button>
             </div>
@@ -122,7 +125,7 @@ function App(props) {
             <div className="borda-roxa">
               <h3 className="display-6">Receba Ajuda</h3>
               <p className="lead">
-                Para receber uma doação através de nossa plataforma, cadastre-se preenchendo o formulário com os dados do seu filho, ou procure nossas ONG's ou nossos outros parceiros.
+                Se você tem um filho que está precisando de materiais escolares, mas não em condições de comprar, receber ajuda através de nossa plataforma. Cadastre-se preenchendo o formulário com os seus dados e os dados do seu filho.
               </p>
               <button type="button" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
             </div>

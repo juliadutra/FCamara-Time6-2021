@@ -26,7 +26,7 @@ export default function Parceiros() {
             <div className="row">
               <div className="col-md-12">
                   <p className="lead">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    A Padrinhos do Bem constitui uma parceria com todos aqueles que querem nos ajudar a construir um novo amanhã. Acreditamos que juntos somos mais fortes e por conta disso, oferecemos um espaço para o logo da sua empresa em nosso site. Como as doações são feias em forma de kit escolar, o pagamento e entrega de cada doação será diretamente no seu estabelecimento, fazendo com que ele seja conhecido e reconhecido cada vez mais.
                   </p>
                   <Link to="/validar-doacao">
                     Sou parceiro e quero validar uma doação
@@ -125,7 +125,8 @@ export default function Parceiros() {
               <div className="col-md-12">
                   <h1 className="display-6 pt-4 pb-4">Seja um parceiro você também!</h1>                  
                   <p className="lead">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    As principais vantagens de ser um parceiro nosso é ganhar visibilidade por ter a o nome do seu negócio em nossas publicações e credibilidade pois o fato de você participar de uma iniciativa tão nobre quanto a nossa faz com que os seus clientes tenham mais confiança em comprar com você. 
+                    Quer se tornar um parceiro? Então clique no botão abaixo e preencha algumas informações suas e do seu estabelecimento!
                   </p>
                 <div class="d-grid gap-2 d-flex justify-content-center">
                   <button type="button">Quero me tornar um parceiro</button>

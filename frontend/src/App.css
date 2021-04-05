@@ -127,7 +127,7 @@ h1, h2, h3 {
 .App #conhecaMais .container{
   position: relative;
   margin-top: 50px;
-  height: 300px;
+  height: 400px;
 }
 
 .App #conhecaMais .container .row {
@@ -225,7 +225,7 @@ h1, h2, h3 {
 
   /*Vídeo*/
   .App #conhecaMais  {
-    height: 550px;
+    height: 750px;
   }
 
   .App #conhecaMais #video {
@@ -270,7 +270,7 @@ h1, h2, h3 {
 
   /*Vídeo*/
   .App #conhecaMais  {
-    height: 550px;
+    height: 650px;
   }
   
   .App #conhecaMais #video {
@@ -303,7 +303,7 @@ h1, h2, h3 {
 
   /*Vídeo*/
   .App #conhecaMais  {
-    height: 320px;
+    height: 520px;
   }
   
   .App #conhecaMais #video {

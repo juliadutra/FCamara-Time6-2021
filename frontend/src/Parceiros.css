@@ -37,6 +37,10 @@
     margin-bottom: 50px;
 }
 
+#secaoParceiros p, #tonarParceiro p{
+    text-align: justify;
+}
+
 #tonarParceiro h1 {
     margin-bottom: 20px;
 }

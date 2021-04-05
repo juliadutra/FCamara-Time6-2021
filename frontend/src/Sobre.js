@@ -54,8 +54,7 @@ export default function Sobre() {
       <section id="situacaoAtual">
         <div className="container-fluid">
           <div>
-            <h1 className="display-4 text-center">Como estamos hoje !</h1>
-            <p className="lead text-center">Parágrafo</p>
+            <h1 className="display-4 text-center">Como estamos hoje !</h1>            
           </div>
           <div className="row">
             <div className="col-sm bg-roxo">
@@ -99,19 +98,19 @@ export default function Sobre() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4">
-              <div class="card">
+              <div className="card">
                 <h3 className="text-center">Missão</h3>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div className="card-body">
+                  <p className="card-text lead">Organização sem fins lucrativos, visamos transformar a nossa plataforma em uma rede de apoio que conecte ONG's, estabelecimentos parceiros e doadores às necessidades de famílias com crianças e adolescentes em idade escolar que estejam em situação de impossibilidade financeira.</p>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4">
-              <div class="card">
+              <div className="card">
               <h3 className="text-center">Visão</h3>
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div className="card-body">
+                  <p className="card-text lead">Acreditamos na caridade através do engajamento da sociedade civil em prol do desenvolvimento educacional como potencializador de um futuro próspero e livre.</p>
                 </div>
               </div>
             </div>
@@ -120,7 +119,7 @@ export default function Sobre() {
               <div class="card">
               <h3 className="text-center">Valores</h3>
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text lead">Acreditamos que não podemos mudar o mundo, mas podemos construir um novo amanhã!</p>
                 </div>
               </div>
             </div>
