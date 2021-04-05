@@ -169,6 +169,7 @@ export default function CadastrarPedido() {
             return
         }
 
+        setCarregando(true)
         const cpfJSON = await recuperarCPF()
         
         const cpfSemFormatacao = cpf.replaceAll(".", "").replaceAll("-", "")
@@ -202,6 +203,7 @@ export default function CadastrarPedido() {
         })
 
         setSolicitacaoCadastrada(solicitacaoCadastrar)
+        setCarregando(false)
     }
 
     function exibirBotoesIniciais() {
