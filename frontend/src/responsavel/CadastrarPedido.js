@@ -6,6 +6,7 @@ import UFs from "../doador/UFs";
 import Municipios from "../doador/Municipios";
 import Escolas from "../doador/Escolas";
 import PedidoCadastrado from "./PedidoCadastrado";
+import Carregando from "../Carregando";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
@@ -24,6 +25,7 @@ export default function CadastrarPedido() {
     const [escolaSelecionada, setEscolaSelecionada] = useState("")
     const [matricula, setMatricula] = useState("")
     const [solicitacaoCadastrada, setSolicitacaoCadastrada] = useState(null)
+    const [carregando, setCarregando] = useState(false)
 
     function aoAlterarCPF(event) {
         const cpf = event.target.value
@@ -66,6 +68,7 @@ export default function CadastrarPedido() {
             return
         }
 
+        setCarregando(true)
         const cpfJSON = await recuperarCPF()
         if (cpfJSON === null) {
             alert.error("Não há registro de solicitações para o CPF informado")
@@ -85,6 +88,7 @@ export default function CadastrarPedido() {
             }
             setSolicitacoes(solicitacoes)
         }
+        setCarregando(false)
     }
 
     async function recuperarCPF() {
@@ -257,6 +261,7 @@ export default function CadastrarPedido() {
     return (
         <>
             <Cabecalho />
+            <Carregando exibir={carregando} />
             <PedidoCadastrado
                 solicitacaoCadastrada={solicitacaoCadastrada}
                 cpf={cpf}
