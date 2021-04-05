@@ -35,7 +35,7 @@ export default function Doador() {
                </Link>
                 <div className="card-body">
                   <p>
-                    Você pode adquirir Kits pré formulados por nós, em parceria com papelarias/livrarias conveniadas, com materiais adequados à realidade de cada faixa etária escolar. Cada kit custa R$120,00, 
+                    Você pode adquirir Kits pré formulados por nós, em parceria com papelarias/livrarias conveniadas, com materiais adequados à realidade de cada faixa etária escolar. Cada kit custa R$120,00.
                   </p>                
                   <Link to="/doar-kit">
                     <button className="btn btn-outline-dark">
