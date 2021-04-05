@@ -21,6 +21,7 @@ export default function CadastrarPedido() {
     const [todasEscolas, setTodasEscolas] = useState(null)
     const [escolasDoMunicipio, setEscolasDoMunicipio] = useState(null)
     const [escolaSelecionada, setEscolaSelecionada] = useState("")
+    const [matricula, setMatricula] = useState("")
 
     function aoAlterarCPF(event) {
         const cpf = event.target.value
@@ -35,6 +36,11 @@ export default function CadastrarPedido() {
     function aoAlterarNomeCrianca(evento) {
         const nomeCrianca = evento.target.value
         setNomeCrianca(nomeCrianca)
+    }
+
+    function aoAlterarMatricula(evento) {
+        const matricula = evento.target.value
+        setMatricula(matricula)
     }
 
     async function aoAlterarUF(evento) {
@@ -170,7 +176,7 @@ export default function CadastrarPedido() {
                     <Escolas lista={escolasDoMunicipio} valorAtual={escolaSelecionada} onChange={aoAlterarEscola} />
                     
                     <label className="form-label">Informe a Matrícula</label>
-                    <input className="form-control mb-3" />
+                    <input className="form-control mb-3" value={matricula} onChange={aoAlterarMatricula} />
 
                     <button className="btn btn-primary" onClick={aoClicarEmCadastrar}>Cadastrar</button>
                     <button className="btn btn-link" onClick={aoClicarEmCancelar}>Cancelar</button>
