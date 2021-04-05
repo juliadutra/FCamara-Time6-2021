@@ -31,6 +31,16 @@
     transform: scale(1.2);
 }
 
+/*Imagens Parceiros*/
+#ImagensParceiros {
+    margin-bottom: 20px;
+}
+
+#ImagensParceiros img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
 
 /*Media Queries*/
 
@@ -45,6 +55,12 @@
     #quemSeDestina img, #montagemKit img{
         padding-bottom: 15px;
     }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 120px;
+        width: 120px;
+    }
  }
    
  /*Landscape phones, 576px and up*/
@@ -58,6 +74,12 @@
     #quemSeDestina img, #montagemKit img{
         padding-bottom: 15px;
     }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 140px;
+        width: 140px;
+    }
  }
    
  /*Tablets, 768px and up*/
@@ -65,5 +87,11 @@
     /*Capa Principal e Capa Secundária*/
     #capaPrincipal, #capaSecundaria {
         height: 480px;
+    }
+
+    /*Imagens Parceiros*/
+    #ImagensParceiros img {
+        height: 180px;
+        width: 180px;
     }
  }

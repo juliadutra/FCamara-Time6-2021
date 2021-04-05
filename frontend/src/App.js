@@ -53,7 +53,7 @@ function App(props) {
             <div className="carousel-item active carousel-fundo1" data-bs-interval="6000" onClick={redirecionarParaSobreNos}>
                 <div className="container">
                     <h1 className="display-4">Sobre Nós</h1>
-                    <p className="lead">
+                    <p className="lead text-amarelo">
                       Nossa história, nosso lema e manifesto.
                     </p>
                 </div>
@@ -61,7 +61,7 @@ function App(props) {
             <div className="carousel-item carousel-fundo2" data-bs-interval="6000" onClick={redirecionaParaProjeto}>
               <div className="container">
                   <h1 className="display-4">O Projeto</h1>
-                  <p className="lead">
+                  <p className="lead text-amarelo">
                     Como transformamos vidas e ajudamos na esperança de um futuro melhor.
                   </p>
               </div>
@@ -69,7 +69,7 @@ function App(props) {
             <div className="carousel-item carousel-fundo3" data-bs-interval="6000" onClick={redirecionaParaComoDoar}>
               <div className="container">
                   <h1 className="display-4">Como Doar</h1>
-                  <p className="lead">
+                  <p className="lead text-amarelo">
                     Você pode ajudar a transformar a vida de diversas crianças. Junte-se a nós!
                   </p>
               </div>

@@ -7,6 +7,12 @@ import foto3 from './Imagens/parceria1.jpg';
 import foto4 from './Imagens/montagemKit1.jpg';
 import foto5 from './Imagens/montagemKit2.jpg';
 import foto6 from './Imagens/montagemKit3.jpg';
+import foto7 from './Imagens/parceiro1.jpg';
+import foto8 from './Imagens/parceiro2.jpg';
+import foto9 from './Imagens/parceiro3.png';
+import foto10 from './Imagens/parceiro4.jpg';
+import foto11 from './Imagens/parceiro5.png';
+import foto12 from './Imagens/parceiro6.jpeg';
 import Rodape from './Rodape';
 
 export default function Projeto() {
@@ -61,10 +67,23 @@ export default function Projeto() {
        <div id="capaSecundaria" className="mt-4"></div>
 
        {/*Parceiros*/}
-       <section>
+       <section id="ImagensParceiros">
          <div className="container text-center pt-4">
           <h1 className="display-4">Parceiros</h1>
-          imagens parcerias
+            <div className="row">
+              <div className="col-xl-6">
+                <img src={foto7} className="me-4" width="150" height="150" alt="Mundo da Papelaria" /> 
+                <img src={foto8} className="me-4" width="150" height="150" alt="Papelaria Brasilia Brinquedos" />   
+                <img src={foto9} className="me-4"  width="150" height="150" alt="Arco - Íris Bazer e Livraria" />                
+              </div>
+           
+              <div className="col-xl-6">                
+                <img src={foto10} className="me-4" width="150" height="150" alt="Papelaria Jambo" />     
+                <img src={foto11} className="me-4" width="150" height="150" alt="Fun - Papelaria Divertida" /> 
+                <img src={foto12} className="me-4" width="150" height="150" alt="Carinho em Papel - Papelaria Personalizada &amp; Arte Digital" />            
+              </div>        
+            
+            </div>
          </div>
        </section>
 

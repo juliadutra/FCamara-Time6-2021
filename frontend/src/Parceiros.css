@@ -1,3 +1,36 @@
+/*Carousel*/
+
+ #secaoImagensParceiros .carousel-item {
+    height: 28rem;
+    background-color: white;
+    color: #000;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #secaoImagensParceiros .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+  }
+
+  #secaoImagensParceiros img {
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+  }
+  
+/*Carousel - padrão*/
+#secaoImagensParceiros .carousel-indicators .active {
+  background-color: #3F0259;
+}
+
+#secaoImagensParceiros .carousel-control-next, .carousel-control-prev {
+  color: #3F0259;
+}
 
 #secaoParceiros {
     margin-top: 50px;
@@ -20,9 +53,38 @@
     width: 256px;
     height: 52px;
     border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    background-color: #F2B705;
+    border: 2px solid #F2B705;
 }
 
 
+/*Media Queries*/
 
+/*Portrait phones, less than 579px*/
+@media (max-width: 575.98px){
+    /*Imagens Parceiros*/    
+    #secaoImagensParceiros img{
+        width: 120px;
+        height: 120px;
+        padding-bottom: 5px;
+    }
+ }
+   
+ /*Landscape phones, 576px and up*/
+ @media (min-width: 576px) and (max-width: 767.98px){ 
+    /*Imagens Parceiros*/    
+    #secaoImagensParceiros img{
+        width: 120px;
+        height: 120px;
+        padding-bottom: 5px;
+    }
+ }
+   
+ /*Tablets, 768px and up*/
+ @media (min-width: 768px) and (max-width: 991.98px){   
+
+ }
 
 

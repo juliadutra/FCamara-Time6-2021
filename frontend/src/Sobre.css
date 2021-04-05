@@ -19,16 +19,16 @@
   
   
 #carouselSobreNos .carousel-fundo1 {
-    background-image:url('./Imagens/foto-carouse1.jpg');
+    background-image:url('./Imagens/foto-carousel1.png');
 }
   
 #carouselSobreNos .carousel-fundo2 {
-    background-image:url('./Imagens/foto-carousel2.jpg');
+    background-image:url('./Imagens/foto-carousel2.png');
   
 }
   
 #carouselSobreNos .carousel-fundo3 {
-    background-image:url('./Imagens/foto-carousel3.jpg');
+    background-image:url('./Imagens/foto-carousel3.png');
 }
 
 /*Nossa história*/
@@ -72,6 +72,8 @@
 #lema .card {
     border: 1px solid #3F0259;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 
