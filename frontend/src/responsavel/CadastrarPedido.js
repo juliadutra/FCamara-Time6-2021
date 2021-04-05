@@ -237,7 +237,7 @@ export default function CadastrarPedido() {
     return (
         <>
             <Cabecalho />
-            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} />
+            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} cpf={cpf} />
             {
                 solicitacaoCadastrada == null && (
                     <div className="container">
