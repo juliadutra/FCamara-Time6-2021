@@ -5,6 +5,7 @@ import Cabecalho from "../Cabecalho";
 import UFs from "../doador/UFs";
 import Municipios from "../doador/Municipios";
 import Escolas from "../doador/Escolas";
+import PedidoCadastrado from "./PedidoCadastrado";
 
 function mascaraCpf(valor) {
     return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "$1.$2.$3-$4");
@@ -236,7 +237,7 @@ export default function CadastrarPedido() {
     return (
         <>
             <Cabecalho />
-
+            <PedidoCadastrado solicitacaoCadastrada={solicitacaoCadastrada} />
             {
                 solicitacaoCadastrada == null && (
                     <div className="container">
