@@ -1,4 +1,7 @@
 import React from "react";
+import {CopyToClipboard} from "react-copy-to-clipboard";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopy } from '@fortawesome/free-solid-svg-icons'
 
 export default function DoacaoCadastrada(props) {
 
@@ -17,6 +20,7 @@ export default function DoacaoCadastrada(props) {
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Número do ticket</th>
+                                <th />
                             </tr>
                         </thead>
                         <tbody>
@@ -25,6 +29,11 @@ export default function DoacaoCadastrada(props) {
                                     <tr key={ticket.codigo}>
                                         <th scope="row">{index + 1}</th>
                                         <td>{ticket.codigo}</td>
+                                        <td>
+                                            <CopyToClipboard text={ticket.codigo}>
+                                                <FontAwesomeIcon icon={faCopy} />
+                                            </CopyToClipboard>
+                                        </td>
                                     </tr>
                                 ))
                             }
