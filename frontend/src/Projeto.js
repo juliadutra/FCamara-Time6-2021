@@ -32,13 +32,13 @@ export default function Projeto() {
             </p>
             <div className="row">
               <div className="col-md-4 inner">
-                <img src={foto3} className="img-fluid"  />                
+                <img src={foto3} className="img-fluid" alt="Imagem 1 - Imagem de crianças na escola" />                
               </div>
               <div className="col-md-4 inner">
-                <img src={foto1} className="img-fluid"  />                
+                <img src={foto1} className="img-fluid" alt="Imagem 2 - Imagem de uma criança"  />                
               </div>
               <div className="col-md-4 inner">
-                <img src={foto2} className="img-fluid"  />
+                <img src={foto2} className="img-fluid" alt="Imagem 3 - Imagem de crianças pintando" />
               </div>
             </div>
           </div>
@@ -55,13 +55,13 @@ export default function Projeto() {
             </p>
             <div className="row">
               <div className="col-md-4 inner">
-                <img src={foto4} className="img-fluid"  />
+                <img src={foto4} className="img-fluid"  alt="Imagem 4 - Kit escolar"/>
               </div>
               <div className="col-md-4 inner">
-                <img src={foto5} className="img-fluid"  />
+                <img src={foto5} className="img-fluid" alt="Imagem 5 - Kit escolar" />
               </div>
               <div className="col-md-4 inner">
-                <img src={foto6} className="img-fluid"  />
+                <img src={foto6} className="img-fluid" alt="Imagem 6 - Kit escolar"  />
               </div>
             </div> 
          </div>         

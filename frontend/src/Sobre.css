@@ -74,6 +74,7 @@
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    height: 290px;
 }
 
 
@@ -105,6 +106,11 @@
     #situacaoAtual p {
         font-size: 16px;
     }
+
+    /*Lema*/
+    #lema .card {
+        height: 350px;
+    }
 }
   
 /*Landscape phones, 576px and up*/
@@ -132,6 +138,11 @@
     #situacaoAtual p {
         font-size: 16px;
     }
+
+    /*Lema*/
+    #lema .card {
+        height: 350px;
+    }
 }
   
 /*Tablets, 768px and up*/
@@ -143,5 +154,18 @@
     /*Carousel*/ 
     #historia #carouselControle .carousel-item {
         height: 30rem;
+    }
+
+    /*Lema*/
+    #lema .card {
+        height: 540px;
+    }
+}
+
+/*Desktop, 992px and up*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*Lema*/
+    #lema .card {
+        height: 450px;
     }
 }
