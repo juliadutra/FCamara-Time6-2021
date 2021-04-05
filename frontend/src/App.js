@@ -77,11 +77,11 @@ function App(props) {
         </div>
 
         <a className="carousel-control-prev" data-bs-target="#carouselControle" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Previous</span>
         </a>
         <a className="carousel-control-next" data-bs-target="#carouselControle" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fas fa-angle-right fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Next</span>
         </a>
       </div>
@@ -110,21 +110,21 @@ function App(props) {
       <div className="container align-self-center">
         <div className="row">
           <div className="col-md-6">
-            <div className="border border-dark rounded">
+            <div className="borda-roxa">
               <h3 className="display-6">Como Ajudar</h3>
               <p className="lead">
                 Junto de nossos parceiros, escolha uma opção de kit mais adequada à faixa etária da criança ou escolha um valor que está ao seu alcance. 
               </p>
-              <button type="button" className="btn btn-outline-dark" onClick={redirecionaParaSejaPadrinho}>Seja um Padrinho</button>
+              <button type="button" onClick={redirecionaParaSejaPadrinho}>Seja um Padrinho</button>
             </div>
           </div>
           <div className="col-md-6">
-            <div className="border border-dark rounded">
+            <div className="borda-roxa">
               <h3 className="display-6">Receba Ajuda</h3>
               <p className="lead">
                 Para receber uma doação através de nossa plataforma, cadastre-se preenchendo o formulário com os dados do seu filho, ou procure nossas ONG's ou nossos outros parceiros.
               </p>
-              <button type="button" className="btn btn-outline-dark" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
+              <button type="button" onClick={redirecionaParaReceberAjuda}>Receber Ajuda</button>
             </div>
           </div>
         </div>
@@ -209,12 +209,12 @@ function App(props) {
             </div>
           </div>      
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselControle2" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button className="carousel-control-prev corSlider" type="button" data-bs-target="#carouselControle2" data-bs-slide="prev">
+          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Previous</span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselControle2" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <button className="carousel-control-next corSlider" type="button" data-bs-target="#carouselControle2" data-bs-slide="next">
+          <i class="fas fa-angle-right fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Next</span>
         </button>
       </div>
@@ -298,11 +298,11 @@ function App(props) {
           </div>      
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselControle3" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i class="fas fa-angle-left fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Previous</span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target="#carouselControle3" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <i class="fas fa-angle-right fa-3x" aria-hidden="true"></i>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

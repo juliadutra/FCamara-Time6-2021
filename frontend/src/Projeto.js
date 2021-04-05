@@ -1,85 +1,72 @@
 import React from 'react'
 import Cabecalho from './Cabecalho';
 import './Projeto.css';
+import foto1 from './Imagens/secaoProjeto1.jpg';
+import foto2 from './Imagens/secaoProjeto2.jpg';
+import foto3 from './Imagens/parceria1.jpg';
+import foto4 from './Imagens/montagemKit1.jpg';
+import foto5 from './Imagens/montagemKit2.jpg';
+import foto6 from './Imagens/montagemKit3.jpg';
 import Rodape from './Rodape';
 
 export default function Projeto() {
     return (
       <div id="projeto">
         <Cabecalho/>              
-      
-      {/*Contribuir*/}
-      <section id="contribuir">
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-md-12">
-              <h1 className="display-5">Entenda como você pode contribuir !</h1>
-              <p className="lead">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </p>  
+
+        {/*Capa Principal*/}
+        <div id="capaPrincipal"></div>
+
+        {/*Para quem é o projeto*/}
+        <section id="quemSeDestina">
+          <div className="container text-center pt-4">
+            <h1 className="display-4">Pra quem é o Projeto</h1>
+            <p className="lead">
+              Texto provisório
+            </p>
+            <div className="row">
+              <div className="col-md-4 inner">
+                <img src={foto1} className="img-fluid"  />
+              </div>
+              <div className="col-md-4 inner">
+                <img src={foto2} className="img-fluid"  />
+              </div>
+              <div className="col-md-4 inner">
+                <img src={foto3} className="img-fluid"  />
+              </div>
             </div>
           </div>
-        </div>
-      </section>  
+        </section>
 
-    {/*Encontre escola*/}
-    <section id="encontrarEscola">
-        <h1 className="display-5 text-center">Encontrar uma escola</h1>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <form>
-                  <fieldset>
-                      <div className="form-group mb-4">
-                        <label for="uf">Selecione a UF</label>
-                        <select className="form-select form-select mb-3" aria-label=".form-select" id="uf">
-                          <option selected>Principal</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
+       {/*Montagem do kit*/} 
+       <section id="montagemKit">
+         <div className="container text-center">
+            <h1 className="display-4 pt-4">Como é a Montagem do Kit</h1>
+            <p className="lead">Texto provisório</p>
+            <div className="row">
+              <div className="col-md-4 inner">
+                <img src={foto4} className="img-fluid"  />
+              </div>
+              <div className="col-md-4 inner">
+                <img src={foto5} className="img-fluid"  />
+              </div>
+              <div className="col-md-4 inner">
+                <img src={foto6} className="img-fluid"  />
+              </div>
+            </div> 
+         </div>         
+       </section>
 
-                      <div className="form-group mb-4">
-                        <label for="cidade">Selecione a cidade</label>
-                          <select className="form-select form-select mb-3" aria-label=".form-select" id="cidade">
-                            <option selected>Principal</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                      </div>
+       {/*Capa Secundária*/}
+       <div id="capaSecundaria" className="mt-4"></div>
 
-                      <div className="form-group mb-4">
-                        <label for="escolaEspecifica">Deseja doar para uma escola específica ?</label><br/>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-dark">Sim</button>
-                          <button type="button" class="btn btn-outline-dark">Não</button>                         
-                        </div>
-                      </div>
-
-                      <div className="form-group mb-4">
-                        <label for="nomeEscola">Digite o nome da escola</label>
-                        <input className="form-control form-control" type="text" id="nomeEscola" />
-                      </div>
-
-                      <div className="form-group mb-4">
-                        <input className="form-check-input" type="checkbox" id="identificacao" />
-                        <label className="form-check-label ms-2" for="identificacao">Deseja se identificar ? </label><br/>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-dark">Sim</button>
-                          <button type="button" class="btn btn-outline-dark">Não</button>                         
-                        </div>
-                      </div>
-
-                      <button id="botaoPadrao" type="button" className="btn btn-outline-dark justify-content-md-center">Enviar</button>
-                      
-                  </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-    </section>
+       {/*Parceiros*/}
+       <section>
+         <div className="container text-center pt-4">
+          <h1 className="display-4">Parceiros</h1>
+          imagens parcerias
+         </div>
+       </section>
 
       {/*Footer*/}
       <Rodape />      
