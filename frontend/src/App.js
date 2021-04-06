@@ -25,11 +25,7 @@ function App(props) {
     props.history.push("/projeto")
   }
   function redirecionaParaComoDoar() {
-    props.history.push("/doador")
-  }
-
-  function redirecionaParaSejaPadrinho() {
-    props.history.push("/seja-padrinho")
+    props.history.push("/como-doar")
   }
 
   function redirecionaParaReceberAjuda() {
@@ -92,7 +88,7 @@ function App(props) {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <div className="d-flex align-self-center">
+            <div id="video" className="d-flex align-self-center">
               <VideoPlayer src={video1} widht="230" height="230" />
             </div>
           </div>
@@ -118,7 +114,7 @@ function App(props) {
               <p className="lead">
                 Nós temos três opções de contribuição, a primeira é a doação de um ki escolar, a segunda é doar por meio da vaquinha do bem e a terceira é a doação de itens que talvez você tenha guardado em casa e que não irá mais usar. Temos certeza de que de alguma forma você pode nos ajudar.
               </p>
-              <button type="button" onClick={redirecionaParaSejaPadrinho}>Seja um Padrinho</button>
+              <button type="button" onClick={redirecionaParaComoDoar}>Seja um Padrinho</button>
             </div>
           </div>
           <div className="col-md-6">
@@ -145,7 +141,7 @@ function App(props) {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className="container">
+            <div>
               <div className="row">
                 <div className="col-md-4">                
                 <div className="card" >              
@@ -179,7 +175,7 @@ function App(props) {
           </div>
           <div className="carousel-item">
             
-          <div className="container">
+          <div>
               <div className="row">
                 <div className="col-md-4">                
                 <div className="card" >              
@@ -233,7 +229,7 @@ function App(props) {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className="container">
+            <div>
               <div className="row">
                 <div className="col-md-4">                
                 <div className="card" >              
@@ -267,7 +263,7 @@ function App(props) {
           </div>
           <div className="carousel-item">
             
-          <div className="container">
+          <div>
               <div className="row">
                 <div className="col-md-4">                
                 <div className="card" >              
