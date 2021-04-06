@@ -1,18 +1,6 @@
 import './App.css';
 import {withRouter} from "react-router-dom";
 import Cabecalho from './Cabecalho';
-import fotoRosto from './Imagens/rosto.jpg';
-import fotoRosto2 from './Imagens/rosto2.jpg';
-import fotoRosto3 from './Imagens/rosto3.jpg';
-import fotoRosto4 from './Imagens/rosto4.jpg';
-import fotoRosto5 from './Imagens/rosto5.jpg';
-import fotoRosto6 from './Imagens/rosto6.jpg';
-import fotoRosto7 from './Imagens/rosto7.jpg';
-import fotoRosto8 from './Imagens/rosto8.jpg';
-import fotoRosto9 from './Imagens/rosto9.jpg';
-import fotoRosto10 from './Imagens/rosto10.jpg';
-import fotoRosto11 from './Imagens/rosto11.jpg';
-import fotoRosto12 from './Imagens/rosto12.jpg';
 import VideoPlayer from 'react-video-js-player';
 import video1 from './Vídeos/video.mp4';
 import Rodape from './Rodape';
@@ -148,8 +136,8 @@ function App(props) {
             <div className="container">
               <div className="row">
                 <div className="col-md-4">                
-                <div className="card" >              
-                <img src={fotoRosto} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Ana Fonseca"/>      
+                <div className="card" >             
+                <div id="fundo1"></div> 
                   <div className="card-body">
                     <p className="card-text lead">Parabéns pelo projeto! Estou muito contente de poder ajudar. Continuem alegrando cada coração dessas crianças e adolestentes.</p>
                     <cite>Ana Fonseca</cite>
@@ -157,8 +145,8 @@ function App(props) {
                 </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">                
-                  <div className="card" >              
-                    <img src={fotoRosto2} className="card-img-top img-fluid" alt="Depoimento - Isabele Lima"/>          
+                  <div className="card" >                
+                    <div id="fundo2"></div>
                     <div className="card-body">
                       <p className="card-text lead">ONG com projeto mais inspirador não há! Estou impressionada pelo trabalho de vocês. Parabéns pela ação.</p>
                       <cite>Isabele Lima</cite>
@@ -166,8 +154,8 @@ function App(props) {
                   </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">
-                  <div className="card" >              
-                      <img src={fotoRosto3} className="card-img-top img-fluid" alt="Depoimento - João Nascimento"/>                
+                  <div className="card" >                                 
+                      <div id="fundo3"></div>
                       <div className="card-body">
                         <p className="card-text lead">Gratidão por poder contribuir para essa ONG. É muito gratificante saber que com pouco podemos ajudar alguém.</p>
                         <cite>João Nascimento</cite>
@@ -182,8 +170,8 @@ function App(props) {
           <div className="container">
               <div className="row">
                 <div className="col-md-4">                
-                <div className="card" >              
-                  <img src={fotoRosto4} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Milena Silva"/>               
+                <div className="card" >                               
+                  <div id="fundo4"></div>
                   <div className="card-body">
                     <p className="card-text lead">Meu filho se sensibilizou e pediu para doar alguns livros que não estava mais usando para tentar ajudar outras crianças. Parabéns pela iniciativa.</p>
                     <cite>Milena Silva</cite>
@@ -191,8 +179,8 @@ function App(props) {
                 </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">                
-                  <div className="card" >              
-                    <img src={fotoRosto5} className="card-img-top img-fluid" alt="Depoimento - Luisa Teixeira"/>                 
+                  <div className="card" >                             
+                    <div id="fundo5"></div>
                     <div className="card-body">
                       <p className="card-text lead">Esse projeto é um grande exemplo de inspiração para todo mundo! Gratidão por fazer parte.</p>
                       <cite>Luisa Teixeira</cite>
@@ -200,8 +188,8 @@ function App(props) {
                   </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">
-                  <div className="card" >              
-                    <img src={fotoRosto6} className="card-img-top img-fluid" alt="Depoimento - Monique Aguiar"/>                      
+                  <div className="card" >                            
+                   <div id="fundo6"></div>
                       <div className="card-body">
                         <p className="card-text lead">Estou muito feliz em poder ajudar esse projeto. Um projeto com pessoas dedicadas em fazer o bem!</p>
                         <cite>Monique Aguiar</cite>
@@ -236,8 +224,8 @@ function App(props) {
             <div className="container">
               <div className="row">
                 <div className="col-md-4">                
-                <div className="card" >              
-                  <img src={fotoRosto7} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Gabriela Gomes"/>      
+                <div className="card" >   
+                <div id="fundo7"></div>                             
                   <div className="card-body">
                     <p className="card-text lead">Graças a este projeto meus filhos conseguiram o material escolar que faltava. Muito obrigada.</p>
                     <cite>Gabriela Gomes</cite>
@@ -245,8 +233,8 @@ function App(props) {
                 </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">                
-                  <div className="card" >              
-                    <img src={fotoRosto8} className="card-img-top img-fluid" alt="Depoimento - Lucas Lima"/>          
+                  <div className="card" >    
+                  <div id="fundo8"></div>                         
                     <div className="card-body">
                       <p className="card-text lead">Antigamente eu não tinha condição de pagar pelo material do meu filho, mas graças a essa ONG meu filho conseguiu obter um kit.</p>
                       <cite>Lucas Lima</cite>
@@ -254,8 +242,8 @@ function App(props) {
                   </div>
                 </div>
                 <div className="col-md-4 d-none d-md-block">
-                  <div className="card" >              
-                    <img src={fotoRosto9} className="card-img-top img-fluid" alt="Depoimento - Paula Ramos"/>                
+                  <div className="card" >      
+                  <div id="fundo9"></div>                    
                       <div className="card-body">
                         <p className="card-text lead">Nesses períodos de incertezas somos gratos por essa ONG ajudar nossas crianças.</p>
                         <cite>Paula Ramos</cite>
@@ -271,7 +259,7 @@ function App(props) {
               <div className="row">
                 <div className="col-md-4">                
                 <div className="card" >              
-                  <img src={fotoRosto10} className="card-img-top img-fluid d-flex align-self-center" alt="Depoimento - Roberta Pereira"/>               
+                  <div id="fundo10"></div>          
                   <div className="card-body">
                     <p className="card-text lead">Precisamos agradecer imensamente pela ajuda de vocês, mais um ano ajudando nossos filhos.</p>
                     <cite>Roberta Pereira</cite>
@@ -280,7 +268,7 @@ function App(props) {
                 </div>
                 <div className="col-md-4 d-none d-md-block">                
                   <div className="card" >              
-                    <img src={fotoRosto11} className="card-img-top img-fluid" alt="Depoimento - Manuel Fernandes"/>                 
+                    <div id="fundo11"></div>             
                     <div className="card-body">
                       <p className="card-text lead">Agradeço a essa ONG por mais uma vez contribuir com os nossos filhos neste momento tão difícil que todos nós estamos passando.</p>
                       <cite>Manuel Fernandes</cite>
@@ -289,7 +277,7 @@ function App(props) {
                 </div>
                 <div className="col-md-4 d-none d-md-block">
                   <div className="card" >              
-                    <img src={fotoRosto12} className="card-img-top img-fluid" alt="Depoimento - Henrique Cardoso"/>     
+                    <div id="fundo12"></div> 
                       <div className="card-body">
                         <p className="card-text lead">Estou muito grato pela ajuda, não sei o que seria dos meus filhos sem essa ONG.</p>
                         <cite>Henrique Cardoso</cite>

@@ -209,6 +209,96 @@ h1, h2, h3 {
 }
 
 
+/*Depoimentos - fundos*/
+
+#pessoasAjudaram #carouselControle2 #fundo1 {
+  background: url("./Imagens/rosto.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAjudaram #carouselControle2 #fundo2 {
+  background: url("./Imagens/rosto2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAjudaram #carouselControle2 #fundo3 {
+  background: url("./Imagens/rosto3.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAjudaram #carouselControle2 #fundo4 {
+  background: url("./Imagens/rosto4.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAjudaram #carouselControle2 #fundo5 {
+  background: url("./Imagens/rosto5.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAjudaram #carouselControle2 #fundo6 {
+  background: url("./Imagens/rosto6.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo7 {
+  background: url("./Imagens/rosto7.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo8 {
+  background: url("./Imagens/rosto8.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo9 {
+  background: url("./Imagens/rosto9.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo10 {
+  background: url("./Imagens/rosto10.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo11 {
+  background: url("./Imagens/rosto11.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#pessoasAReceberam #carouselControle3 #fundo12 {
+  background: url("./Imagens/rosto12.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+
+
+
+
 
 
 
